@@ -2,7 +2,7 @@
 
 $files = [
 
-    "assets/grunt/css/main.css" => "assets/grunt/css/main.037522f9.css",
+    "assets/grunt/css/main.css" => "assets/grunt/css/main.a41701e2.css",
 
     "assets/grunt/js/vendor.js" => "assets/grunt/js/vendor.857a50a0.js",
 

@@ -9,10 +9,10 @@
 
 <?php if (!$webpage->main): ?>
     <h1><?= $page->title; ?></h1>
-<?php endif; ?>
 
-<div class="row">
-    <div class="col-xs-12 text-content">
-        <?= $page->content; ?>
+    <div class="row">
+        <div class="col-xs-12 text-content">
+            <?= $page->content; ?>
+        </div>
     </div>
-</div>
+<?php endif; ?>

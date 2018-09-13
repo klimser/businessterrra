@@ -111,10 +111,177 @@ $this->render('/grunt-assets');
 
 <div class="container">
     <h2>Этот Бизнес-интенсив<br> именно для вас если:</h2>
-    <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-4 icon-block text-center">
-            <div class="icon-pic icon-pic-1"></div>
+    <div class="row icons-container">
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="icon-block text-center">
+                <div class="icon-pic icon-pic-1"></div>
+                <div class="text-center">
+                    Хотите прокачать<br> свои лидерские навыки
+                </div>
+            </div>
         </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="icon-block text-center">
+                <div class="icon-pic icon-pic-2"></div>
+                <div class="text-center">
+                    Хотите запустить<br> бизнес без потерь
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="icon-block text-center">
+                <div class="icon-pic icon-pic-3"></div>
+                <div class="text-center">
+                    Хотите научится управлять<br> сотрудниками качественно
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="icon-block text-center">
+                <div class="icon-pic icon-pic-4"></div>
+                <div class="text-center">
+                    Работаете в топ-менеджменте<br> или на управленческой должности
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="icon-block text-center">
+                <div class="icon-pic icon-pic-5"></div>
+                <div class="text-center">
+                    В поисках новых идей,<br> инсайтов чтобы двигаться вперед
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="icon-block text-center">
+                <div class="icon-pic icon-pic-6"></div>
+                <div class="text-center">
+                    Хотите наконец-то<br> заработать на своём деле
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bg-2">
+    <div class="container">
+        <h2>ПРИХОДИТЕ НА МАСТЕР-КЛАСС<br> СО СВОЕЙ КОМАНДОЙ</h2>
+        <div class="row icons-container">
+            <div class="col-xs-12 col-sm-4">
+                <div class="icon-block-red text-center">
+                    <div class="icon-pic icon-pic-7"></div>
+                    <div class="text-center">
+                        Чтобы быть эффективнее<br> вместе с командой
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+                <div class="icon-block-red text-center">
+                    <div class="icon-pic icon-pic-8"></div>
+                    <div class="text-center">
+                        Чтобы быть эффективнее<br> вместе с командой
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+                <div class="icon-block-red text-center">
+                    <div class="icon-pic icon-pic-9"></div>
+                    <div class="text-center">
+                        Чтобы увеличить свои<br> показатели раньше
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="speaker-biografy-block container vawes-bg">
+    <div class="row">
+        <div class="col-xs-12 col-sm-7 col-sm-push-5 speaker-biografy">
+            <h2>Дмитрий Карнаухов</h2>
+            <dl>
+                <dt>Образование:</dt>
+                <dd>Кандидат психологических наук;</dd>
+                <dd>2 образования МВА</dd>
+
+                <dt>Опыт:</dt>
+                <dd>Практик с 13-летним опытом работы в должности Директора по персоналу в крупных компаниях, в том числе в «тысячниках» из списка Forbes;</dd>
+                <dd>Бизнес-тренер с опытом проведения ряда управленческих тренингов в масштабах России и СНГ</dd>
+
+                <dt>Компетенции:</dt>
+                <dd>Автор более 40 научных статей и публикаций в области психологии и управления персоналом;</dd>
+                <dd>Официальный Спикер компании "Хедхантер", официальный спикер компании "Деловая среда" от Сбербанка; </dd>
+                <dd>Основатель компании «Д.А. Консалт», тренинговой компании и кадрового агентства HR365;</dd>
+                <dd>В рамках БМ: Тренер, член команды "300 тигров Петра Осипова", член экспертного совета HR-ов, автор мастер-классов, приглашенный спикер на тренерстве по темам управления персоналом, один из Админов чатов БМ.</dd>
+
+                <dt>Заказчики:</dt>
+                <dd>Многие Тренеры БМ. За 4 года закрыл больше 600 разных вакансий в РФ, Украине, Казахстане, без учёта массподбора.</dd>
+            </dl>
+        </div>
+        <div class="col-xs-12 col-sm-5 col-sm-pull-7 speaker-portrait"></div>
+    </div>
+</div>
+
+<div class="bg-3">
+    <div class="container">
+        <h2>Выбирите билет, подходящий именно Вам:</h2>
+        <div class="row tariffs-block">
+            <div class="col-xs-12 col-sm-4">
+                <div class="tariff-block text-center">
+                    <div class="block-title">Блок - VIP</div>
+                    (1 290 000 сум)
+                    <div class="block-body">
+                        <ul class="list-unstyled">
+                            <li>Программа мастер-класса</li>
+                            <li>Кофе-брейк</li>
+                            <li>Первые места</li>
+                            <li>VIP ужин</li>
+                            <li>Личный разбор</li>
+                        </ul>
+                    </div>
+                    <button class="order-button">ЗАКАЗАТЬ БИЛЕТ</button>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+                <div class="tariff-block text-center">
+                    <div class="block-title">Блок - Стандарт</div>
+                    (990 000 сум)
+                    <div class="block-body">
+                        <ul class="list-unstyled extra-padding">
+                            <li>Программа мастер-класса</li>
+                            <li>Кофе-брейк</li>
+                            <li>Места в середине зала</li>
+                        </ul>
+                    </div>
+                    <button class="order-button">ЗАКАЗАТЬ БИЛЕТ</button>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+                <div class="tariff-block text-center">
+                    <div class="block-title">Блок - Минимал</div>
+                    (590 000 сум)
+                    <div class="block-body">
+                        <ul class="list-unstyled extra-padding">
+                            <li>Программа мастер-класса</li>
+                            <li>Кофе-брейк</li>
+                            <li>Места в конце зала</li>
+                        </ul>
+                    </div>
+                    <button class="order-button">ЗАКАЗАТЬ БИЛЕТ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container vawes-bg order-block">
+    <div class="timer-block">
+        <div class="block-title">Оставьте заявку на мастер-класс</div>
+        <div class="font-thin">Стоимость участия поднимется через:</div>
+        <div class="timer">
+
+        </div>
+        <button class="red-label-button">Забронировать место</button>
     </div>
 </div>
 
@@ -126,8 +293,23 @@ $this->render('/grunt-assets');
     <?= $content ?>
 </div>
 
-<footer class="footer">
-
+<footer class="vawes-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-3">
+                <div class="red-icon icon icon-location pull-left"></div>
+                <div class="pull-left">Ташкент Business Terra,<br> Oybek street, 16</div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-3">
+                <div class="red-icon icon icon-bell pull-left"></div>
+                <div class="pull-left">20 октября<br> с 10.00 до 19.00</div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-3 col-md-offset-3">
+                <a class="font-bigger" href="tel:+99895-145-82-49">+99895 145 82 49</a><br>
+                <button class="red-button">Обратный звонок</button>
+            </div>
+        </div>
+    </div>
 </footer>
 
 <?php $this->endBody() ?>

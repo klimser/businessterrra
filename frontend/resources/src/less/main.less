@@ -14,11 +14,11 @@ body {
   font-size: 16px;
 }
 
-header {
+header, footer {
   padding: @grid-gutter-width 0;
 }
 @media (min-width: @screen-md-min) {
-  header {
+  header, footer {
     padding: (@grid-gutter-width + 10px) 0;
   }
 }
@@ -35,9 +35,10 @@ h1 {
 }
 h2 {
   font-family: 'Muller Extrabold', @fonts-tail;
-  font-size: 2.5em;
+  font-size: 1.7em;
   display: inline-block;
   position: relative;
+  margin-top: @grid-gutter-width * 2;
 }
 h2:after {
   display: block;
@@ -51,7 +52,7 @@ h2:after {
   height: 10px;
   width: @half-gutter-width * 6px;
 }
-@media (min-width: @screen-md-min) {
+@media (min-width: @screen-sm-min) {
   h2 {
     font-size: 3em;
   }
@@ -127,26 +128,34 @@ ul.list-over li {
   background: url("../images/bg-pic1.jpg") no-repeat center;
   background-size: cover;
 }
-.timer-block {
-  margin: (@grid-gutter-width + 10px);
+.bg-1 .timer-block {
+  margin: @grid-gutter-width + 10px 0;
   background: white;
   box-shadow: 0 0 14px #1f191a;
   padding: @grid-gutter-width @grid-gutter-width @half-gutter-width;
 }
 @media (min-width: @screen-md-min) {
-  .timer-block {
-    margin: (@grid-gutter-width * 2 + 20px);
+  .bg-1 .timer-block {
+    margin: @grid-gutter-width * 2 + 20px 0;
   }
 }
 .timer-block .block-title {
   font-family: 'Muller Extrabold', @fonts-tail;
-  font-size: 2em;
+  font-size: 1.2em;
   text-transform: uppercase;
 }
 .timer-block .font-thin {
   font-family: 'Muller Light', @fonts-tail;
-  font-size: 2em;
+  font-size: 1.2em;
   text-transform: uppercase;
+}
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+  .timer-block .block-title {font-size: 1.5em;}
+  .timer-block .font-thin {font-size: 1.5em;}
+}
+@media (min-width: @screen-md-min) {
+  .timer-block .block-title {font-size: 2em;}
+  .timer-block .font-thin {font-size: 2em;}
 }
 .red-label-button {
   background: @soft-red;
@@ -158,14 +167,154 @@ ul.list-over li {
   border: none;
 }
 
+.icons-container {
+  margin-top: @grid-gutter-width * 2;
+}
 .icon-block {
   border: solid 1px #acacac;
-  padding: @grid-gutter-width * 2px;
+  padding: @grid-gutter-width * 2px 0;
+  margin-bottom: @grid-gutter-width;
 }
-.icon-pic {
-  width: @grid-gutter-width * 2px;
-  height: @grid-gutter-width * 2px;
+.icon-block .icon-pic {
+  width: 158px;
+  height: 158px + @grid-gutter-width;
+  margin: 0 auto @grid-gutter-width;
+  position: relative;
+  background: no-repeat center top;
+  font-family: 'Muller Medium', @fonts-tail;
 }
-.icon-pic-1 {
-  background: url("../images/icons/chief.svg") no-repeat center;
+@media (min-width: @screen-md-min) {
+  .icon-block .icon-pic {
+    height: 158px + @grid-gutter-width + 10px;
+    margin-bottom: @grid-gutter-width + 10px;
+  }
+}
+
+.icon-block .icon-pic:after {
+  content: '.';
+  width: @grid-gutter-width * 2;
+  margin-left: -@grid-gutter-width;
+  height: 0;
+  overflow: hidden;
+  border-bottom: solid 2px @soft-red;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+}
+.icon-block .icon-pic-1 {background-image: url("../images/icons/chief.svg");}
+.icon-block .icon-pic-2 {background-image: url("../images/icons/rocket.svg");}
+.icon-block .icon-pic-3 {background-image: url("../images/icons/team.svg");}
+.icon-block .icon-pic-4 {background-image: url("../images/icons/top.svg");}
+.icon-block .icon-pic-5 {background-image: url("../images/icons/idea.svg");}
+.icon-block .icon-pic-6 {background-image: url("../images/icons/volcano.svg");}
+
+.bg-2 {
+  background: url("../images/bg-pic2.jpg") no-repeat center top;
+  color: white;
+}
+.icon-block-red {
+  background: @soft-red;
+  color: white;
+  padding: @grid-gutter-width * 2px 0;
+  margin-bottom: @grid-gutter-width;
+}
+.icon-block-red .icon-pic {
+  width: 125px;
+  height: 125px;
+  margin: 0 auto @grid-gutter-width;
+  background: no-repeat center top;
+  font-family: 'Muller Medium', @fonts-tail;
+}
+.icon-block-red .icon-pic-7 {background-image: url("../images/icons/laptop.svg");}
+.icon-block-red .icon-pic-8 {background-image: url("../images/icons/workers.svg");}
+.icon-block-red .icon-pic-9 {background-image: url("../images/icons/timer.svg");}
+
+.speaker-biografy-block {
+  margin-top: @grid-gutter-width;
+  margin-bottom: @grid-gutter-width;
+}
+.speaker-biografy {
+  padding: @grid-gutter-width;
+}
+.speaker-biografy h2 {
+  margin-top: @grid-gutter-width;
+}
+.speaker-biografy dl {
+  margin-top: @grid-gutter-width;
+}
+.speaker-biografy dt {
+  font-family: 'Muller Bold', @fonts-tail;
+  font-size: 2em;
+  margin-top: @grid-gutter-width;
+}
+.speaker-biografy dd:before {
+  content: "o";
+  color: @soft-red;
+  font-weight: bold;
+  padding-right: @half-gutter-width;
+}
+.speaker-portrait {
+  background: url("../images/speaker-photo.jpg") no-repeat center top;
+  background-size: contain;
+  min-height: 670px;
+}
+@media (min-width: @screen-md-min) {
+  .speaker-portrait {
+    min-height: 853px;
+  }
+}
+
+.bg-3 {
+  background: url("../images/bg-pic3.jpg") no-repeat center top;
+  color: white;
+}
+.bg-3 h2:after {
+  display: none;
+}
+.tariffs-block {
+  margin-top: @grid-gutter-width;
+  margin-bottom: @grid-gutter-width;
+}
+.tariff-block {
+  background: @soft-red;
+  font-size: 1.3em;
+  font-family: 'Muller ExtraBold', @fonts-tail;
+  margin-bottom: @half-gutter-width;
+}
+.tariff-block .block-title {
+  font-size: 1.5em;
+}
+.tariff-block .block-body {
+  font-family: 'Muller', @fonts-tail;
+  background: #192133;
+}
+.tariff-block .block-body ul {
+  margin: 0;
+  text-align: left;
+  padding: @grid-gutter-width @half-gutter-width;
+}
+@media (min-width: @screen-sm-min) {
+  .tariff-block .block-body ul.extra-padding {
+    padding-top: @grid-gutter-width * 2;
+    padding-bottom: @grid-gutter-width * 2;
+  }
+}
+.tariff-block .block-body ul li:before {
+  content: "o";
+  color: @soft-red;
+  font-weight: bold;
+  padding-right: @half-gutter-width;
+}
+.tariff-block .order-button {
+  font-family: 'Muller', @fonts-tail;
+  width: 100%;
+  border: none;
+  background: none;
+  padding: @half-gutter-width 0;
+}
+
+.order-block {
+  margin-top: @grid-gutter-width * 2;
+  margin-bottom: @grid-gutter-width * 2;
+  padding: @grid-gutter-width;
 }
