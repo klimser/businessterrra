@@ -1,0 +1,171 @@
+@import "../../../../node_modules/bootstrap/less/bootstrap";
+
+@import "_variables";
+@import "_fonts";
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  font-family: 'Muller', @fonts-tail;
+  background: white;
+  color: black;
+  font-size: 16px;
+}
+
+header {
+  padding: @grid-gutter-width 0;
+}
+@media (min-width: @screen-md-min) {
+  header {
+    padding: (@grid-gutter-width + 10px) 0;
+  }
+}
+
+h1 {
+  font-family: 'Muller Extrabold', @fonts-tail;
+  font-size: 2.5em;
+  text-transform: uppercase;
+}
+@media (min-width: @screen-md-min) {
+  h1 {
+    font-size: 3em;
+  }
+}
+h2 {
+  font-family: 'Muller Extrabold', @fonts-tail;
+  font-size: 2.5em;
+  display: inline-block;
+  position: relative;
+}
+h2:after {
+  display: block;
+  content: ".";
+  line-height: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  background: @soft-red;
+  color: @soft-red;
+  height: 10px;
+  width: @half-gutter-width * 6px;
+}
+@media (min-width: @screen-md-min) {
+  h2 {
+    font-size: 3em;
+  }
+}
+h3 {
+  font-family: 'Muller Bold', @fonts-tail;
+  font-size: 1.5em;
+}
+
+.vawes-bg {
+  background: url("../images/bg.png") repeat;
+  color: white;
+}
+.vawes-bg a, .vawes-bg a:focus, .vawes-bg a:hover {
+  color: white;
+  text-decoration: none;
+}
+.red-icon {
+  color: @soft-red;
+  font-size: 1.5em;
+  padding: 10px;
+}
+.font-bigger {
+  font-size: 1.5em;
+}
+.red-button {
+  background: none;
+  border: solid 3px @soft-red;
+  font-family: 'Muller Medium', @fonts-tail;
+  padding: (@half-gutter-width - 5px) (@half-gutter-width + 5px);
+  text-transform: uppercase;
+}
+.red-label {
+  background: @soft-red;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Muller Bold', @fonts-tail;
+  font-size: 18px;
+  padding: (@half-gutter-width - 10px) (@half-gutter-width - 5px);
+}
+dl.main-list dt {
+  color: @soft-red;
+  font-family: 'Muller Bold', @fonts-tail;
+  font-size: 2em;
+  text-transform: uppercase;
+  margin-top: @grid-gutter-width;
+}
+.red-bold-frame {
+  border: solid 5px @soft-red;
+  overflow: visible;
+  padding: 0 @half-gutter-width @half-gutter-width;
+  width: 220px;
+}
+ul.list-over {
+  min-width: 230px;
+}
+ul.list-over li {
+  white-space: nowrap;
+}
+.speaker-bg {
+  background: url("../images/speaker-info.png") no-repeat right bottom;
+  background-size: contain;
+  height: 391px;
+}
+@media (min-width: @screen-sm-min) {
+  .speaker-bg {
+    height: 742px;
+  }
+}
+
+
+.bg-1 {
+  background: url("../images/bg-pic1.jpg") no-repeat center;
+  background-size: cover;
+}
+.timer-block {
+  margin: (@grid-gutter-width + 10px);
+  background: white;
+  box-shadow: 0 0 14px #1f191a;
+  padding: @grid-gutter-width @grid-gutter-width @half-gutter-width;
+}
+@media (min-width: @screen-md-min) {
+  .timer-block {
+    margin: (@grid-gutter-width * 2 + 20px);
+  }
+}
+.timer-block .block-title {
+  font-family: 'Muller Extrabold', @fonts-tail;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+.timer-block .font-thin {
+  font-family: 'Muller Light', @fonts-tail;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+.red-label-button {
+  background: @soft-red;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Muller Bold', @fonts-tail;
+  font-size: 18px;
+  padding: @half-gutter-width (@half-gutter-width - 5px);
+  border: none;
+}
+
+.icon-block {
+  border: solid 1px #acacac;
+  padding: @grid-gutter-width * 2px;
+}
+.icon-pic {
+  width: @grid-gutter-width * 2px;
+  height: @grid-gutter-width * 2px;
+}
+.icon-pic-1 {
+  background: url("../images/icons/chief.svg") no-repeat center;
+}
