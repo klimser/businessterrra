@@ -1,7 +1,20 @@
 <?php
+$params = array_merge(
+    require(__DIR__ . '/params.php'),
+    require(__DIR__ . '/params-local.php')
+);
+
 return [
     'vendorPath' => dirname(dirname(__DIR__)) . '/vendor',
     'components' => [
+        'db' => [
+            'class' => 'yii\db\Connection',
+            'charset' => 'utf8',
+            'dsn' => $params['db-dsn'],
+            'username' => $params['db-username'],
+            'password' => $params['db-password'],
+            'tablePrefix' => $params['db-tablePrefix'],
+        ],
         'assetManager' => [
             'linkAssets' => false,
             'appendTimestamp' => false,
@@ -30,8 +43,15 @@ return [
         'errorLogger' => [
             'class' => 'common\components\Error',
         ],
-        'actionLogger' => [
-            'class' => 'common\components\Action',
+        'reCaptcha' => [
+            'name' => 'reCaptcha',
+            'class' => 'himiklab\yii2\recaptcha\ReCaptcha',
+            'siteKey' => $params['reCaptcha-siteKey'],
+            'secret' => $params['reCaptcha-secret'],
+        ],
+        'tinifier' => [
+            'class' => 'common\components\Tinifier',
+            'apiKey' => $params['tinifyKey'],
         ],
     ],
     'aliases' => [

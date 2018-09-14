@@ -25,6 +25,7 @@ return [
             'manageMenu',
             'manageWidgetHtml',
             'viewIndex',
+            'manageOrders',
             'manageUsers',
             'editUser',
         ],
@@ -48,5 +49,9 @@ return [
     'manageWidgetHtml' => [
         'type' => 2,
         'description' => 'Manage blocks',
+    ],
+    'manageOrders' => [
+        'type' => 2,
+        'description' => 'Manage orders',
     ],
 ];

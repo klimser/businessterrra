@@ -5,5 +5,4 @@ return [
     'user.passwordResetTokenExpire' => 3600,
     'noticeEmail' => 'klimser@inbox.ru',
     'mailFrom' => 'robot@5plus.uz',
-    'tinyfyKey' => '',
 ];

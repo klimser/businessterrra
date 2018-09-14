@@ -5,6 +5,7 @@ namespace backend\controllers;
 use backend\controllers\traits\Active;
 use common\models\Module;
 use common\models\Webpage;
+use common\models\WidgetHtml;
 use yii;
 use common\models\Page;
 use yii\data\ActiveDataProvider;

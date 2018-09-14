@@ -119,7 +119,9 @@ class Webpage extends ActiveRecord
 
     public function beforeSave($insert)
     {
-        \common\components\Webpage::clearCache($this);
+        $res = \common\components\Webpage::clearCache($this);
+        var_dump($res);
+        die('TEST');
         return parent::beforeSave($insert);
     }
 

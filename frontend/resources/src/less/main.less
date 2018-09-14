@@ -318,3 +318,67 @@ ul.list-over li {
   margin-bottom: @grid-gutter-width * 2;
   padding: @grid-gutter-width;
 }
+
+.modal-content {
+  background: black;
+  border: solid 3px white;
+  border-radius: 0;
+  color: white;
+}
+.modal-content .modal-header {
+  border-bottom: solid 2px @soft-red;
+}
+.modal-content .modal-header h4 {
+  font-family: 'Muller Medium', @fonts-tail;
+  font-size: 2em;
+}
+.modal-content .modal-header button {
+  opacity: 1;
+}
+.order_form input, .order_form .input-group-addon {
+  background: none;
+  color: white;
+}
+.order_form button {
+  background: none;
+  border: solid 1px white;
+  color: white;
+  padding: @half-gutter-width - 5px @grid-gutter-width;
+  margin-left: 10px;
+}
+.order_form button.complete-button {
+  background: @soft-red;
+  text-transform: uppercase;
+  border: none;
+}
+
+.remain-time-block {
+  font-family: 'Muller Bold', @fonts-tail;
+  font-size: 2.5em;
+  margin-top: @half-gutter-width;
+}
+.remain-titles-block {
+  margin-bottom: @grid-gutter-width;
+}
+.remain-time-block .remain, .remain-titles-block .remain-title {
+  float: left;
+  width: @grid-gutter-width * 2;
+  max-width: @grid-gutter-width * 2;
+  text-align: center;
+  overflow: hidden;
+}
+.remain-titles-block .remain-title {
+  font-family: 'Muller Light', @fonts-tail;
+}
+@media (min-width: @screen-sm-min) {
+  .remain-time-block {
+    font-size: 4em;
+  }
+  .remain-titles-block .remain-title {
+    font-size: 1.5em;
+  }
+  .remain-time-block .remain, .remain-titles-block .remain-title {
+    width: @grid-gutter-width * 3;
+    max-width: @grid-gutter-width * 3;
+  }
+}
