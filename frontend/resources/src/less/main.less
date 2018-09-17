@@ -279,7 +279,14 @@ ul.list-over li {
   background: @soft-red;
   font-size: 1.3em;
   font-family: 'Muller ExtraBold', @fonts-tail;
-  margin-bottom: @half-gutter-width;
+}
+@media (max-width: @screen-xs-max) {
+  .tariffs-block, .last-tariff-block {
+    margin-bottom: 0;
+  }
+  .tariff-block {
+    margin-bottom: @grid-gutter-width * 2;
+  }
 }
 .tariff-block .block-title {
   font-size: 1.5em;

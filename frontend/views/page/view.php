@@ -267,7 +267,7 @@ SCRIPT
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-4">
-                    <div class="tariff-block text-center">
+                    <div class="tariff-block last-tariff-block text-center">
                         <div class="block-title">Минимал</div>
                         (590 000 сум)
                         <div class="block-body">
