@@ -41,7 +41,7 @@ SCRIPT
                     </div>
                     <div class="col-xs-12 col-sm-4 col-md-3">
                         <div class="red-icon icon icon-bell pull-left"></div>
-                        <div class="pull-left">20 октября<br> с 10.00 до 19.00</div>
+                        <div class="pull-left">20 октября<br> с 9.00 до 19.00</div>
                     </div>
                     <div class="col-xs-12 col-sm-4 col-md-3 col-md-offset-3">
                         <a class="font-bigger" href="tel:+99895-145-82-49">+99895 145 82 49</a><br>
@@ -53,8 +53,11 @@ SCRIPT
 
         <div class="container speaker-info">
             <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-5">
+                <div class="visible-xs col-xs-12 speaker-bg">
                     <span class="red-label">Впервые в Ташкенте</span><br>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-5">
+                    <span class="red-label hidden-xs">Впервые в Ташкенте</span><br>
                     <h1>Дмитрий Карнаухов</h1>
                     <dl class="main-list">
                         <dt>Бизнес с нуля</dt>
@@ -85,8 +88,7 @@ SCRIPT
                         </ul>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-7 speaker-bg">
-                </div>
+                <div class="hidden-xs col-sm-6 col-md-7 speaker-bg"></div>
             </div>
         </div>
     </div>
@@ -94,7 +96,7 @@ SCRIPT
     <div class="bg-1">
         <div class="container">
             <div class="timer-block">
-                <div class="block-title">Забронируйте билет по самой низкой цене!</div>
+                <div class="block-title">Успейте приобрести билет по самой низкой цене!</div>
                 <div class="font-thin">Стоимость участия поднимется через:</div>
                 <div class="timer">
                     <div class="remain-time-block">
@@ -112,7 +114,7 @@ SCRIPT
                         <div class="clearfix"></div>
                     </div>
                 </div>
-                <button class="red-label-button" onclick="MainPage.launchModal();">Забронировать место</button>
+                <button class="red-label-button" onclick="MainPage.launchModal();">Приобрести билет</button>
             </div>
         </div>
     </div>
@@ -236,12 +238,12 @@ SCRIPT
             <div class="row tariffs-block">
                 <div class="col-xs-12 col-sm-4">
                     <div class="tariff-block text-center">
-                        <div class="block-title">Блок - VIP</div>
+                        <div class="block-title">VIP</div>
                         (1 290 000 сум)
                         <div class="block-body">
                             <ul class="list-unstyled">
                                 <li>Программа мастер-класса</li>
-                                <li>Кофе-брейк</li>
+                                <li>2 кофе-брейка и обед</li>
                                 <li>Первые места</li>
                                 <li>VIP ужин</li>
                                 <li>Личный разбор</li>
@@ -252,12 +254,12 @@ SCRIPT
                 </div>
                 <div class="col-xs-12 col-sm-4">
                     <div class="tariff-block text-center">
-                        <div class="block-title">Блок - Стандарт</div>
+                        <div class="block-title">Стандарт</div>
                         (990 000 сум)
                         <div class="block-body">
                             <ul class="list-unstyled extra-padding">
                                 <li>Программа мастер-класса</li>
-                                <li>Кофе-брейк</li>
+                                <li>2 кофе-брейка и обед</li>
                                 <li>Места в середине зала</li>
                             </ul>
                         </div>
@@ -266,12 +268,12 @@ SCRIPT
                 </div>
                 <div class="col-xs-12 col-sm-4">
                     <div class="tariff-block text-center">
-                        <div class="block-title">Блок - Минимал</div>
+                        <div class="block-title">Минимал</div>
                         (590 000 сум)
                         <div class="block-body">
                             <ul class="list-unstyled extra-padding">
                                 <li>Программа мастер-класса</li>
-                                <li>Кофе-брейк</li>
+                                <li>2 кофе-брейка и обед</li>
                                 <li>Места в конце зала</li>
                             </ul>
                         </div>
@@ -284,7 +286,7 @@ SCRIPT
 
     <div class="container vawes-bg order-block">
         <div class="timer-block">
-            <div class="block-title">Оставьте заявку на мастер-класс</div>
+            <div class="block-title">Оставьте заявку на мастер класс и получите полный тайминг</div>
             <div class="font-thin">Стоимость участия поднимется через:</div>
             <div class="timer">
                 <div class="remain-time-block">
@@ -316,7 +318,7 @@ SCRIPT
                         <?= ReCaptcha::widget(['name' => 'order[reCaptcha]', 'theme' => 'dark']) ?>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-3">
-                        <button class="complete-button">Забронировать место</button>
+                        <button class="complete-button">Получить тайминг</button>
                     </div>
                 </div>
                 <div class="order_form_extra hidden"></div>
@@ -334,7 +336,7 @@ SCRIPT
                 </div>
                 <div class="col-xs-12 col-sm-4 col-md-3">
                     <div class="red-icon icon icon-bell pull-left"></div>
-                    <div class="pull-left">20 октября<br> с 10.00 до 19.00</div>
+                    <div class="pull-left">20 октября<br> с 9.00 до 19.00</div>
                 </div>
                 <div class="col-xs-12 col-sm-4 col-md-3 col-md-offset-3">
                     <a class="font-bigger" href="tel:+99895-145-82-49">+99895 145 82 49</a><br>

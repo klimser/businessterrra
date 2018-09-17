@@ -17,14 +17,16 @@ $this->render('/grunt-assets');
     <meta charset="<?= Yii::$app->charset ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="<?= Yii::$app->homeUrl; ?>apple-touch-icon.png?v=vMOvEOK0AG">
-    <link rel="icon" type="image/png" sizes="32x32" href="<?= Yii::$app->homeUrl; ?>favicon-32x32.png?v=vMOvEOK0AG">
-    <link rel="icon" type="image/png" sizes="16x16" href="<?= Yii::$app->homeUrl; ?>favicon-16x16.png?v=vMOvEOK0AG">
-    <link rel="manifest" href="<?= Yii::$app->homeUrl; ?>site.webmanifest?v=vMOvEOK0AG">
-    <link rel="mask-icon" href="<?= Yii::$app->homeUrl; ?>safari-pinned-tab.svg?v=vMOvEOK0AG" color="#6f71e9">
-    <link rel="shortcut icon" href="<?= Yii::$app->homeUrl; ?>favicon.ico?v=vMOvEOK0AG">
-    <meta name="msapplication-TileColor" content="#b91d47">
-    <meta name="msapplication-config" content="<?= Yii::$app->homeUrl; ?>browserconfig.xml?v=vMOvEOK0AG">
+    <link rel="apple-touch-icon" sizes="180x180" href="<?= Yii::$app->homeUrl; ?>apple-touch-icon.png?v=Gvm6WyMYaM">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?= Yii::$app->homeUrl; ?>favicon-32x32.png?v=Gvm6WyMYaM">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?= Yii::$app->homeUrl; ?>favicon-16x16.png?v=Gvm6WyMYaM">
+    <link rel="manifest" href="<?= Yii::$app->homeUrl; ?>site.webmanifest?v=Gvm6WyMYaM">
+    <link rel="mask-icon" href="<?= Yii::$app->homeUrl; ?>safari-pinned-tab.svg?v=Gvm6WyMYaM" color="#333366">
+    <link rel="shortcut icon" href="<?= Yii::$app->homeUrl; ?>favicon.ico?v=Gvm6WyMYaM">
+    <meta name="apple-mobile-web-app-title" content="Business Terra">
+    <meta name="application-name" content="Business Terra">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="<?= Yii::$app->homeUrl; ?>browserconfig.xml?v=Gvm6WyMYaM">
     <meta name="theme-color" content="#ffffff">
 
     <?= Html::csrfMetaTags() ?>
