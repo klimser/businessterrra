@@ -234,7 +234,7 @@ SCRIPT
 
     <div class="bg-3">
         <div class="container">
-            <h2>Выбирите билет, подходящий именно Вам:</h2>
+            <h2>Выберите билет, подходящий именно Вам:</h2>
             <div class="row tariffs-block">
                 <div class="col-xs-12 col-sm-4">
                     <div class="tariff-block text-center">
@@ -244,6 +244,7 @@ SCRIPT
                             <ul class="list-unstyled">
                                 <li>Программа мастер-класса</li>
                                 <li>2 кофе-брейка и обед</li>
+                                <li>Сертификат о прохождении</li>
                                 <li>Первые места</li>
                                 <li>VIP ужин</li>
                                 <li>Личный разбор</li>
@@ -260,6 +261,7 @@ SCRIPT
                             <ul class="list-unstyled extra-padding">
                                 <li>Программа мастер-класса</li>
                                 <li>2 кофе-брейка и обед</li>
+                                <li>Сертификат о прохождении</li>
                                 <li>Места в середине зала</li>
                             </ul>
                         </div>
@@ -274,6 +276,7 @@ SCRIPT
                             <ul class="list-unstyled extra-padding">
                                 <li>Программа мастер-класса</li>
                                 <li>2 кофе-брейка и обед</li>
+                                <li>Сертификат о прохождении</li>
                                 <li>Места в конце зала</li>
                             </ul>
                         </div>
