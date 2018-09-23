@@ -35,7 +35,7 @@ SCRIPT
         <header>
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-4 col-md-3">
+                    <div class="col-xs-12 col-sm-4 col-md-4">
                         <div class="red-icon icon icon-location pull-left"></div>
                         <div class="pull-left">Ташкент Business Terra,<br> Oybek street, 16</div>
                     </div>
@@ -43,8 +43,9 @@ SCRIPT
                         <div class="red-icon icon icon-bell pull-left"></div>
                         <div class="pull-left">20 октября<br> с 9.00 до 19.00</div>
                     </div>
-                    <div class="col-xs-12 col-sm-4 col-md-3 col-md-offset-3">
-                        <a class="font-bigger" href="tel:+99895-145-82-49">+99895 145 82 49</a><br>
+                    <div class="col-xs-12 col-sm-4 col-md-3 col-md-offset-2">
+                        <a class="font-bigger" href="tel:+99890-965-83-31">+99890 965 83 31</a><br>
+                        <a class="font-bigger" href="tel:+99890-178-28-07">+99890 178 28 07</a><br>
                         <button class="red-button" onclick="MainPage.launchModal();">Обратный звонок</button>
                     </div>
                 </div>
@@ -175,13 +176,13 @@ SCRIPT
 
     <div class="bg-2">
         <div class="container">
-            <h2>ПРИХОДИТЕ НА МАСТЕР-КЛАСС<br> СО СВОЕЙ КОМАНДОЙ</h2>
+            <h2>ПРИХОДИТЕ НА МАСТЕР-КЛАСС<br> СО СВОЕЙ КОМАНДОЙ ЧТОБЫ</h2>
             <div class="row icons-container">
                 <div class="col-xs-12 col-sm-4">
                     <div class="icon-block-red text-center">
                         <div class="icon-pic icon-pic-7"></div>
                         <div class="text-center">
-                            Чтобы быть эффективнее<br> вместе с командой
+                            Быть продуктивнее вместе с командой
                         </div>
                     </div>
                 </div>
@@ -189,7 +190,7 @@ SCRIPT
                     <div class="icon-block-red text-center">
                         <div class="icon-pic icon-pic-8"></div>
                         <div class="text-center">
-                            Чтобы вдохновить на новые<br> креативные идеи
+                            Вдохновить на новые идеи
                         </div>
                     </div>
                 </div>
@@ -197,7 +198,7 @@ SCRIPT
                     <div class="icon-block-red text-center">
                         <div class="icon-pic icon-pic-9"></div>
                         <div class="text-center">
-                            Чтобы увеличить свои<br> показатели раньше
+                            Раньше всех увеличить свои показатели
                         </div>
                     </div>
                 </div>
@@ -333,7 +334,7 @@ SCRIPT
     <footer class="vawes-bg">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-sm-4 col-md-3">
+                <div class="col-xs-12 col-sm-4 col-md-4">
                     <div class="red-icon icon icon-location pull-left"></div>
                     <div class="pull-left">Ташкент Business Terra,<br> Oybek street, 16</div>
                 </div>
@@ -341,9 +342,15 @@ SCRIPT
                     <div class="red-icon icon icon-bell pull-left"></div>
                     <div class="pull-left">20 октября<br> с 9.00 до 19.00</div>
                 </div>
-                <div class="col-xs-12 col-sm-4 col-md-3 col-md-offset-3">
-                    <a class="font-bigger" href="tel:+99895-145-82-49">+99895 145 82 49</a><br>
+                <div class="col-xs-12 col-sm-4 col-md-3 col-md-offset-2">
+                    <a class="font-bigger" href="tel:+99890-965-83-31">+99890 965 83 31</a><br>
+                    <a class="font-bigger" href="tel:+99890-178-28-07">+99890 178 28 07</a><br>
                     <button class="red-button" onclick="MainPage.launchModal();">Обратный звонок</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    Сайт сделал <a href="https://sergey-klimov.ru">Сергей Климов</a>
                 </div>
             </div>
         </div>
