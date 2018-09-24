@@ -18,8 +18,8 @@ header, footer {
   padding: @grid-gutter-width 0;
 }
 @media (min-width: @screen-md-min) {
-  header, footer {
-    padding: (@grid-gutter-width + 10px) 0;
+  header {
+    padding: (@grid-gutter-width + 10px) 0 0;
   }
 }
 
@@ -41,20 +41,24 @@ h2 {
   margin-top: @grid-gutter-width * 2;
 }
 h2:after {
-  display: block;
+  display: inline-block;
   content: ".";
-  line-height: 0;
+  line-height: 10px;
   overflow: hidden;
-  position: absolute;
-  right: 0;
   background: @soft-red;
   color: @soft-red;
-  height: 10px;
-  width: @half-gutter-width * 6px;
+  height: 6px;
+  width: @grid-gutter-width * 3px;
+  margin: 0 0 -20px -@grid-gutter-width * 3px;
 }
 @media (min-width: @screen-sm-min) {
   h2 {
     font-size: 3em;
+  }
+  h2:after {
+    height: 10px;
+    width: @grid-gutter-width * 4px;
+    margin-left: -@grid-gutter-width * 4px;
   }
 }
 h3 {

@@ -121,7 +121,7 @@ SCRIPT
     </div>
 
     <div class="container">
-        <h2>Этот Бизнес-интенсив<br> именно для вас если:</h2>
+        <h2>Этот Бизнес-интенсив именно для вас если:</h2>
         <div class="row icons-container">
             <div class="col-xs-12 col-sm-6 col-md-4">
                 <div class="icon-block text-center">
@@ -176,7 +176,7 @@ SCRIPT
 
     <div class="bg-2">
         <div class="container">
-            <h2>ПРИХОДИТЕ НА МАСТЕР-КЛАСС<br> СО СВОЕЙ КОМАНДОЙ ЧТОБЫ</h2>
+            <h2>ПРИХОДИТЕ НА МАСТЕР-КЛАСС СО СВОЕЙ КОМАНДОЙ ЧТОБЫ</h2>
             <div class="row icons-container">
                 <div class="col-xs-12 col-sm-4">
                     <div class="icon-block-red text-center">
@@ -348,9 +348,9 @@ SCRIPT
                     <button class="red-button" onclick="MainPage.launchModal();">Обратный звонок</button>
                 </div>
             </div>
-            <div class="row">
+            <div class="row" style="padding-top: 15px;">
                 <div class="col-xs-12 text-center">
-                    Сайт сделал <a href="https://sergey-klimov.ru">Сергей Климов</a>
+                    Сайт сделал <a href="https://sergey-klimov.ru"><b>Сергей Климов</b></a>
                 </div>
             </div>
         </div>
