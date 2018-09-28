@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5a0f633dc6717a5f78c1e4a37ca4cee7",
+    "content-hash": "8a2a646f1b55b3368f6dbb239b98413e",
     "packages": [
         {
             "name": "2amigos/yii2-date-picker-widget",
@@ -903,16 +903,6 @@
                 "yii2"
             ],
             "time": "2018-07-03T13:34:52+00:00"
-        },
-        {
-            "name": "ilikenwf/nestedSortable",
-            "version": "2.0",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:ilikenwf/nestedSortable.git",
-                "reference": "2.0alpha"
-            },
-            "type": "library"
         },
         {
             "name": "kartik-v/yii2-field-range",

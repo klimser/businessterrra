@@ -38,38 +38,11 @@ var Menu = {
                 }
             });
         }
+    },
+    setItemType: function(e, type) {
+        var muted = (type === "url") ? "webpage_id" : "url";
+        var container = $(e).closest(".menu-item-form");
+        container.find(".field-menuitem-" + type).removeClass("disabled-group");
+        container.find(".field-menuitem-" + muted).addClass("disabled-group");
     }
 };
-
-$(function() {
-    $('.menu_items').nestedSortable({
-        handle: 'div',
-        items: 'li',
-        toleranceElement: '> div',
-        tabSize: 10,
-        isTree: true,
-        expandOnHover: 700,
-        forcePlaceholderSize: true,
-        helper: 'clone',
-        opacity: .6,
-        placeholder: 'placeholder',
-        tolerance: 'pointer',
-        startCollapsed: false,
-        relocate: function () {
-            $.ajax({
-                url: "/menu/reorder/?menuId=" + Menu.id,
-                type: "post",
-                dataType: "json",
-                data: {
-                    ordered_data: $(".menu_items").nestedSortable("toArray")
-                },
-                success: function (data) {
-                    if (data.status !== "ok") {
-                        alert("Error!");
-                        console.log(data.message);
-                    }
-                }
-            });
-        }
-    });
-});

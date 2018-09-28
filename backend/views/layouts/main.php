@@ -3,17 +3,16 @@
 /* @var $this \yii\web\View */
 /* @var $content string */
 
-use backend\assets\AppAsset;
 use yii\helpers\Html;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 use common\widgets\Alert;
 
-$appAsset = AppAsset::register($this);
-
+$this->beginPage();
+$this->render('/grunt-assets');
 ?>
-<?php $this->beginPage() ?>
+
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>">
 <head>
@@ -41,7 +40,7 @@ $appAsset = AppAsset::register($this);
     <?php
     if (!Yii::$app->user->isGuest) {
         NavBar::begin([
-            'brandLabel' => '<div class="form-inline"><img src="' . $appAsset->baseUrl . '/images/logo.png" style="margin-top: -19px; height: 35px;"></div>',
+            'brandLabel' => '<div class="form-inline"><img src="' . \Yii::$app->homeUrl . 'images/logo.png" style="margin-top: -10px; height: 43px;"></div>',
             'brandUrl' => Yii::$app->homeUrl,
             'options' => [
                 'class' => 'navbar-default',
@@ -53,7 +52,7 @@ $appAsset = AppAsset::register($this);
                 'url' => ['user/update'],
             ],
             [
-                'label' => '<span class="icon icon-exit"></span>',
+                'label' => '<span class="fas fa-sign-out-alt"></span>',
                 'encode' => false,
                 'url' => ['site/logout'],
             ],

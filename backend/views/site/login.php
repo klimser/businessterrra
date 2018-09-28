@@ -12,7 +12,7 @@ $this->title = 'Личный кабинет';
 <div class="row">
     <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
         <div class="row">
-            <div class="col-xs-2 text-center"><?= Html::img('/images/logo.png', ['style' => 'margin-top: 20px;']); ?></div>
+            <div class="col-xs-2 text-center"><?= Html::img(\Yii::$app->homeUrl . 'images/logo.png'); ?></div>
             <div class="col-xs-10"><h1 class="text-center"><?= Html::encode($this->title) ?></h1></div>
         </div>
 
