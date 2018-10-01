@@ -22,7 +22,7 @@ use himiklab\yii2\recaptcha\ReCaptcha;
     </div>
 <?php else:
     $nowDate = new \DateTime();
-    $targetDate = new \DateTime('2018-10-01 00:00:00');
+    $targetDate = new \DateTime('2018-10-20 09:00:00');
     $this->registerJs(<<<SCRIPT
         MainPage.nowDate = new Date("{$nowDate->format(DateTime::ATOM)}");
         MainPage.targetDate = new Date("{$targetDate->format(DateTime::ATOM)}");
@@ -97,8 +97,8 @@ SCRIPT
     <div class="bg-1">
         <div class="container">
             <div class="timer-block">
-                <div class="block-title">Успейте приобрести билет по самой низкой цене!</div>
-                <div class="font-thin">Стоимость участия поднимется через:</div>
+                <?php /*<div class="block-title">Успейте приобрести билет по самой низкой цене!</div>*/ ?>
+                <div class="font-thin">До вашего очень полезного семинара осталось:</div>
                 <div class="timer">
                     <div class="remain-time-block">
                         <div class="remain remain-day"></div>
@@ -240,7 +240,7 @@ SCRIPT
                 <div class="col-xs-12 col-sm-4">
                     <div class="tariff-block text-center">
                         <div class="block-title">VIP</div>
-                        (1 290 000 сум)
+                        (1 490 000 сум)
                         <div class="block-body">
                             <ul class="list-unstyled">
                                 <li>Программа мастер-класса</li>
@@ -272,7 +272,7 @@ SCRIPT
                 <div class="col-xs-12 col-sm-4">
                     <div class="tariff-block last-tariff-block text-center">
                         <div class="block-title">Минимал</div>
-                        (590 000 сум)
+                        (790 000 сум)
                         <div class="block-body">
                             <ul class="list-unstyled extra-padding">
                                 <li>Программа мастер-класса</li>
@@ -291,7 +291,7 @@ SCRIPT
     <div class="container vawes-bg order-block">
         <div class="timer-block">
             <div class="block-title">Оставьте заявку на мастер класс и получите полный тайминг</div>
-            <div class="font-thin">Стоимость участия поднимется через:</div>
+            <div class="font-thin">До вашего очень полезного семинара осталось:</div>
             <div class="timer">
                 <div class="remain-time-block">
                     <div class="remain remain-day"></div>
