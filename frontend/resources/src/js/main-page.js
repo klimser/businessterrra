@@ -11,10 +11,10 @@ var MainPage = {
             var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
             var days = Math.floor(t / (1000 * 60 * 60 * 24));
             $(".remain-time-block").each(function () {
-                $(this).find(".remain-day").text(days);
-                $(this).find(".remain-hour").text(hours);
-                $(this).find(".remain-minute").text(minutes);
-                $(this).find(".remain-second").text(seconds);
+                $(this).find(".remain-day").text(days < 0 ? 0 : days);
+                $(this).find(".remain-hour").text(hours < 0 ? 0 : hours);
+                $(this).find(".remain-minute").text(minutes < 0 ? 0 : minutes);
+                $(this).find(".remain-second").text(seconds < 0 ? 0 : seconds);
             });
         }
     },

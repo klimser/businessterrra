@@ -42,8 +42,8 @@ class MailController extends Controller
                 $message = null;
                 switch ($toSend->template_html) {
                     case 'order-html':
-                        $message = "На сайте посетитель {$params['userName']} оставил заявку на занятие \"{$params['subjectName']}\".\n
-                            [Обработать заявку](https://cabinet.businessterra.uz/order/index)";
+                        $message = "На сайте посетитель {$params['userName']} оставил заявку на занятие \"{$params['subjectName']}\".\n"
+                            . '[Обработать заявку](https://cabinet.businessterra.uz/order/index)';
                         break;
                 }
                 if ($message) {

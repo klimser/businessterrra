@@ -96,8 +96,9 @@ SCRIPT
 
     <div class="bg-1">
         <div class="container">
-            <div class="timer-block">
-                <?php /*<div class="block-title">Успейте приобрести билет по самой низкой цене!</div>*/ ?>
+            <div class="timer-block text-center">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/1lgbjXv9UpE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <?php /*<div class="block-title">Успейте приобрести билет по самой низкой цене!</div>
                 <div class="font-thin">До вашего очень полезного семинара осталось:</div>
                 <div class="timer">
                     <div class="remain-time-block">
@@ -115,7 +116,7 @@ SCRIPT
                         <div class="clearfix"></div>
                     </div>
                 </div>
-                <button class="red-label-button" onclick="MainPage.launchModal();">Приобрести билет</button>
+                <button class="red-label-button" onclick="MainPage.launchModal();">Приобрести билет</button>*/ ?>
             </div>
         </div>
     </div>
@@ -221,7 +222,7 @@ SCRIPT
 
                     <dt>Компетенции:</dt>
                     <dd>Автор более 40 научных статей и публикаций в области психологии и управления персоналом;</dd>
-                    <dd>Официальный Спикер компании "Хедхантер", официальный спикер компании "Деловая среда" от Сбербанка; </dd>
+                    <dd>Официальный Спикер компании "Head Hunter", официальный спикер компании "Деловая среда" от Сбербанка; </dd>
                     <dd>Основатель компании «Д.А. Консалт», тренинговой компании и кадрового агентства HR365;</dd>
                     <dd>В рамках БМ: Тренер, член команды "300 тигров Петра Осипова", член экспертного совета HR-ов, автор мастер-классов, приглашенный спикер на тренерстве по темам управления персоналом, один из Админов чатов БМ.</dd>
 
@@ -327,6 +328,22 @@ SCRIPT
                 </div>
                 <div class="order_form_extra hidden"></div>
             <?= Html::endForm(); ?>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-1">
+        <div class="container">
+            <div class="timer-block">
+                <div class="font-thin">Партнёры:</div>
+                <br>
+                <div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4 partner-logo logo-sm"></div>
+                        <div class="col-xs-12 col-sm-4 partner-logo logo-nmc"></div>
+                        <div class="col-xs-12 col-sm-4 partner-logo logo-5p"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
