@@ -10,6 +10,7 @@ use common\components\WidgetHtml;
 
 $this->beginPage();
 $this->render('/grunt-assets');
+$this->registerJs('yii.init();');
 ?>
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>">
