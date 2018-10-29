@@ -30,7 +30,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
-        'rowOptions' => function ($model, $key, $index, $grid) {return ($model->status == \backend\models\User::STATUS_INACTIVE) ? ['class' => 'inactive'] : [];},
+        'rowOptions' => function ($model, $key, $index, $grid) {return ($model->active == \backend\models\User::STATUS_INACTIVE) ? ['class' => 'inactive'] : [];},
         'columns' => [
             'username',
             [
@@ -56,9 +56,9 @@ $this->params['breadcrumbs'][] = $this->title;
                 'template' => '{lock}',
                 'buttons' => [
                     'lock' => function ($url, $model, $key) {
-                        return $model->status == \backend\models\User::STATUS_ACTIVE
-                            ? Html::a(Html::tag('span', '', ['class' => 'glyphicon glyphicon-lock', 'title' => 'Заблокировать']), '#', ['onclick' => 'Main.changeEntityActive("user", ' . $model->id . ', this, 0); return false;'])
-                            : Html::a(Html::tag('span', '', ['class' => 'icon icon-unlocked', 'title' => 'Разблокировать']), '#', ['onclick' => 'Main.changeEntityActive("user", ' . $model->id . ', this, 1); return false;']);
+                        return $model->active == \backend\models\User::STATUS_ACTIVE
+                            ? Html::button(Html::tag('span', '', ['class' => 'fas fa-lock']), ['onclick' => 'Main.changeEntityActive("user", ' . $model->id . ', this, 0);', 'class' => 'btn btn-default margin-right-10', 'type' => 'button', 'title' => 'Заблокировать'])
+                            : Html::button(Html::tag('span', '', ['class' => 'fas fa-lock-open']), ['onclick' => 'Main.changeEntityActive("user", ' . $model->id . ', this, 1);', 'class' => 'btn btn-default margin-right-10', 'type' => 'button', 'title' => 'Разблокировать']);
                     },
                 ],
             ],

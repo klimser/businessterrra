@@ -16,7 +16,7 @@ class UserSearch extends User
     public function rules()
     {
         return [
-            [['id', 'status', 'role'], 'integer'],
+            [['id', 'active', 'role'], 'integer'],
             [['username', 'name', 'auth_key', 'password_hash', 'password_reset_token'], 'safe'],
         ];
     }
@@ -39,7 +39,7 @@ class UserSearch extends User
      */
     public function search($params)
     {
-        $query = User::find()->orderBy(['status' => SORT_DESC]);
+        $query = User::find()->orderBy(['active' => SORT_DESC]);
 
         $providerParams = [
             'query' => $query,
@@ -71,7 +71,7 @@ class UserSearch extends User
 
         // grid filtering conditions
         $query->andFilterWhere([
-            'status' => $this->status,
+            'active' => $this->active,
             'role' => $this->role,
         ]);
 
