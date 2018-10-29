@@ -5,6 +5,7 @@ namespace frontend\controllers;
 use common\components\extended\Controller;
 use common\models\Webpage;
 use common\models\Page;
+use yii\base\ViewNotFoundException;
 use yii\web\NotFoundHttpException;
 
 /**
@@ -22,13 +23,16 @@ class PageController extends Controller
     public function actionView($id, $webpage)
     {
         $page = $this->findModel($id);
-        if ($page->isActive()) {
-            return $this->render('view', [
-                'page' => $page,
-                'webpage' => $webpage,
-            ]);
-        } else {
-            throw new NotFoundHttpException('Page is not exists');
+        if (!$page->isActive()) throw new NotFoundHttpException('Page is not exists');
+
+        $params = [
+            'page' => $page,
+            'webpage' => $webpage,
+        ];
+        try {
+            return $this->render('view-' . $page->id, $params);
+        } catch (ViewNotFoundException $e) {
+            return $this->render('view', $params);
         }
     }
 
