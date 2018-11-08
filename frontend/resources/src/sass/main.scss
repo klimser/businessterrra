@@ -1,0 +1,15 @@
+@import "../../../../node_modules/bootstrap/scss/bootstrap";
+
+@import "_variables";
+@import "_fonts";
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  background: white;
+  color: black;
+}
+
+@import "page/karnauhov";

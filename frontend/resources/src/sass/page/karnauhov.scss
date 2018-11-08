@@ -1,0 +1,398 @@
+$page-id: "#karnauhov";
+
+#{$page-id} {
+  font-family: 'Muller', $font-family-sans-serif;
+  background: white;
+  color: black;
+  font-size: 16px;
+}
+
+#{$page-id} header, #{$page-id} footer {
+  padding: $grid-gutter-width 0;
+}
+@include media-breakpoint-up(lg) {
+  #{$page-id} header {
+    padding: ($grid-gutter-width + 10px) 0 0;
+  }
+}
+
+#{$page-id} h1 {
+  font-family: 'Muller Extrabold', $font-family-sans-serif;
+  font-size: 2.5em;
+  text-transform: uppercase;
+}
+@include media-breakpoint-up(lg) {
+  #{$page-id} h1 {
+    font-size: 3em;
+  }
+}
+#{$page-id} h2 {
+  font-family: 'Muller Extrabold', $font-family-sans-serif;
+  font-size: 1.7em;
+  display: inline-block;
+  position: relative;
+  margin-top: $grid-gutter-width * 2;
+}
+#{$page-id} h2:after {
+  display: inline-block;
+  content: ".";
+  line-height: 10px;
+  overflow: hidden;
+  background: $soft-red;
+  color: $soft-red;
+  height: 6px;
+  width: $grid-gutter-width * 3;
+  margin: 0 0 -20px -$grid-gutter-width * 3;
+}
+@include media-breakpoint-up(md) {
+  #{$page-id} h2 {
+    font-size: 3em;
+  }
+  #{$page-id} h2:after {
+    height: 10px;
+    width: $grid-gutter-width * 4;
+    margin-left: -$grid-gutter-width * 4;
+  }
+}
+#{$page-id} h3 {
+  font-family: 'Muller Bold', $font-family-sans-serif;
+  font-size: 1.5em;
+}
+
+#{$page-id} .vawes-bg {
+  background: url("../images/bg.png") repeat;
+  color: white;
+}
+#{$page-id} .vawes-bg a, #{$page-id} .vawes-bg a:focus, #{$page-id} .vawes-bg a:hover, #{$page-id} .vawes-bg button {
+  color: white;
+  text-decoration: none;
+}
+#{$page-id} .red-icon {
+  color: $soft-red;
+  font-size: 1.5em;
+  padding: 10px;
+}
+#{$page-id} .font-bigger {
+  font-size: 1.5em;
+}
+#{$page-id} .red-button {
+  background: none;
+  border: solid 3px $soft-red;
+  font-family: 'Muller Medium', $font-family-sans-serif;
+  padding: ($half-gutter-width - 5px) ($half-gutter-width + 5px);
+  text-transform: uppercase;
+}
+#{$page-id} .red-label {
+  background: $soft-red;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Muller Bold', $font-family-sans-serif;
+  font-size: 18px;
+  padding: ($half-gutter-width - 10px) ($half-gutter-width - 5px);
+}
+#{$page-id} dl.main-list dt {
+  color: $soft-red;
+  font-family: 'Muller Bold', $font-family-sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  margin-top: $grid-gutter-width;
+}
+#{$page-id} .red-bold-frame {
+  border: solid 5px $soft-red;
+  overflow: visible;
+  padding: 0 $half-gutter-width $half-gutter-width;
+  width: 220px;
+}
+#{$page-id} ul.list-over {
+  min-width: 230px;
+}
+#{$page-id} ul.list-over li {
+  white-space: nowrap;
+}
+#{$page-id} .speaker-bg {
+  background: url("../images/speaker-info.png") no-repeat right bottom;
+  background-size: contain;
+  height: 422px;
+}
+@include media-breakpoint-up(md) {
+  #{$page-id} .speaker-bg {
+    height: 742px;
+  }
+}
+
+
+#{$page-id} .bg-1 {
+  background: url("../images/bg-pic1.jpg") no-repeat center;
+  background-size: cover;
+}
+#{$page-id} .bg-1 .timer-block {
+  background: white;
+  box-shadow: 0 0 14px #1f191a;
+  padding: $grid-gutter-width $grid-gutter-width $half-gutter-width;
+}
+#{$page-id} .timer-block .block-title {
+  font-family: 'Muller Extrabold', $font-family-sans-serif;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+#{$page-id} .timer-block .font-thin {
+  font-family: 'Muller Light', $font-family-sans-serif;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+@include media-breakpoint-between(sm, md) {
+  #{$page-id} .timer-block .block-title {font-size: 1.5em;}
+  #{$page-id} .timer-block .font-thin {font-size: 1.5em;}
+}
+@include media-breakpoint-up(lg) {
+  #{$page-id} .timer-block .block-title {font-size: 2em;}
+  #{$page-id} .timer-block .font-thin {font-size: 2em;}
+}
+#{$page-id} .red-label-button {
+  background: $soft-red;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Muller Bold', $font-family-sans-serif;
+  font-size: 18px;
+  padding: $half-gutter-width ($half-gutter-width - 5px);
+  border: none;
+}
+
+#{$page-id} .icons-container {
+  margin-top: $grid-gutter-width * 2;
+}
+#{$page-id} .icon-block {
+  border: solid 1px #acacac;
+  padding: $grid-gutter-width * 2 0;
+  margin-bottom: $grid-gutter-width;
+}
+#{$page-id} .icon-block .icon-pic {
+  width: 158px;
+  height: 158px + $grid-gutter-width;
+  margin: 0 auto $grid-gutter-width;
+  position: relative;
+  background: no-repeat center top;
+  font-family: 'Muller Medium', $font-family-sans-serif;
+}
+@include media-breakpoint-up(lg) {
+  #{$page-id} .icon-block .icon-pic {
+    height: 158px + $grid-gutter-width + 10px;
+    margin-bottom: $grid-gutter-width + 10px;
+  }
+}
+
+#{$page-id} .icon-block .icon-pic:after {
+  content: '.';
+  width: $grid-gutter-width * 2;
+  margin-left: -$grid-gutter-width;
+  height: 0;
+  overflow: hidden;
+  border-bottom: solid 2px $soft-red;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+}
+#{$page-id} .icon-block .icon-pic-1 {background-image: url("../images/icons/chief.svg");}
+#{$page-id} .icon-block .icon-pic-2 {background-image: url("../images/icons/rocket.svg");}
+#{$page-id} .icon-block .icon-pic-3 {background-image: url("../images/icons/team.svg");}
+#{$page-id} .icon-block .icon-pic-4 {background-image: url("../images/icons/top.svg");}
+#{$page-id} .icon-block .icon-pic-5 {background-image: url("../images/icons/idea.svg");}
+#{$page-id} .icon-block .icon-pic-6 {background-image: url("../images/icons/volcano.svg");}
+
+#{$page-id} .bg-2 {
+  background: url("../images/bg-pic2.jpg") no-repeat center top;
+  color: white;
+}
+#{$page-id} .icon-block-red {
+  background: $soft-red;
+  color: white;
+  padding: $grid-gutter-width * 2 0;
+  margin-bottom: $grid-gutter-width;
+}
+#{$page-id} .icon-block-red .icon-pic {
+  width: 125px;
+  height: 125px;
+  margin: 0 auto $grid-gutter-width;
+  background: no-repeat center top;
+  font-family: 'Muller Medium', $font-family-sans-serif;
+}
+#{$page-id} .icon-block-red .icon-pic-7 {background-image: url("../images/icons/laptop.svg");}
+#{$page-id} .icon-block-red .icon-pic-8 {background-image: url("../images/icons/workers.svg");}
+#{$page-id} .icon-block-red .icon-pic-9 {background-image: url("../images/icons/timer.svg");}
+
+#{$page-id} .speaker-biografy-block {
+  margin-top: $grid-gutter-width;
+  margin-bottom: $grid-gutter-width;
+}
+#{$page-id} .speaker-biografy {
+  padding: $grid-gutter-width;
+}
+#{$page-id} .speaker-biografy h2 {
+  margin-top: $grid-gutter-width;
+}
+#{$page-id} .speaker-biografy dl {
+  margin-top: $grid-gutter-width;
+}
+#{$page-id} .speaker-biografy dt {
+  font-family: 'Muller Bold', $font-family-sans-serif;
+  font-size: 2em;
+  margin-top: $grid-gutter-width;
+}
+#{$page-id} .speaker-biografy dd:before {
+  content: "o";
+  color: $soft-red;
+  font-weight: bold;
+  padding-right: $half-gutter-width;
+}
+#{$page-id} .speaker-portrait {
+  background: url("../images/speaker-photo.jpg") no-repeat center top;
+  background-size: contain;
+  min-height: 670px;
+}
+@include media-breakpoint-up(lg) {
+  #{$page-id} .speaker-portrait {
+    min-height: 853px;
+  }
+}
+
+#{$page-id} .bg-3 {
+  background: url("../images/bg-pic3.jpg") no-repeat center top;
+  color: white;
+}
+#{$page-id} .bg-3 h2:after {
+  display: none;
+}
+#{$page-id} .tariffs-block {
+  margin-top: $grid-gutter-width;
+  margin-bottom: $grid-gutter-width;
+}
+#{$page-id} .tariff-block {
+  background: $soft-red;
+  font-size: 1.3em;
+  font-family: 'Muller ExtraBold', $font-family-sans-serif;
+}
+@include media-breakpoint-down(xs) {
+  #{$page-id} .tariffs-block, #{$page-id} .last-tariff-block {
+    margin-bottom: 0;
+  }
+  #{$page-id} .tariff-block {
+    margin-bottom: $grid-gutter-width * 2;
+  }
+}
+#{$page-id} .tariff-block .block-title {
+  font-size: 1.5em;
+}
+#{$page-id} .tariff-block .block-body {
+  font-family: 'Muller', $font-family-sans-serif;
+  background: #192133;
+}
+#{$page-id} .tariff-block .block-body ul {
+  margin: 0;
+  text-align: left;
+  padding: $grid-gutter-width $half-gutter-width;
+}
+@include media-breakpoint-up(lg) {
+  #{$page-id} .tariff-block .block-body ul.extra-padding {
+    padding-top: $grid-gutter-width * 2;
+    padding-bottom: $grid-gutter-width * 2;
+  }
+}
+#{$page-id} .tariff-block .block-body ul li:before {
+  content: "o";
+  color: $soft-red;
+  font-weight: bold;
+  padding-right: $half-gutter-width;
+}
+#{$page-id} .tariff-block .order-button {
+  font-family: 'Muller', $font-family-sans-serif;
+  width: 100%;
+  border: none;
+  background: none;
+  padding: $half-gutter-width 0;
+}
+
+#{$page-id} .order-block {
+  margin-top: $grid-gutter-width * 2;
+  margin-bottom: $grid-gutter-width * 2;
+  padding: $grid-gutter-width;
+}
+
+#{$page-id} .modal-content {
+  background: black;
+  border: solid 3px white;
+  border-radius: 0;
+  color: white;
+}
+#{$page-id} .modal-content .modal-header {
+  border-bottom: solid 2px $soft-red;
+}
+#{$page-id} .modal-content .modal-header h4 {
+  font-family: 'Muller Medium', $font-family-sans-serif;
+  font-size: 2em;
+}
+#{$page-id} .modal-content .modal-header button {
+  opacity: 1;
+}
+#{$page-id} .order_form input, #{$page-id} .order_form .input-group-addon {
+  background: none;
+  color: white;
+}
+#{$page-id} .order_form button {
+  background: none;
+  border: solid 1px white;
+  color: white;
+  padding: $half-gutter-width - 5px $grid-gutter-width;
+  margin-left: 10px;
+}
+#{$page-id} .order_form button.complete-button {
+  background: $soft-red;
+  text-transform: uppercase;
+  border: none;
+}
+
+#{$page-id} .remain-time-block {
+  font-family: 'Muller Bold', $font-family-sans-serif;
+  font-size: 2.5em;
+  margin-top: $half-gutter-width;
+}
+#{$page-id} .remain-titles-block {
+  margin-bottom: $grid-gutter-width;
+}
+#{$page-id} .remain-time-block .remain, #{$page-id} .remain-titles-block .remain-title {
+  float: left;
+  width: $grid-gutter-width * 2;
+  max-width: $grid-gutter-width * 2;
+  text-align: center;
+  overflow: hidden;
+}
+#{$page-id} .remain-titles-block .remain-title {
+  font-family: 'Muller Light', $font-family-sans-serif;
+}
+@include media-breakpoint-up(lg) {
+  #{$page-id} .remain-time-block {
+    font-size: 4em;
+  }
+  #{$page-id} .remain-titles-block .remain-title {
+    font-size: 1.5em;
+  }
+  #{$page-id} .remain-time-block .remain, #{$page-id} .remain-titles-block .remain-title {
+    width: $grid-gutter-width * 3;
+    max-width: $grid-gutter-width * 3;
+  }
+}
+
+#{$page-id} .partner-logo {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height:200px;
+}
+#{$page-id} .logo-sm {
+  background-image: url("../images/logo_mp.svg");
+}
+#{$page-id} .logo-nmc {
+  background-image: url("../images/logo_nmc.svg");
+}
+#{$page-id} .logo-5p {
+  background-image: url("../images/logo_5p.png");
+}

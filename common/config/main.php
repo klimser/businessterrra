@@ -23,7 +23,13 @@ return [
                 'yii\bootstrap\BootstrapAsset' => [
                     'css' => []
                 ],
+                'yii\bootstrap4\BootstrapAsset' => [
+                    'css' => []
+                ],
                 'yii\bootstrap\BootstrapPluginAsset' => [
+                    'js' => []
+                ],
+                'yii\bootstrap4\BootstrapPluginAsset' => [
                     'js' => []
                 ],
             ],

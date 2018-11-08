@@ -6,5 +6,9 @@
 
 <hr>
 <div class="row">
-    <a href="<?= \yii\helpers\Url::to(['user/index']); ?>" class="btn btn-default btn-lg col-xs-12 col-sm-4 col-md-3 col-lg-2"><span class="glyphicon glyphicon-user"></span> Пользователи</a>
+    <div class="col-xs-12 col-md-4 col-lg-3">
+        <a href="<?= \yii\helpers\Url::to(['user/index']); ?>" class="btn btn-outline-secondary btn-lg btn-block">
+            <span class="fas fa-users"></span> Пользователи
+        </a>
+    </div>
 </div>

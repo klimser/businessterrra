@@ -4,8 +4,8 @@
 /* @var $content string */
 
 use yii\helpers\Html;
-use yii\bootstrap\Nav;
-use yii\bootstrap\NavBar;
+use yii\bootstrap4\Nav;
+use yii\bootstrap4\NavBar;
 use yii\widgets\Breadcrumbs;
 use common\widgets\Alert;
 
@@ -42,9 +42,6 @@ $this->render('/grunt-assets');
         NavBar::begin([
             'brandLabel' => '<div class="form-inline"><img src="' . \Yii::$app->homeUrl . 'images/logo.png" style="margin-top: -10px; height: 43px;"></div>',
             'brandUrl' => Yii::$app->homeUrl,
-            'options' => [
-                'class' => 'navbar-default',
-            ],
         ]);
         $menuItems = [
             [
@@ -67,8 +64,13 @@ $this->render('/grunt-assets');
 
     <div class="container">
         <?php if (!Yii::$app->user->isGuest): ?>
-            <nav class="hidden-print">
-                <?=  Breadcrumbs::widget(['links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : []]); ?>
+            <nav class="hidden-print" aria-label="breadcrumb">
+                <?=  Breadcrumbs::widget([
+                        'tag' => 'ol',
+                        'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+                        'itemTemplate' => "<li class=\"breadcrumb-item\">{link}</li>\n",
+                        'activeItemTemplate' => "<li class=\"breadcrumb-item active\">{link}</li>\n"
+                    ]); ?>
             </nav>
         <?php endif; ?>
         <?= Alert::widget() ?>

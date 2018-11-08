@@ -57,8 +57,8 @@ $this->params['breadcrumbs'][] = $this->title;
                 'buttons' => [
                     'lock' => function ($url, $model, $key) {
                         return $model->active == \backend\models\User::STATUS_ACTIVE
-                            ? Html::button(Html::tag('span', '', ['class' => 'fas fa-lock']), ['onclick' => 'Main.changeEntityActive("user", ' . $model->id . ', this, 0);', 'class' => 'btn btn-default margin-right-10', 'type' => 'button', 'title' => 'Заблокировать'])
-                            : Html::button(Html::tag('span', '', ['class' => 'fas fa-lock-open']), ['onclick' => 'Main.changeEntityActive("user", ' . $model->id . ', this, 1);', 'class' => 'btn btn-default margin-right-10', 'type' => 'button', 'title' => 'Разблокировать']);
+                            ? Html::button(Html::tag('span', '', ['class' => 'fas fa-lock']), ['onclick' => 'Main.changeEntityActive("user", ' . $model->id . ', this, 0);', 'class' => 'btn btn-outline-secondary margin-right-10', 'type' => 'button', 'title' => 'Заблокировать'])
+                            : Html::button(Html::tag('span', '', ['class' => 'fas fa-lock-open']), ['onclick' => 'Main.changeEntityActive("user", ' . $model->id . ', this, 1);', 'class' => 'btn btn-outline-secondary margin-right-10', 'type' => 'button', 'title' => 'Разблокировать']);
                     },
                 ],
             ],

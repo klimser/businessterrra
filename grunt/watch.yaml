@@ -1,11 +1,12 @@
-less:
+sass:
   files:
-    - "frontend/resources/src/less/*.less"
-    - "backend/resources/src/less/*.less"
-    - "grunt/less.yaml"
+    - "frontend/resources/src/sass/*.scss"
+    - "frontend/resources/src/sass/**/*.scss"
+    - "backend/resources/src/sass/*.scss"
+    - "grunt/sass.yaml"
   tasks:
-    - less:dev_front
-    - less:dev_back
+    - sass:dev_front
+    - sass:dev_back
     - assets_versioning:dev_front
     - assets_versioning:dev_back
 uglify:

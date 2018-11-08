@@ -1,7 +1,7 @@
 <?php
 
 use yii\helpers\Html;
-use \yii\bootstrap\ActiveForm;
+use \yii\bootstrap4\ActiveForm;
 
 /* @var $this yii\web\View */
 /* @var $widget common\models\WidgetHtml */
@@ -33,15 +33,19 @@ $this->params['breadcrumbs'][] = $this->title;
 
         <div>
             <ul class="nav nav-tabs" role="tablist">
-                <li role="presentation" <?= $widget->editor ? '' : 'class="active"'; ?>><a href="#without_editor" role="tab" data-toggle="tab">Без редактора</a></li>
-                <li role="presentation" <?= $widget->editor ? 'class="active"' : ''; ?>><a href="#with_editor" role="tab" data-toggle="tab">С редактором</a></li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link <?= $widget->editor ? '' : 'active'; ?>" data-toggle="tab" href="#without_editor" role="tab">Без редактора</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link <?= $widget->editor ? 'active' : ''; ?>" data-toggle="tab" href="#with_editor" role="tab">С редактором</a>
+                </li>
             </ul>
 
             <div class="tab-content">
-                <div role="tabpanel" class="tab-pane <?= $widget->editor ? '' : 'active'; ?>" id="without_editor">
+                <div role="tabpanel" class="tab-pane fade <?= $widget->editor ? '' : 'show active'; ?>" id="without_editor">
                     <?= $form->field($widget, 'content[plain]', ['enableLabel' => false])->textarea(['rows' => 10, 'value' => $widget->content]); ?>
                 </div>
-                <div role="tabpanel" class="tab-pane <?= $widget->editor ? 'active' : ''; ?>" id="with_editor">
+                <div role="tabpanel" class="tab-pane fade <?= $widget->editor ? 'active' : ''; ?>" id="with_editor">
                     <?=
                     $form->field($widget, 'content[editor]', ['enableLabel' => false])
                         ->widget(\dosamigos\tinymce\TinyMce::class, array_merge(
