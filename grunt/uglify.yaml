@@ -7,7 +7,7 @@ vendors_front:
     "frontend/web/assets/grunt/js/vendor.js":
       - "node_modules/jquery/dist/jquery.js"
       - "vendor/yiisoft/yii2/assets/yii.js"
-      - "node_modules/bootstrap/dist/js/bootstrap.js"
+      - "node_modules/bootstrap/dist/js/bootstrap.bundle.js"
       - "node_modules/inputmask/dist/min/inputmask/inputmask.min.js"
       - "node_modules/inputmask/dist/min/inputmask/jquery.inputmask.min.js"
       - "node_modules/inputmask/dist/min/inputmask/inputmask.numeric.extensions.min.js"

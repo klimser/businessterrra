@@ -1,0 +1,82 @@
+$page-id: "#yakuba";
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500i,700,900&subset=cyrillic,cyrillic-ext');
+
+#{$page-id} {
+  font-family: 'Roboto', $font-family-sans-serif;
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+}
+
+@include media-breakpoint-up(sm) {
+  #{$page-id} {
+    font-size: 1.2rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  #{$page-id} {
+    font-size: 1.4rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  #{$page-id} {
+    font-size: 1.6rem;
+  }
+}
+
+#{$page-id} .modal-content {
+  background-color: black;
+  font-size: 0.7em;
+  border: solid 1px white;
+}
+#{$page-id} .close {
+  color: white;
+}
+
+#{$page-id} .red-button {
+  background-color: $soft-red;
+  border-width: 3px;
+  border-color: transparent;
+  color: white;
+  font-weight: 700;
+}
+#{$page-id} .red-button:focus, #{$page-id} .red-button:hover {
+  background-color: $true-red;
+  border-color: $soft-red;
+}
+
+#{$page-id} .red-button-outline {
+  border-width: 3px;
+  border-color: $soft-red;
+  background-color: transparent;
+  color: white;
+  font-weight: 700;
+}
+#{$page-id} .red-button-outline:focus, #{$page-id} .red-button-outline:hover {
+  background-color: $soft-red;
+}
+
+#{$page-id} header .container {
+  background: url("../images/yakuba/speaker-photo.jpg") no-repeat left top;
+  background-size: contain;
+  padding-top: $half-gutter-width;
+}
+
+#{$page-id} header .date {
+  font-size: 3em;
+  line-height: 85%;
+}
+
+#{$page-id} header .header-title {
+  font-size: 9vw;
+  line-height: 1.3em;
+}
+
+@include media-breakpoint-up(sm) {
+  #{$page-id} header .header-title {
+    font-size: 2.5em;
+  }
+}
