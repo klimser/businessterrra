@@ -54,7 +54,7 @@ SCRIPT
                     конкуренции
                 </div>
             </div>
-            <div class="row justify-content-between align-items-end mt-3">
+            <div class="row justify-content-between align-items-end mt-3 pb-3">
                 <div class="col-12 col-sm-8 col-md-6 col-lg-5">
                     <div class="row">
                         <div class="col-6">
@@ -65,59 +65,197 @@ SCRIPT
                         </div>
                     </div>
                 </div>
-                <div class="col-6 col-sm-4 col-md-6 col-lg-7 order-sm-first font-italic pt-3 pt-sm-0">
+                <h1 class="col-6 col-sm-4 col-md-6 col-lg-7 order-sm-first font-italic pt-3 pt-sm-0">
                     Владимир <span class="red-text">Якуба</span>
-                </div>
+                </h1>
             </div>
         </div>
     </header>
 
-    <?php /*
-    <div class="container speaker-info">
-        <div class="row d-md-none">
-            <div class="col speaker-bg">
-                <span class="red-label">Впервые в Ташкенте</span><br>
+    <section class="container expectations">
+        <div class="row">
+            <div class="col text-center text-uppercase mt-5 mb-3 font-weight-bold">
+                <h2>Что будет на тренинге?</h2>
             </div>
         </div>
         <div class="row">
-            <div class="col-12 col-md-6 col-lg-5">
-                <span class="red-label d-none d-md-inline">Впервые в Ташкенте</span><br><br>
-                <h1>Дмитрий Карнаухов</h1>
-                <dl class="main-list">
-                    <dt>Бизнес с нуля</dt>
-                    <dd>
-                        С чего начать? Как выбрать нишу?<br>
-                        Стоит ли вкладывать деньги и сколько?
-                    </dd>
+            <div class="col-12 col-sm-6 col-lg-4 z-1 pt-3 pb-3">
+                <div class="red-square"></div>
+                <h3 class="text-uppercase">Приёмы, инструменты и технологии</h3>
+                <p>Упакованные в формат «Бери и делай». Разобраны все нюансы применения.</p>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 z-1 pt-3 pb-3">
+                <div class="red-square"></div>
+                <h3 class="text-uppercase">Свежий взгляд</h3>
+                <p>Нельзя получить новый результат, тиражируя прошлый опыт. Работа с тренером и коллегами из других отраслей поможет расширить картину мира и инструментарий профессии.</p>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 z-1 pt-3 pb-3">
+                <div class="red-square"></div>
+                <h3 class="text-uppercase">Разбор «полётов»</h3>
+                <p>Практические задания, работа в группах, чтобы закрепить теорию, получить обратную связь от тренера и коллег.</p>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 z-1 pt-3 pb-3">
+                <div class="red-square"></div>
+                <h3 class="text-uppercase">Работа над вашими кейсами</h3>
+                <p>Вы решаете вопросы вашей компании прямо на практикуме, используя опыт тренера и других участников.</p>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 z-1 pt-3 pb-3">
+                <div class="red-square"></div>
+                <h3 class="text-uppercase">Полезные знакомства</h3>
+                <p>За время практикума участники заведут полезные знакомства с коллегами из разных компаний и городов.</p>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 z-1 pt-3 pb-3">
+                <div class="red-square"></div>
+                <h3 class="text-uppercase">Больше денег, времени и удовольствия</h3>
+                <p>После внедрения изученного на программе, все будут зарабатывать больше — и компания и вы лично. Кроме того, появится время на проекты развития, которые вечно откладываются на следующий год.</p>
+            </div>
+        </div>
+    </section>
 
-                    <dt>Поколение Z</dt>
-                    <dd>
-                        Что такое поколение Z?<br>
-                        Что важно знать о поколении?<br>
-                        Как работать с таким поколением?
-                    </dd>
-
-                    <dt>Найм персонала</dt>
-                    <dd>
-                        Кого нанимать чтобы вырасти?<br>
-                        Как собрать команду мечты?<br>
-                        Мотивация персонала
-                    </dd>
-                </dl>
-                <div class="red-bold-frame">
-                    <h3>VIP ужин</h3>
-                    <ul class="list-unstyled vawes-bg list-over">
-                        <li>Закрытая встреча с 20-ти участниками</li>
-                        <li>Личный разбор каждого участника</li>
-                    </ul>
+    <section class="learn-block d-flex align-items-center">
+        <div class="container mt-md-5 mb-md-5">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 d-flex align-items-center justify-content-center red text-center text-uppercase border-right border-bottom pt-2">
+                    <h2 class="h3 font-weight-black">Чему вы научитесь?</h2>
+                </div>
+                <div class="col-lg-4 col-md-6 d-flex justify-content-between align-items-center border-right border-bottom py-3">
+                    <img src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/yakuba/smartphone.png" class="mr-3">
+                    <div class="text">Преодолевать телефонные барьеры, вести диалог с сотрудником любого уровня от секретаря до топ-менеджера</div>
+                </div>
+                <div class="col-lg-4 col-md-6 d-flex justify-content-between align-items-center border-bottom py-3">
+                    <img src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/yakuba/conversation.png" class="mr-3">
+                    <div class="text">Вести переговоры, учитывая контекст и индивидуальные особенности собеседника;</div>
+                </div>
+                <div class="col-lg-4 col-md-6 d-flex justify-content-between align-items-center border-top border-right py-3">
+                    <img src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/yakuba/note.png" class="mr-3">
+                    <div class="text">Создавать «дожимающие» тексты после телефонного разговора или встречи</div>
+                </div>
+                <div class="col-lg-4 col-md-6 d-flex justify-content-between align-items-center border-top border-right py-3">
+                    <img src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/yakuba/business-deal.png" class="mr-3">
+                    <div class="text">Продавать больше, быстрее, дороже, чаще проходить возражения и закрывать сделки</div>
+                </div>
+                <div class="col-lg-4 col-md-6 d-flex justify-content-between align-items-center border-top py-3">
+                    <img src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/yakuba/coins.png" class="mr-3">
+                    <div class="text">Совершать звонки и проводить встречи, которые приводят к продаже по щелчку пальцев, как это происходит на Wall Street</div>
                 </div>
             </div>
-            <div class="d-none d-md-block col-md-6 col-lg-7 speaker-bg"></div>
         </div>
-    </div>
+    </section>
+
+    <section class="container audience mt-3 mt-md-5 mb-3">
+        <div class="row">
+            <div class="col text-center text-uppercase">
+                <h2>Для кого этот тренинг?</h2>
+            </div>
+        </div>
+        <div class="row d-none d-lg-flex">
+            <div class="col-4 offset-2 right-border bottom-border"></div>
+            <div class="col-4 bottom-border"></div>
+        </div>
+        <div class="row d-none d-lg-flex">
+            <div class="col-2 right-border"></div>
+            <div class="col-3 right-border"></div>
+            <div class="col-2 right-border"></div>
+            <div class="col-3 right-border"></div>
+        </div>
+        <div class="row blocks">
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="w-100 rounded border border-danger text-center d-flex justify-content-center align-items-center">
+                    Собственники бизнеса/предприниматели
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="w-100 rounded border border-danger text-center d-flex justify-content-center align-items-center">
+                    Коммерческие директора
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="w-100 rounded border border-danger text-center d-flex justify-content-center align-items-center">
+                    Руководители отделов продаж
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="w-100 rounded border border-danger text-center d-flex justify-content-center align-items-center">
+                    Менеджеры/специалисты по продажам
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="speaker-biografy speaker-bg2">
+        <div class="container speaker-bg2">
+            <div class="row justify-content-end pt-5 pt-sm-0">
+                <div class="col-12 col-sm-7 col-md-6 col-lg-5 mb-3 speaker-bio">
+                    <h2 class="mt-3">Владимир Якуба</h2>
+                    <div class="text-muted mb-3">Лидерство Команда Продажи</div>
+                    <p>36 лет. Бизнес-тренер №1 в формате “Реалити”. Дважды признан лучшим в профессии. Провел обучение в 112 городах, 17 странах. Финалист книжной премии "Деловая книга года".<br>
+                        <a href="https://vladimiryakuba.ru/about" class="d-inline-block mt-2">Узнать больше о Владимире >></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section clients">
+        <div class="container">
+            <div class="row">
+                <h3 class="clients__title col-12 text-center">Клиенты</h3>
+            </div>
+            <div class="row zoom-gallery clients__list" onclick="$('.popup-gallery-partners a:eq(0)').click()">
+                <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
+                    <img src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/yakuba/client-1.png" alt="Лукойл">
+                </div>
+                <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
+                    <img src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/yakuba/client-2.png" alt="Газпром">
+                </div>
+                <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
+                    <img src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/yakuba/client-3.png" alt="Ростелеком">
+                </div>
+                <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
+                    <img src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/yakuba/client-4.png" alt="MERZ">
+                </div>
+                <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
+                    <img src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/yakuba/client-5.png" alt="Сбербанк">
+                </div>
+                <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
+                    <img src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/yakuba/client-6.png" alt="Албфа банк">
+                </div>
+                <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
+                    <img src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/yakuba/client-7.png" alt="Рив гош">
+                </div>
+                <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
+                    <img src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/yakuba/client-8.png" alt="Росавтодор">
+                </div>
+            </div>
+            <div class="row clients__bottom">
+                <div class="col-12 text-center">
+                    <div class="d-inline-block clients__more_clients mr-4 popup-gallery-partners">
+                        <a href="https://vladimiryakuba.ru/storage/partners/SQnb8Ojjy9ZIkaP2Kr49vqqJ2hOjxaBWEH3KvB37.png">+ Более 120 клиентов</a>
+                        <a href="https://vladimiryakuba.ru/storage/partners/uMKI66Lvn60XKZRkzv26fCOdiENVvNnhthjRt1e2.png"></a>
+                        <a href="https://vladimiryakuba.ru/storage/partners/KF0Jm9dZVbRuFlPhacTAMu9a4kSSmx3n8aRz9R25.png"></a>
+                        <a href="https://vladimiryakuba.ru/storage/partners/0ehNR4adjauDf7SfWJ24FGibCZlLS5tR9l2bKFQi.png"></a>
+                        <a href="https://vladimiryakuba.ru/storage/partners/Q5OE166QgJGQy88FMX9UcPRFKZoKlnaohcDvvfcz.png"></a>
+                    </div>
+                    <div class="d-inline-block clients__more_clients mr-4 popup-gallery-recomendations">
+
+                        <a href="/images/recommendations/1.jpg"><img src="images/icon-document.png" alt="icon-document" class="mr-2">Посмотреть
+                            рекомендации</a>
+                        <a href="/images/recommendations/2.jpg"></a>
+                        <a href="/images/recommendations/3.jpg"></a>
+                        <a href="/images/recommendations/4.jpg"></a>
+                        <a href="/images/recommendations/5.jpg"></a>
+
+                    </div>
 
 
-    <div class="bg-1">
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <?php /*<div class="bg-1">
         <div class="container">
             <div class="py-5 text-center">
                 <div class="timer-block">

@@ -1,11 +1,12 @@
 $page-id: "#yakuba";
+$gray-dashed-border: dotted 3px #939393;
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500i,700,900&subset=cyrillic,cyrillic-ext');
 
 #{$page-id} {
   font-family: 'Roboto', $font-family-sans-serif;
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
   font-size: 1rem;
 }
 
@@ -23,7 +24,7 @@ $page-id: "#yakuba";
 
 @include media-breakpoint-up(lg) {
   #{$page-id} {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -59,6 +60,15 @@ $page-id: "#yakuba";
   background-color: $soft-red;
 }
 
+#{$page-id} h1 {
+  font-size: 1em;
+}
+
+#{$page-id} header {
+  background-color: black;
+  color: white;
+}
+
 #{$page-id} header .container {
   background: url("../images/yakuba/speaker-photo.jpg") no-repeat left top;
   background-size: contain;
@@ -78,5 +88,97 @@ $page-id: "#yakuba";
 @include media-breakpoint-up(sm) {
   #{$page-id} header .header-title {
     font-size: 2.5em;
+  }
+}
+
+#{$page-id} .expectations .z-1 {
+  z-index: 1;
+}
+#{$page-id} .expectations h3 {
+  background-color: white;
+  z-index: 10;
+  min-height: 2em;
+}
+#{$page-id} .expectations .red-square {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: solid 3px $brand-red;
+  width: 60px;
+  height: 60px;
+  font-size: 0;
+  z-index: -1;
+}
+#{$page-id} .expectations p {
+  font-size: 0.8em;
+}
+
+#{$page-id} .audience .right-border {
+  border-right: $gray-dashed-border;
+  height: $grid-gutter-width;
+}
+#{$page-id} .audience .bottom-border {
+  border-bottom: $gray-dashed-border;
+  height: $grid-gutter-width;
+}
+#{$page-id} .audience .blocks {
+  font-size: 0.8em;
+}
+#{$page-id} .audience .blocks > div > div {
+  min-height: 3em;
+}
+
+#{$page-id} .learn-block {
+  background: black;
+  color: white;
+}
+#{$page-id} .learn-block div.red {
+  background-color: $soft-red;
+}
+#{$page-id} .learn-block div.row div {
+  border-color: white;
+  font-size: 0.9em;
+}
+
+#{$page-id} .speaker-biografy {
+  background-color: #8E8E8E;
+  color: white;
+}
+#{$page-id} .speaker-biografy h2 {
+  font-size: 3em;
+}
+#{$page-id} .speaker-biografy a {
+  color: white;
+}
+@include media-breakpoint-down(md) {
+  #{$page-id} .speaker-biografy.speaker-bg2 {
+    background-image: url("../images/yakuba/speaker-photo2.jpg");
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+@include media-breakpoint-up(lg) {
+  #{$page-id} .container.speaker-bg2 {
+    background-image: url("../images/yakuba/speaker-photo2.jpg");
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+@include media-breakpoint-between(sm, md) {
+  #{$page-id} .speaker-bg2 {
+    background-position-x: -$grid-gutter-width * 7;
+  }
+}
+@include media-breakpoint-down(xs) {
+  #{$page-id} .speaker-biografy .speaker-bio {
+    padding-top: $grid-gutter-width * 4;
+  }
+}
+@include media-breakpoint-down(md) {
+  #{$page-id} .speaker-biografy .speaker-bio {
+    font-size: 0.9em;
   }
 }
