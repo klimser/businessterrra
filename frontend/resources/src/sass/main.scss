@@ -1,7 +1,6 @@
 @import "../../../../node_modules/bootstrap/scss/bootstrap";
 @import "../../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
 @import "../../../../node_modules/@fortawesome/fontawesome-free/scss/brands";
-@import "../../../../node_modules/@fortawesome/fontawesome-free/scss/regular";
 @import "../../../../node_modules/@fortawesome/fontawesome-free/scss/solid";
 
 @import "_variables";
@@ -18,6 +17,46 @@ body {
 
 .font-weight-black   { font-weight: $font-weight-black !important; }
 .red-text { color: $soft-red; }
+.red-icon {
+  color: $soft-red;
+  font-size: 1.5em;
+  padding: 10px;
+}
+
+.partner-logo {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100px;
+  width: 100%;
+}
+.logo-sm {
+  background-image: url("../images/logo_mp.svg");
+}
+.logo-nmc {
+  background-image: url("../images/logo_nmc.svg");
+}
+.logo-5p {
+  background-image: url("../images/logo_5p.png");
+}
+.logo-alo {
+  background-image: url("../images/logo_alo.png");
+}
+.logo-kun {
+  background-image: url("../images/logo_kun.png");
+}
+.logo-gazeta {
+  background-image: url("../images/logo_gazeta.png");
+}
+.logo-repost {
+  background-image: url("../images/logo_repost.svg");
+}
+.logo-spot {
+  background-image: url("../images/logo_spot.png");
+}
+.logo-hvan {
+  background-image: url("../images/logo_hvan.png");
+}
 
 @import "page/karnauhov";
 @import "page/yakuba";

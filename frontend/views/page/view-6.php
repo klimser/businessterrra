@@ -115,26 +115,26 @@ SCRIPT
     <section class="learn-block d-flex align-items-center">
         <div class="container mt-md-5 mb-md-5">
             <div class="row">
-                <div class="col-lg-4 col-md-6 d-flex align-items-center justify-content-center red text-center text-uppercase border-right border-bottom pt-2">
+                <div class="block-1 col-lg-4 col-md-6 d-flex align-items-center justify-content-center red text-center text-uppercase pt-2">
                     <h2 class="h3 font-weight-black">Чему вы научитесь?</h2>
                 </div>
-                <div class="col-lg-4 col-md-6 d-flex justify-content-between align-items-center border-right border-bottom py-3">
+                <div class="block-2 col-lg-4 col-md-6 d-flex justify-content-between align-items-center py-3">
                     <img src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/yakuba/smartphone.png" class="mr-3">
                     <div class="text">Преодолевать телефонные барьеры, вести диалог с сотрудником любого уровня от секретаря до топ-менеджера</div>
                 </div>
-                <div class="col-lg-4 col-md-6 d-flex justify-content-between align-items-center border-bottom py-3">
+                <div class="block-3 col-lg-4 col-md-6 d-flex justify-content-between align-items-center py-3">
                     <img src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/yakuba/conversation.png" class="mr-3">
                     <div class="text">Вести переговоры, учитывая контекст и индивидуальные особенности собеседника;</div>
                 </div>
-                <div class="col-lg-4 col-md-6 d-flex justify-content-between align-items-center border-top border-right py-3">
+                <div class="block-4 col-lg-4 col-md-6 d-flex justify-content-between align-items-center py-3">
                     <img src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/yakuba/note.png" class="mr-3">
                     <div class="text">Создавать «дожимающие» тексты после телефонного разговора или встречи</div>
                 </div>
-                <div class="col-lg-4 col-md-6 d-flex justify-content-between align-items-center border-top border-right py-3">
+                <div class="block-5 col-lg-4 col-md-6 d-flex justify-content-between align-items-center py-3">
                     <img src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/yakuba/business-deal.png" class="mr-3">
                     <div class="text">Продавать больше, быстрее, дороже, чаще проходить возражения и закрывать сделки</div>
                 </div>
-                <div class="col-lg-4 col-md-6 d-flex justify-content-between align-items-center border-top py-3">
+                <div class="block-6 col-lg-4 col-md-6 d-flex justify-content-between align-items-center py-3">
                     <img src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/yakuba/coins.png" class="mr-3">
                     <div class="text">Совершать звонки и проводить встречи, которые приводят к продаже по щелчку пальцев, как это происходит на Wall Street</div>
                 </div>
@@ -145,7 +145,7 @@ SCRIPT
     <section class="container audience mt-3 mt-md-5 mb-3">
         <div class="row">
             <div class="col text-center text-uppercase">
-                <h2>Для кого этот тренинг?</h2>
+                <h2 class="mb-0">Для кого этот тренинг?</h2>
             </div>
         </div>
         <div class="row d-none d-lg-flex">
@@ -159,25 +159,30 @@ SCRIPT
             <div class="col-3 right-border"></div>
         </div>
         <div class="row blocks">
-            <div class="col-12 col-sm-6 col-lg-3">
+            <div class="col-12 col-sm-6 col-lg-3 mb-1">
                 <div class="w-100 rounded border border-danger text-center d-flex justify-content-center align-items-center">
                     Собственники бизнеса/предприниматели
                 </div>
             </div>
-            <div class="col-12 col-sm-6 col-lg-3">
+            <div class="col-12 col-sm-6 col-lg-3 mb-1">
                 <div class="w-100 rounded border border-danger text-center d-flex justify-content-center align-items-center">
                     Коммерческие директора
                 </div>
             </div>
-            <div class="col-12 col-sm-6 col-lg-3">
+            <div class="col-12 col-sm-6 col-lg-3 mb-1">
                 <div class="w-100 rounded border border-danger text-center d-flex justify-content-center align-items-center">
                     Руководители отделов продаж
                 </div>
             </div>
-            <div class="col-12 col-sm-6 col-lg-3">
+            <div class="col-12 col-sm-6 col-lg-3 mb-1">
                 <div class="w-100 rounded border border-danger text-center d-flex justify-content-center align-items-center">
                     Менеджеры/специалисты по продажам
                 </div>
+            </div>
+        </div>
+        <div class="row my-5">
+            <div class="col text-center">
+                <button class="btn btn-large red-button text-uppercase text-center px-1 px-sm-3 py-3" onclick="MainPage.launchModal();">купить билет</button>
             </div>
         </div>
     </section>
@@ -196,64 +201,118 @@ SCRIPT
         </div>
     </section>
 
-    <section class="section clients">
+    <section class="section clients py-5">
         <div class="container">
             <div class="row">
-                <h3 class="clients__title col-12 text-center">Клиенты</h3>
+                <h2 class="col-12 text-center">Клиенты</h2>
             </div>
-            <div class="row zoom-gallery clients__list" onclick="$('.popup-gallery-partners a:eq(0)').click()">
-                <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
+            <div class="row">
+                <div class="col-6 col-lg-3 d-flex align-items-center justify-content-center py-2">
                     <img src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/yakuba/client-1.png" alt="Лукойл">
                 </div>
-                <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
+                <div class="col-6 col-lg-3 d-flex align-items-center justify-content-center py-2">
                     <img src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/yakuba/client-2.png" alt="Газпром">
                 </div>
-                <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
+                <div class="col-6 col-lg-3 d-flex align-items-center justify-content-center py-2">
                     <img src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/yakuba/client-3.png" alt="Ростелеком">
                 </div>
-                <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
+                <div class="col-6 col-lg-3 d-flex align-items-center justify-content-center py-2">
                     <img src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/yakuba/client-4.png" alt="MERZ">
                 </div>
-                <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
+                <div class="col-6 col-lg-3 d-flex align-items-center justify-content-center py-3">
                     <img src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/yakuba/client-5.png" alt="Сбербанк">
                 </div>
-                <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
+                <div class="col-6 col-lg-3 d-flex align-items-center justify-content-center py-3">
                     <img src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/yakuba/client-6.png" alt="Албфа банк">
                 </div>
-                <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
+                <div class="col-6 col-lg-3 d-flex align-items-center justify-content-center py-3">
                     <img src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/yakuba/client-7.png" alt="Рив гош">
                 </div>
-                <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
+                <div class="col-6 col-lg-3 d-flex align-items-center justify-content-center py-3">
                     <img src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/yakuba/client-8.png" alt="Росавтодор">
                 </div>
             </div>
-            <div class="row clients__bottom">
+            <div class="row pt-3">
                 <div class="col-12 text-center">
-                    <div class="d-inline-block clients__more_clients mr-4 popup-gallery-partners">
-                        <a href="https://vladimiryakuba.ru/storage/partners/SQnb8Ojjy9ZIkaP2Kr49vqqJ2hOjxaBWEH3KvB37.png">+ Более 120 клиентов</a>
-                        <a href="https://vladimiryakuba.ru/storage/partners/uMKI66Lvn60XKZRkzv26fCOdiENVvNnhthjRt1e2.png"></a>
-                        <a href="https://vladimiryakuba.ru/storage/partners/KF0Jm9dZVbRuFlPhacTAMu9a4kSSmx3n8aRz9R25.png"></a>
-                        <a href="https://vladimiryakuba.ru/storage/partners/0ehNR4adjauDf7SfWJ24FGibCZlLS5tR9l2bKFQi.png"></a>
-                        <a href="https://vladimiryakuba.ru/storage/partners/Q5OE166QgJGQy88FMX9UcPRFKZoKlnaohcDvvfcz.png"></a>
-                    </div>
-                    <div class="d-inline-block clients__more_clients mr-4 popup-gallery-recomendations">
-
-                        <a href="/images/recommendations/1.jpg"><img src="images/icon-document.png" alt="icon-document" class="mr-2">Посмотреть
-                            рекомендации</a>
-                        <a href="/images/recommendations/2.jpg"></a>
-                        <a href="/images/recommendations/3.jpg"></a>
-                        <a href="/images/recommendations/4.jpg"></a>
-                        <a href="/images/recommendations/5.jpg"></a>
-
-                    </div>
-
-
-
-
+                    + Более 120 клиентов
                 </div>
             </div>
         </div>
     </section>
+
+    <section class="partners">
+        <div class="container my-3 my-md-5">
+            <div class="row">
+                <h2 class="col-12 text-center">Партнёры</h2>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                    <a href="https://5plus.uz" class="partner-logo logo-5p d-block"></a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                    <div class="partner-logo logo-alo d-block"></div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                    <div class="partner-logo logo-sm d-block"></div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                    <div class="partner-logo logo-nmc d-block"></div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                    <a href="https://kun.uz" class="partner-logo logo-kun d-block"></a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                    <a href="https://gazeta.uz/ru" class="partner-logo logo-gazeta d-block"></a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                    <a href="https://repost.uz" class="partner-logo logo-repost d-block"></a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                    <a href="https://spot.uz/ru" class="partner-logo logo-spot d-block"></a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                    <a href="http://hvan.uz" class="partner-logo logo-hvan d-block"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-sm-6">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-xl-6 py-2 py-sm-1 d-flex">
+                            <div class="red-icon icon icon-location"></div>
+                            <div>
+                                <a href="https://goo.gl/maps/ox5UVECu67J2" target="_blank">Ташкент Business Terra,<br> Oybek street, 16</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xl-6 py-2 py-sm-1 align-items-center d-flex">
+                            <div class="red-icon icon icon-bell"></div>
+                            <div>23 января</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-xl-6 py-2 py-sm-1 text-center">
+                            <a href="https://www.facebook.com/businessterra2018/" class="mr-3"><span class="fab fa-2x fa-facebook-f"></span></a>
+                            <a href="https://www.instagram.com/terra_biz/" class="mr-3"><span class="fab fa-2x fa-instagram"></span></a>
+                            <a href="https://t.me/business_terra2018"><span class="fab fa-2x fa-telegram"></span></a>
+                        </div>
+                        <div class="col-12 col-xl-6 py-2 text-center">
+                            <a href="tel:+99890-965-83-31">+99890 965 83 31</a><br>
+                            <a href="tel:+99890-178-28-07">+99890 178 28 07</a><br>
+                            <div class="copyright text-right">
+                                Сайт сделал <a href="https://sergey-klimov.ru"><b>Сергей Климов</b></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <?php /*<div class="bg-1">
         <div class="container">
@@ -283,257 +342,6 @@ SCRIPT
             </div>
         </div>
     </div>
-
-    <div class="container">
-        <h2>Этот Бизнес-интенсив именно для вас если:</h2>
-        <div class="row icons-container">
-            <div class="col-12 col-sm-6 col-md-4">
-                <div class="icon-block text-center">
-                    <div class="icon-pic icon-pic-1"></div>
-                    <div class="text-center">
-                        Хотите прокачать<br> свои лидерские навыки
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4">
-                <div class="icon-block text-center">
-                    <div class="icon-pic icon-pic-2"></div>
-                    <div class="text-center">
-                        Хотите запустить<br> бизнес без потерь
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4">
-                <div class="icon-block text-center">
-                    <div class="icon-pic icon-pic-3"></div>
-                    <div class="text-center">
-                        Хотите научится управлять<br> сотрудниками качественно
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4">
-                <div class="icon-block text-center">
-                    <div class="icon-pic icon-pic-4"></div>
-                    <div class="text-center">
-                        Работаете в топ-менеджменте<br> или на управленческой должности
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4">
-                <div class="icon-block text-center">
-                    <div class="icon-pic icon-pic-5"></div>
-                    <div class="text-center">
-                        В поисках новых идей,<br> инсайтов чтобы двигаться вперед
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4">
-                <div class="icon-block text-center">
-                    <div class="icon-pic icon-pic-6"></div>
-                    <div class="text-center">
-                        Хотите наконец-то<br> заработать на своём деле
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="bg-2">
-        <div class="container">
-            <h2>ПРИХОДИТЕ НА МАСТЕР-КЛАСС СО СВОЕЙ КОМАНДОЙ ЧТОБЫ</h2>
-            <div class="row icons-container">
-                <div class="col-12 col-sm-4">
-                    <div class="icon-block-red text-center">
-                        <div class="icon-pic icon-pic-7"></div>
-                        <div class="text-center">
-                            Быть продуктивнее вместе с командой
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-4">
-                    <div class="icon-block-red text-center">
-                        <div class="icon-pic icon-pic-8"></div>
-                        <div class="text-center">
-                            Вдохновить на новые идеи
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-4">
-                    <div class="icon-block-red text-center">
-                        <div class="icon-pic icon-pic-9"></div>
-                        <div class="text-center">
-                            Раньше всех увеличить свои показатели
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="speaker-biografy-block container vawes-bg">
-        <div class="row">
-            <div class="col-12 col-sm-7 col-sm-push-5 speaker-biografy">
-                <h2>Дмитрий Карнаухов</h2>
-                <dl>
-                    <dt>Образование:</dt>
-                    <dd>Кандидат психологических наук;</dd>
-                    <dd>2 образования МВА</dd>
-
-                    <dt>Опыт:</dt>
-                    <dd>Практик с 13-летним опытом работы в должности Директора по персоналу в крупных компаниях, в том числе в «тысячниках» из списка Forbes;</dd>
-                    <dd>Бизнес-тренер с опытом проведения ряда управленческих тренингов в масштабах России и СНГ</dd>
-
-                    <dt>Компетенции:</dt>
-                    <dd>Автор более 40 научных статей и публикаций в области психологии и управления персоналом;</dd>
-                    <dd>Официальный Спикер компании "Head Hunter", официальный спикер компании "Деловая среда" от Сбербанка; </dd>
-                    <dd>Основатель компании «Д.А. Консалт», тренинговой компании и кадрового агентства HR365;</dd>
-                    <dd>В рамках БМ: Тренер, член команды "300 тигров Петра Осипова", член экспертного совета HR-ов, автор мастер-классов, приглашенный спикер на тренерстве по темам управления персоналом, один из Админов чатов БМ.</dd>
-
-                    <dt>Заказчики:</dt>
-                    <dd>Многие Тренеры БМ. За 4 года закрыл больше 600 разных вакансий в РФ, Украине, Казахстане, без учёта массподбора.</dd>
-                </dl>
-            </div>
-            <div class="col-12 col-sm-5 col-sm-pull-7 speaker-portrait"></div>
-        </div>
-    </div>
-
-    <div class="bg-3">
-        <div class="container">
-            <h2>Выберите билет, подходящий именно Вам:</h2>
-            <div class="row tariffs-block">
-                <div class="col-12 col-sm-4">
-                    <div class="tariff-block text-center">
-                        <div class="block-title">Platinum</div>
-                        (1 490 000 сум)
-                        <div class="block-body">
-                            <ul class="list-unstyled">
-                                <li>Программа мастер-класса</li>
-                                <li>2 кофе-брейка и обед</li>
-                                <li>Сертификат о прохождении</li>
-                                <li>VIP ужин</li>
-                                <li>Личный разбор</li>
-                            </ul>
-                        </div>
-                        <button class="order-button" onclick="MainPage.launchModal();">ЗАКАЗАТЬ БИЛЕТ</button>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-4">
-                    <div class="tariff-block text-center">
-                        <div class="block-title">Gold</div>
-                        (990 000 сум)
-                        <div class="block-body">
-                            <ul class="list-unstyled extra-padding">
-                                <li>Программа мастер-класса</li>
-                                <li>2 кофе-брейка и обед</li>
-                                <li>Сертификат о прохождении</li>
-                                <li>Места в середине зала</li>
-                            </ul>
-                        </div>
-                        <button class="order-button" onclick="MainPage.launchModal();">ЗАКАЗАТЬ БИЛЕТ</button>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-4">
-                    <div class="tariff-block last-tariff-block text-center">
-                        <div class="block-title">Silver</div>
-                        (790 000 сум)
-                        <div class="block-body">
-                            <ul class="list-unstyled extra-padding">
-                                <li>Программа мастер-класса</li>
-                                <li>2 кофе-брейка и обед</li>
-                                <li>Сертификат о прохождении</li>
-                                <li>Места в конце зала</li>
-                            </ul>
-                        </div>
-                        <button class="order-button" onclick="MainPage.launchModal();">ЗАКАЗАТЬ БИЛЕТ</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container vawes-bg order-block">
-        <div class="timer-block">
-            <div class="block-title">Оставьте заявку на мастер класс и получите полный тайминг</div>
-            <div class="font-thin">До вашего очень полезного семинара осталось:</div>
-            <div class="timer">
-                <div class="remain-time-block">
-                    <div class="remain remain-day"></div>
-                    <div class="remain remain-hour"></div>
-                    <div class="remain remain-minute"></div>
-                    <div class="remain remain-second"></div>
-                    <div class="clearfix"></div>
-                </div>
-                <div class="remain-titles-block">
-                    <div class="remain-title">дней</div>
-                    <div class="remain-title">часов</div>
-                    <div class="remain-title">минут</div>
-                    <div class="remain-title">секунд</div>
-                    <div class="clearfix"></div>
-                </div>
-            </div>
-            <div class="row order_form">
-            <?= Html::beginForm(\yii\helpers\Url::to(['order/create']), 'post', ['onsubmit' => 'return MainPage.completeOrder(this);']); ?>
-                <div class="order_form_body">
-                    <input type="hidden" name="order[subject]" value="Дмитрий Карнаухов">
-                    <div class="col-12 col-sm-6 col-md-5">
-                        <input name="order[name]" class="form-control" required minlength="2" maxlength="50" placeholder="Ваше имя"><br>
-                        <div class="input-group"><span class="input-group-addon">+998</span>
-                            <input type="tel" name="order[phoneFormatted]" class="form-control order-phone" maxlength="11" pattern="\d{2} \d{3}-\d{4}" required placeholder="Ваш номер телефона">
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4">
-                        <?= ReCaptcha::widget(['name' => 'order[reCaptcha]', 'theme' => 'dark']) ?>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-3">
-                        <button class="complete-button">Получить тайминг</button>
-                    </div>
-                </div>
-                <div class="order_form_extra hidden"></div>
-            <?= Html::endForm(); ?>
-            </div>
-        </div>
-    </div>
-
-    <div class="bg-1">
-        <div class="container">
-            <div class="timer-block">
-                <div class="font-thin">Партнёры:</div>
-                <br>
-                <div>
-                    <div class="row">
-                        <div class="col-12 col-sm-4 partner-logo logo-sm"></div>
-                        <div class="col-12 col-sm-4 partner-logo logo-nmc"></div>
-                        <div class="col-12 col-sm-4 partner-logo logo-5p"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <footer class="vawes-bg">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-sm-4 col-md-4">
-                    <div class="red-icon icon icon-location float-left"></div>
-                    <div class="float-left">Ташкент Business Terra,<br> Oybek street, 16</div>
-                </div>
-                <div class="col-12 col-sm-4 col-md-3">
-                    <div class="red-icon icon icon-bell float-left"></div>
-                    <div class="float-left">20 октября<br> с 9.00 до 19.00</div>
-                </div>
-                <div class="col-12 col-sm-4 col-md-3 col-md-offset-2">
-                    <a class="font-bigger" href="tel:+99890-965-83-31">+99890 965 83 31</a><br>
-                    <a class="font-bigger" href="tel:+99890-178-28-07">+99890 178 28 07</a><br>
-                    <button class="red-button" onclick="MainPage.launchModal();">Обратный звонок</button>
-                </div>
-            </div>
-            <div class="row" style="padding-top: 15px;">
-                <div class="col-12 text-center">
-                    Сайт сделал <a href="https://sergey-klimov.ru"><b>Сергей Климов</b></a>
-                </div>
-            </div>
-        </div>
-    </footer>
  */ ?>
 
     <div id="program_frame" class="modal fade program_frame" tabindex="-1" role="dialog">
@@ -585,44 +393,21 @@ SCRIPT
                 </div>
                 <div class="modal-body">
                     <div class="row">
-                        <?php
-                            $limit1 = new \DateTime('2019-01-01 00:00:00');
-                            $limit2 = new \DateTime('2019-01-20 00:00:00');
-                            $nowDate = new \DateTime();
-                        ?>
-                        <div class="col">
-                            <button type="button" class="btn btn-lg btn-block red-button" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-html="true" data-content="Программа мастер-класса<br> 2 кофе-брейка и обед<br> Сертификат о прохождении<br> VIP ужин<br> Личный разбор">
+                        <div class="col-12 col-sm-6 mb-2">
+                            <button type="button" class="btn btn-lg btn-block red-button" data-toggle="popover" data-trigger="click" data-placement="bottom" data-html="true" data-content="Программа мастер-класса<br> 2 кофе-брейка и обед<br> Сертификат о прохождении<br> VIP ужин<br> Личный разбор">
                                 Platinum<br>
-                                <small>
-                                <?php
-                                    if ($nowDate < $limit1) echo '1 290 000';
-                                    elseif ($nowDate < $limit2) echo '1 490 000';
-                                    else echo '1 790 000';
-                                ?>
-                                </small>
+                                <small>1 290 000 <small>до 01.01.19</small></small><br>
+                                <small>1 490 000 <small>до 20.01.19</small></small><br>
+                                <small>1 790 000 <small>с 20.01.19</small></small>
                             </button>
                         </div>
-                        <div class="col">
-                            <button type="button" class="btn btn-lg btn-block red-button" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-html="true" data-content="Программа мастер-класса<br> 2 кофе-брейка и обед<br> Сертификат о прохождении">
+                        <div class="col-12 col-sm-6 mb-2">
+                            <button type="button" class="btn btn-lg btn-block red-button" data-toggle="popover" data-trigger="click" data-placement="bottom" data-html="true" data-content="Программа мастер-класса<br> 2 кофе-брейка и обед<br> Сертификат о прохождении">
                                 Gold<br>
-                                <small>
-                                <?php
-                                    if ($nowDate < $limit1) echo '790 000';
-                                    elseif ($nowDate < $limit2) echo '890 000';
-                                    else echo '1 290 000';
-                                ?>
-                                </small>
+                                <small>790 000 <small>до 01.01.19</small></small><br>
+                                <small>990 000 <small>до 20.01.19</small></small><br>
+                                <small>1 290 000 <small>с 20.01.19</small></small>
                             </button>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col text-center pt-2">
-                            <small>
-                            <?php
-                                if ($nowDate < $limit1) echo 'успейте оставить заявку, цены действительны до ' . $limit1->format('d.m.Y');
-                                elseif ($nowDate < $limit2) echo 'успейте оставить заявку, цены действительны до ' . $limit2->format('d.m.Y');
-                            ?>
-                            </small>
                         </div>
                     </div>
                     <div class="order_form_body mt-3 pt-3 border-top">

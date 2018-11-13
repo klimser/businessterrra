@@ -67,11 +67,6 @@ $page-id: "#karnauhov";
   color: white;
   text-decoration: none;
 }
-#{$page-id} .red-icon {
-  color: $soft-red;
-  font-size: 1.5em;
-  padding: 10px;
-}
 #{$page-id} .font-bigger {
   font-size: 1.5em;
 }
@@ -379,20 +374,4 @@ $page-id: "#karnauhov";
     width: $grid-gutter-width * 3;
     max-width: $grid-gutter-width * 3;
   }
-}
-
-#{$page-id} .partner-logo {
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  min-height:200px;
-}
-#{$page-id} .logo-sm {
-  background-image: url("../images/logo_mp.svg");
-}
-#{$page-id} .logo-nmc {
-  background-image: url("../images/logo_nmc.svg");
-}
-#{$page-id} .logo-5p {
-  background-image: url("../images/logo_5p.png");
 }

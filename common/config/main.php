@@ -5,7 +5,7 @@ $params = array_merge(
 );
 
 return [
-    'vendorPath' => dirname(dirname(__DIR__)) . '/vendor',
+    'vendorPath' => '@app/../vendor',
     'components' => [
         'db' => [
             'class' => 'yii\db\Connection',

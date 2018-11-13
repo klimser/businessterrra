@@ -30,8 +30,12 @@ $gray-dashed-border: dotted 3px #939393;
 
 #{$page-id} .modal-content {
   background-color: black;
+  color: white;
   font-size: 0.7em;
   border: solid 1px white;
+}
+#{$page-id} .modal-content dt {
+  color: $soft-red;
 }
 #{$page-id} .close {
   color: white;
@@ -141,6 +145,26 @@ $gray-dashed-border: dotted 3px #939393;
   font-size: 0.9em;
 }
 
+#{$page-id} .learn-block .block-2, #{$page-id} .learn-block .block-3, #{$page-id} .learn-block .block-4, #{$page-id} .learn-block .block-5, #{$page-id} .learn-block .block-6 {
+  border-top: solid 1px;
+}
+@include media-breakpoint-only(md) {
+  #{$page-id} .learn-block .block-1, #{$page-id} .learn-block .block-2 {
+    border-top: none;
+  }
+  #{$page-id} .learn-block .block-1, #{$page-id} .learn-block .block-3, #{$page-id} .learn-block .block-5 {
+    border-right: solid 1px;
+  }
+}
+@include media-breakpoint-up(lg) {
+  #{$page-id} .learn-block .block-1, #{$page-id} .learn-block .block-2, #{$page-id} .learn-block .block-3 {
+    border-top: none;
+  }
+  #{$page-id} .learn-block .block-1, #{$page-id} .learn-block .block-2, #{$page-id} .learn-block .block-4, #{$page-id} .learn-block .block-5 {
+    border-right: solid 1px;
+  }
+}
+
 #{$page-id} .speaker-biografy {
   background-color: #8E8E8E;
   color: white;
@@ -181,4 +205,21 @@ $gray-dashed-border: dotted 3px #939393;
   #{$page-id} .speaker-biografy .speaker-bio {
     font-size: 0.9em;
   }
+}
+
+#{$page-id} .clients {
+  background: black;
+  color: white;
+}
+
+#{$page-id} footer {
+  background: black;
+  color: white;
+  font-size: 0.8em;
+}
+#{$page-id} footer a {
+  color: white;
+}
+#{$page-id} footer .copyright {
+  font-size: 0.8em;
 }
