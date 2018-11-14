@@ -148,39 +148,39 @@ SCRIPT
                 <h2 class="mb-0">Для кого этот тренинг?</h2>
             </div>
         </div>
-        <div class="row d-none d-lg-flex">
-            <div class="col-4 offset-2 right-border bottom-border"></div>
-            <div class="col-4 bottom-border"></div>
-        </div>
-        <div class="row d-none d-lg-flex">
-            <div class="col-2 right-border"></div>
-            <div class="col-3 right-border"></div>
-            <div class="col-2 right-border"></div>
-            <div class="col-3 right-border"></div>
-        </div>
-        <div class="row blocks">
-            <div class="col-12 col-sm-6 col-lg-3 mb-1">
-                <div class="w-100 rounded border border-danger text-center d-flex justify-content-center align-items-center">
-                    Собственники бизнеса/предприниматели
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3 mb-1">
-                <div class="w-100 rounded border border-danger text-center d-flex justify-content-center align-items-center">
-                    Коммерческие директора
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3 mb-1">
-                <div class="w-100 rounded border border-danger text-center d-flex justify-content-center align-items-center">
-                    Руководители отделов продаж
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3 mb-1">
+        <div class="row blocks mt-5">
+            <div class="col-12 col-sm-6 col-lg-4 mb-3">
                 <div class="w-100 rounded border border-danger text-center d-flex justify-content-center align-items-center">
                     Менеджеры/специалисты по продажам
                 </div>
             </div>
+            <div class="col-12 col-sm-6 col-lg-4 mb-3">
+                <div class="w-100 rounded border border-danger text-center d-flex justify-content-center align-items-center">
+                    Коммерческие директора
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 mb-3">
+                <div class="w-100 rounded border border-danger text-center d-flex justify-content-center align-items-center">
+                    Руководители отделов по работе с клиентами
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 mb-3">
+                <div class="w-100 rounded border border-danger text-center d-flex justify-content-center align-items-center">
+                    Собственники бизнеса/предприниматели
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 mb-3">
+                <div class="w-100 rounded border border-danger text-center d-flex justify-content-center align-items-center">
+                    Руководители отделов маркетинга/маркетологи
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 mb-3">
+                <div class="w-100 rounded border border-danger text-center d-flex justify-content-center align-items-center">
+                    Руководители отделов продаж
+                </div>
+            </div>
         </div>
-        <div class="row my-5">
+        <div class="row mt-3 mb-5">
             <div class="col text-center">
                 <button class="btn btn-large red-button text-uppercase text-center px-1 px-sm-3 py-3" onclick="MainPage.launchModal();">купить билет</button>
             </div>
@@ -208,28 +208,28 @@ SCRIPT
             </div>
             <div class="row">
                 <div class="col-6 col-lg-3 d-flex align-items-center justify-content-center py-2">
-                    <img src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/yakuba/client-1.png" alt="Лукойл">
+                    <img class="img-fluid" src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/yakuba/client-1.png" alt="Лукойл">
                 </div>
                 <div class="col-6 col-lg-3 d-flex align-items-center justify-content-center py-2">
-                    <img src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/yakuba/client-2.png" alt="Газпром">
+                    <img class="img-fluid" src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/yakuba/client-2.png" alt="Газпром">
                 </div>
                 <div class="col-6 col-lg-3 d-flex align-items-center justify-content-center py-2">
-                    <img src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/yakuba/client-3.png" alt="Ростелеком">
+                    <img class="img-fluid" src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/yakuba/client-3.png" alt="Ростелеком">
                 </div>
                 <div class="col-6 col-lg-3 d-flex align-items-center justify-content-center py-2">
-                    <img src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/yakuba/client-4.png" alt="MERZ">
+                    <img class="img-fluid" src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/yakuba/client-4.png" alt="MERZ">
                 </div>
                 <div class="col-6 col-lg-3 d-flex align-items-center justify-content-center py-3">
-                    <img src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/yakuba/client-5.png" alt="Сбербанк">
+                    <img class="img-fluid" src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/yakuba/client-5.png" alt="Сбербанк">
                 </div>
                 <div class="col-6 col-lg-3 d-flex align-items-center justify-content-center py-3">
-                    <img src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/yakuba/client-6.png" alt="Албфа банк">
+                    <img class="img-fluid" src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/yakuba/client-6.png" alt="Албфа банк">
                 </div>
                 <div class="col-6 col-lg-3 d-flex align-items-center justify-content-center py-3">
-                    <img src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/yakuba/client-7.png" alt="Рив гош">
+                    <img class="img-fluid" src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/yakuba/client-7.png" alt="Рив гош">
                 </div>
                 <div class="col-6 col-lg-3 d-flex align-items-center justify-content-center py-3">
-                    <img src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/yakuba/client-8.png" alt="Росавтодор">
+                    <img class="img-fluid" src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/yakuba/client-8.png" alt="Росавтодор">
                 </div>
             </div>
             <div class="row pt-3">
@@ -280,7 +280,7 @@ SCRIPT
     <footer>
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-12 col-sm-6">
+                <div class="col-12 col-md-6">
                     <div class="row align-items-center">
                         <div class="col-12 col-xl-6 py-2 py-sm-1 d-flex">
                             <div class="red-icon icon icon-location"></div>
@@ -288,20 +288,23 @@ SCRIPT
                                 <a href="https://goo.gl/maps/ox5UVECu67J2" target="_blank">Ташкент Business Terra,<br> Oybek street, 16</a>
                             </div>
                         </div>
-                        <div class="col-12 col-xl-6 py-2 py-sm-1 align-items-center d-flex">
+                        <div class="col-6 col-xl-6 order-xl-last py-2 py-sm-1 align-items-center d-flex">
                             <div class="red-icon icon icon-bell"></div>
                             <div>23 января</div>
                         </div>
+                        <div class="col-6 col-xl-6 py-2 py-sm-1 align-items-center d-flex">
+                            <button class="btn btn-block red-button text-uppercase text-center px-1 px-sm-3" onclick="MainPage.launchModal();">купить билет</button>
+                        </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6">
+                <div class="col-12 col-md-6">
                     <div class="row align-items-center">
-                        <div class="col-12 col-xl-6 py-2 py-sm-1 text-center">
+                        <div class="col-6 col-xl-6 py-2 py-sm-1 text-center">
                             <a href="https://www.facebook.com/businessterra2018/" class="mr-3"><span class="fab fa-2x fa-facebook-f"></span></a>
                             <a href="https://www.instagram.com/terra_biz/" class="mr-3"><span class="fab fa-2x fa-instagram"></span></a>
                             <a href="https://t.me/business_terra2018"><span class="fab fa-2x fa-telegram"></span></a>
                         </div>
-                        <div class="col-12 col-xl-6 py-2 text-center">
+                        <div class="col-6 col-xl-6 py-2 text-center">
                             <a href="tel:+99890-965-83-31">+99890 965 83 31</a><br>
                             <a href="tel:+99890-178-28-07">+99890 178 28 07</a><br>
                             <div class="copyright text-right">
