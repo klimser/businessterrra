@@ -207,8 +207,9 @@ SCRIPT
     </section>
 
     <section class="speaker-video">
-        <div class="container my-5">
+        <div class="container mt-4 mb-5">
             <div class="col text-center">
+                <h3 class="mb-3">Приглашение на семинар от Владимира Якубы</h3>
                 <div id="video"></div>
             </div>
         </div>
@@ -293,24 +294,24 @@ SCRIPT
     <footer>
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6 col-xl-8">
                     <div class="row align-items-center">
-                        <div class="col-12 col-xl-6 py-2 py-sm-1 d-flex">
+                        <div class="col-12 col-xl-5 py-2 py-sm-1 d-flex">
                             <div class="red-icon icon icon-location"></div>
                             <div>
                                 <a href="https://goo.gl/maps/ox5UVECu67J2" target="_blank">Ташкент Business Terra,<br> Oybek street, 16</a>
                             </div>
                         </div>
-                        <div class="col-6 col-xl-6 order-xl-last py-2 py-sm-1 align-items-center d-flex">
+                        <div class="col-6 col-xl-3 py-2 py-sm-1 align-items-center d-flex">
                             <div class="red-icon icon icon-bell"></div>
                             <div>23 января</div>
                         </div>
-                        <div class="col-6 col-xl-6 py-2 py-sm-1 align-items-center d-flex">
+                        <div class="col-6 col-xl-4 py-2 py-sm-1 align-items-center d-flex">
                             <button class="btn btn-block red-button text-uppercase text-center px-1 px-sm-3" onclick="MainPage.launchModal();">купить билет</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6 col-xl-4">
                     <div class="row align-items-center">
                         <div class="col-6 col-xl-6 py-2 py-sm-1 text-center">
                             <a href="https://www.facebook.com/businessterra2018/" class="mr-3"><span class="fab fa-2x fa-facebook-f"></span></a>
