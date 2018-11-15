@@ -362,11 +362,6 @@ SCRIPT
                     <button class="red-button" onclick="MainPage.launchModal();">Обратный звонок</button>
                 </div>
             </div>
-            <div class="row" style="padding-top: 15px;">
-                <div class="col-12 text-center">
-                    Сайт сделал <a href="https://sergey-klimov.ru"><b>Сергей Климов</b></a>
-                </div>
-            </div>
         </div>
     </footer>
 

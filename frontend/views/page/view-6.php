@@ -17,6 +17,11 @@ $this->registerJs(<<<SCRIPT
     MainPage.init();
     $('[data-toggle="popover"]').popover();
     window.setInterval(function(){MainPage.setTimeRemaining();}, 1000);
+    var player = new Playerjs({
+        id:"video",
+        "file":"/uploads/video/yakuba1080.mp4,/uploads/video/yakuba720.mp4,/uploads/video/yakuba480.mp4",
+        "qualities":"1080p,720p,480"
+    });
 SCRIPT
 ); ?>
 
@@ -192,11 +197,19 @@ SCRIPT
             <div class="row justify-content-end pt-5 pt-sm-0">
                 <div class="col-12 col-sm-7 col-md-6 col-lg-5 mb-3 speaker-bio">
                     <h2 class="mt-3">Владимир Якуба</h2>
-                    <div class="text-muted mb-3">Лидерство Команда Продажи</div>
+                    <div class="border border-danger rounded mb-3 px-2">Лидерство Команда Продажи</div>
                     <p>36 лет. Бизнес-тренер №1 в формате “Реалити”. Дважды признан лучшим в профессии. Провел обучение в 112 городах, 17 странах. Финалист книжной премии "Деловая книга года".<br>
-                        <a href="https://vladimiryakuba.ru/about" class="d-inline-block mt-2">Узнать больше о Владимире >></a>
+                        <a href="https://vladimiryakuba.ru/about" target="_blank" class="d-inline-block mt-2">Узнать больше о Владимире >></a>
                     </p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="speaker-video">
+        <div class="container my-5">
+            <div class="col text-center">
+                <div id="video"></div>
             </div>
         </div>
     </section>
@@ -204,7 +217,7 @@ SCRIPT
     <section class="section clients py-5">
         <div class="container">
             <div class="row">
-                <h2 class="col-12 text-center">Клиенты</h2>
+                <h2 class="col-12 text-center">Клиенты Владимира Якубы</h2>
             </div>
             <div class="row">
                 <div class="col-6 col-lg-3 d-flex align-items-center justify-content-center py-2">
@@ -234,7 +247,7 @@ SCRIPT
             </div>
             <div class="row pt-3">
                 <div class="col-12 text-center">
-                    + Более 120 клиентов
+                    + Более 120 компаний
                 </div>
             </div>
         </div>
@@ -307,9 +320,6 @@ SCRIPT
                         <div class="col-6 col-xl-6 py-2 text-center">
                             <a href="tel:+99890-965-83-31">+99890 965 83 31</a><br>
                             <a href="tel:+99890-178-28-07">+99890 178 28 07</a><br>
-                            <div class="copyright text-right">
-                                Сайт сделал <a href="https://sergey-klimov.ru"><b>Сергей Климов</b></a>
-                            </div>
                         </div>
                     </div>
                 </div>
