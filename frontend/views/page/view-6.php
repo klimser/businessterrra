@@ -255,37 +255,43 @@ SCRIPT
     </section>
 
     <section class="partners">
-        <div class="container my-3 my-md-5">
+        <div class="container mt-3 mt-md-4 mb-md-3">
             <div class="row">
                 <h2 class="col-12 text-center">Партнёры</h2>
             </div>
             <div class="row align-items-center">
-                <div class="col-6 col-md-4 col-lg-3 col-xl-2">
-                    <a href="https://5plus.uz" class="partner-logo logo-5p d-block"></a>
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2 pb-3">
+                    <a href="https://5plus.uz" target="_blank" class="partner-logo logo-5p d-block"></a>
                 </div>
-                <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2 pb-3">
                     <div class="partner-logo logo-alo d-block"></div>
                 </div>
-                <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2 pb-3">
                     <div class="partner-logo logo-sm d-block"></div>
                 </div>
-                <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2 pb-3">
                     <div class="partner-logo logo-nmc d-block"></div>
                 </div>
-                <div class="col-6 col-md-4 col-lg-3 col-xl-2">
-                    <a href="https://kun.uz" class="partner-logo logo-kun d-block"></a>
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2 pb-3">
+                    <a href="https://kun.uz" target="_blank" class="partner-logo logo-kun d-block"></a>
                 </div>
-                <div class="col-6 col-md-4 col-lg-3 col-xl-2">
-                    <a href="https://gazeta.uz/ru" class="partner-logo logo-gazeta d-block"></a>
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2 pb-3">
+                    <a href="https://gazeta.uz/ru" target="_blank" class="partner-logo logo-gazeta d-block"></a>
                 </div>
-                <div class="col-6 col-md-4 col-lg-3 col-xl-2">
-                    <a href="https://repost.uz" class="partner-logo logo-repost d-block"></a>
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2 pb-3">
+                    <a href="https://repost.uz" target="_blank" class="partner-logo logo-repost d-block"></a>
                 </div>
-                <div class="col-6 col-md-4 col-lg-3 col-xl-2">
-                    <a href="https://spot.uz/ru" class="partner-logo logo-spot d-block"></a>
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2 pb-3">
+                    <a href="https://spot.uz/ru" target="_blank" class="partner-logo logo-spot d-block"></a>
                 </div>
-                <div class="col-6 col-md-4 col-lg-3 col-xl-2">
-                    <a href="http://hvan.uz" class="partner-logo logo-hvan d-block"></a>
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2 pb-3">
+                    <a href="http://hvan.uz" target="_blank" class="partner-logo logo-hvan d-block"></a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2 pb-3">
+                    <a href="https://instagram.com/art_models_agency?utm_source=ig_profile_share&igshid=ozen17cjnavv" target="_blank" class="partner-logo logo-artmodels d-block"></a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2 pb-3">
+                    <a href="https://aydatuda.uz/" target="_blank" class="partner-logo logo-aydatuda d-block"></a>
                 </div>
             </div>
         </div>
@@ -327,36 +333,6 @@ SCRIPT
             </div>
         </div>
     </footer>
-
-    <?php /*<div class="bg-1">
-        <div class="container">
-            <div class="py-5 text-center">
-                <div class="timer-block">
-                    <iframe width="560" height="315" style="max-width: 100%;" src="https://www.youtube.com/embed/1lgbjXv9UpE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    <?php /*<div class="block-title">Успейте приобрести билет по самой низкой цене!</div>
-                    <div class="font-thin">До вашего очень полезного семинара осталось:</div>
-                    <div class="timer">
-                        <div class="remain-time-block">
-                            <div class="remain remain-day"></div>
-                            <div class="remain remain-hour"></div>
-                            <div class="remain remain-minute"></div>
-                            <div class="remain remain-second"></div>
-                            <div class="clearfix"></div>
-                        </div>
-                        <div class="remain-titles-block">
-                            <div class="remain-title">дней</div>
-                            <div class="remain-title">часов</div>
-                            <div class="remain-title">минут</div>
-                            <div class="remain-title">секунд</div>
-                            <div class="clearfix"></div>
-                        </div>
-                    </div>
-                    <button class="red-label-button" onclick="MainPage.launchModal();">Приобрести билет</button>* / ?>
-                </div>
-            </div>
-        </div>
-    </div>
- */ ?>
 
     <div id="program_frame" class="modal fade program_frame" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
