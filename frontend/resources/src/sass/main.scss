@@ -64,5 +64,10 @@ body {
   background-image: url("../images/logo_aydatuda.png");
 }
 
+.g-recaptcha, .g-recaptcha > div {
+  transform-origin: left top;
+  -webkit-transform-origin: left top;
+}
+
 @import "page/karnauhov";
 @import "page/yakuba";
