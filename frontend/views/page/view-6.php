@@ -9,14 +9,9 @@ use himiklab\yii2\recaptcha\ReCaptcha;
 
 //$this->params['breadcrumbs'][] = $page->title;
 
-$nowDate = new \DateTime();
-$targetDate = new \DateTime('2018-10-20 09:00:00');
 $this->registerJs(<<<SCRIPT
-    MainPage.nowDate = new Date("{$nowDate->format(DateTime::ATOM)}");
-    MainPage.targetDate = new Date("{$targetDate->format(DateTime::ATOM)}");
     MainPage.init();
     $('[data-toggle="popover"]').popover();
-    window.setInterval(function(){MainPage.setTimeRemaining();}, 1000);
     var player = new Playerjs({
         id:"video",
         "file":"/uploads/video/yakuba1080.mp4,/uploads/video/yakuba720.mp4,/uploads/video/yakuba480.mp4",
@@ -29,15 +24,19 @@ SCRIPT
     <header>
         <div class="container">
             <div class="row justify-content-end">
-                <div class="col-4 order-last col-sm-3 col-md-2 order-sm-first text-center pt-3 pt-sm-0 mb-5">
+                <div class="col-4 order-6 col-sm-3 col-md-2 order-md-1 text-center pt-3 pt-md-0">
+                    <img src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/logo_radisson.svg" class="img-fluid" alt="Radisson Blu">
+                </div>
+                <div class="w-100 order-8 d-md-none"></div>
+                <div class="col-4 order-12 col-sm-3 col-md-2 order-md-6 text-center pt-3 pt-md-0 mb-5">
                     Ташкент
                     <div class="red-text font-weight-black date">23</div>
                     <div class="font-weight-bold">января</div>
                 </div>
-                <div class="col-4 col-sm-3 col-md-2">
+                <div class="col-4 col-sm-3 col-md-2 order-1 order-md-4">
                     <img src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/bt-logo.svg" class="img-fluid" alt="Business Terra">
                 </div>
-                <div class="w-100 d-sm-none"></div>
+                <div class="w-100 order-3 d-md-none"></div>
             </div>
             <div class="row mt-5 mt-sm-3">
                 <div class="col font-weight-black text-uppercase text-right header-title">
@@ -292,6 +291,9 @@ SCRIPT
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 col-xl-2 pb-3">
                     <a href="https://aydatuda.uz/" target="_blank" class="partner-logo logo-aydatuda d-block"></a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2 pb-3">
+                    <a href="https://uznews.uz/ru/" target="_blank" class="partner-logo logo-uznews d-block"></a>
                 </div>
             </div>
         </div>
