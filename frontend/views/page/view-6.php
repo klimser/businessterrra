@@ -272,9 +272,6 @@ SCRIPT
                     <div class="partner-logo logo-nmc d-block"></div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 col-xl-2 pb-3">
-                    <a href="https://kun.uz" target="_blank" class="partner-logo logo-kun d-block"></a>
-                </div>
-                <div class="col-6 col-md-4 col-lg-3 col-xl-2 pb-3">
                     <a href="https://gazeta.uz/ru" target="_blank" class="partner-logo logo-gazeta d-block"></a>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 col-xl-2 pb-3">
