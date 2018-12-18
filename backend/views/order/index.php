@@ -22,13 +22,13 @@ $this->params['breadcrumbs'][] = $this->title;
         'rowOptions' => function ($model, $index, $widget, $grid) {
             switch ($model->status) {
                 case 'unread':
-                    $class = 'info';
+                    $class = 'table-info';
                     break;
                 case 'done':
-                    $class = 'success';
+                    $class = 'table-success';
                     break;
                 case 'problem':
-                    $class = 'danger';
+                    $class = 'table-danger';
                     break;
             }
             $return = ['title' => $model->admin_comment];
