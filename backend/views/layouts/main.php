@@ -40,22 +40,28 @@ $this->render('/grunt-assets');
     <?php
     if (!Yii::$app->user->isGuest) {
         NavBar::begin([
-            'brandLabel' => '<div class="form-inline"><img src="' . \Yii::$app->homeUrl . 'images/logo.png" style="margin-top: -10px; height: 43px;"></div>',
-            'brandUrl' => Yii::$app->homeUrl,
+            'brandLabel' => '<img src="' . \Yii::$app->homeUrl . 'images/logo.svg" style="max-height: 100%;">',
+            'brandOptions' => ['style' => 'height: 40px;'],
+            'containerOptions' => ['class' => ['justify-content-end']],
         ]);
-        $menuItems = [
-            [
-                'label' => Yii::$app->user->identity->name,
-                'url' => ['user/update'],
-            ],
-            [
-                'label' => '<span class="fas fa-sign-out-alt"></span>',
+        $menuItems = [];
+        if (\Yii::$app->user->identity->role == \backend\models\User::ROLE_ROOT) {
+            $menuItems[] = [
+                'label' => '<span class="fas fa-broom"></span>',
                 'encode' => false,
-                'url' => ['site/logout'],
-            ],
+                'url' => ['site/clear-cache'],
+            ];
+        }
+        $menuItems[] = [
+            'label' => Yii::$app->user->identity->name,
+            'url' => ['user/update'],
+        ];
+        $menuItems[] = [
+            'label' => '<span class="fas fa-sign-out-alt"></span>',
+            'encode' => false,
+            'url' => ['site/logout'],
         ];
         echo Nav::widget([
-            'options' => ['class' => 'navbar-nav navbar-right'],
             'items' => $menuItems,
         ]);
         NavBar::end();

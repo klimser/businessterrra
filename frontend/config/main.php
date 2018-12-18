@@ -16,7 +16,7 @@ return [
             'traceLevel' => YII_DEBUG ? 3 : 0,
             'targets' => [
                 [
-                    'class' => 'yii\log\FileTarget',
+                    'class' => \yii\log\FileTarget::class,
                     'levels' => ['error', 'warning'],
                 ],
             ],
@@ -31,7 +31,7 @@ return [
             //'suffix' => '.html',
             'rules' => [
                 [
-                    'class' => 'frontend\components\WebpageUrlRule',
+                    'class' => \frontend\components\WebpageUrlRule::class,
                 ],
             ],
         ],

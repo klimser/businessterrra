@@ -8,28 +8,30 @@ return [
     'vendorPath' => '@app/../vendor',
     'components' => [
         'db' => [
-            'class' => 'yii\db\Connection',
+            'class' => \yii\db\Connection::class,
             'charset' => 'utf8',
             'dsn' => $params['db-dsn'],
             'username' => $params['db-username'],
             'password' => $params['db-password'],
             'tablePrefix' => $params['db-tablePrefix'],
+            'enableSchemaCache' => true,
+            'schemaCacheDuration' => 0,
         ],
         'assetManager' => [
             'bundles' => [
-                'yii\web\JqueryAsset' => [
+                \yii\web\JqueryAsset::class => [
                     'js' => []
                 ],
-                'yii\bootstrap\BootstrapAsset' => [
+                \yii\bootstrap\BootstrapAsset::class => [
                     'css' => []
                 ],
-                'yii\bootstrap4\BootstrapAsset' => [
+                \yii\bootstrap4\BootstrapAsset::class => [
                     'css' => []
                 ],
-                'yii\bootstrap\BootstrapPluginAsset' => [
+                \yii\bootstrap\BootstrapPluginAsset::class => [
                     'js' => []
                 ],
-                'yii\bootstrap4\BootstrapPluginAsset' => [
+                \yii\bootstrap4\BootstrapPluginAsset::class => [
                     'js' => []
                 ],
             ],
@@ -51,23 +53,23 @@ return [
             },
         ],
         'formatter' => [
-            'class' => 'yii\i18n\Formatter',
+            'class' => \yii\i18n\Formatter::class,
             'defaultTimeZone' => 'Asia/Tashkent',
         ],
         'mailQueue' => [
-            'class' => 'common\components\MailQueue',
+            'class' => \common\components\MailQueue::class,
         ],
         'errorLogger' => [
-            'class' => 'common\components\Error',
+            'class' => \common\components\Error::class,
         ],
         'reCaptcha' => [
             'name' => 'reCaptcha',
-            'class' => 'himiklab\yii2\recaptcha\ReCaptcha',
+            'class' => \himiklab\yii2\recaptcha\ReCaptcha::class,
             'siteKey' => $params['reCaptcha-siteKey'],
             'secret' => $params['reCaptcha-secret'],
         ],
         'tinifier' => [
-            'class' => 'common\components\Tinifier',
+            'class' => \common\components\Tinifier::class,
             'apiKey' => $params['tinifyKey'],
         ],
     ],

@@ -378,7 +378,7 @@ SCRIPT
     <div id="order_form" class="modal fade order_form" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
-                <?= Html::beginForm(\yii\helpers\Url::to(['order/create']), 'post', ['onsubmit' => 'fbq("track", "SubmitApplication"); return MainPage.completeOrder(this);']); ?>
+                <?= Html::beginForm(\yii\helpers\Url::to(['order/create']), 'post', ['onsubmit' => 'fbq("track", "Lead"); return MainPage.completeOrder(this);']); ?>
                 <div class="modal-header border-bottom border-danger">
                     <h5 class="modal-title">Выберите билет, подходящий именно Вам</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span></button>
