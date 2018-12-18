@@ -292,6 +292,9 @@ SCRIPT
                 <div class="col-6 col-md-4 col-lg-3 col-xl-2 pb-3">
                     <a href="https://uznews.uz/ru/" target="_blank" class="partner-logo logo-uznews d-block"></a>
                 </div>
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2 pb-3">
+                    <a href="https://kommersant.uz/" target="_blank" class="partner-logo logo-kommersant d-block"></a>
+                </div>
             </div>
         </div>
     </section>
