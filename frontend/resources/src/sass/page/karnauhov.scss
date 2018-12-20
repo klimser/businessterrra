@@ -1,4 +1,5 @@
 $page-id: "#karnauhov";
+$image-folder: "../images/karnauhov/";
 
 #{$page-id} {
   font-family: 'Muller', $font-family-sans-serif;
@@ -31,7 +32,6 @@ $page-id: "#karnauhov";
   font-size: 1.7em;
   display: inline-block;
   position: relative;
-  margin-top: $grid-gutter-width * 2;
 }
 #{$page-id} h2:after {
   display: inline-block;
@@ -42,14 +42,13 @@ $page-id: "#karnauhov";
   color: $soft-red;
   height: 6px;
   width: $grid-gutter-width * 3;
-  margin: 0 0 -20px -$grid-gutter-width * 3;
+  margin: 0 0 -10px #{-$grid-gutter-width * 3};
 }
 @include media-breakpoint-up(md) {
   #{$page-id} h2 {
     font-size: 3em;
   }
   #{$page-id} h2:after {
-    height: 10px;
     width: $grid-gutter-width * 4;
     margin-left: -$grid-gutter-width * 4;
   }
@@ -60,7 +59,7 @@ $page-id: "#karnauhov";
 }
 
 #{$page-id} .vawes-bg {
-  background: url("../images/bg.png") repeat;
+  background: url("#{$image-folder}bg.png") repeat;
   color: white;
 }
 #{$page-id} .vawes-bg a, #{$page-id} .vawes-bg a:focus, #{$page-id} .vawes-bg a:hover, #{$page-id} .vawes-bg button {
@@ -105,7 +104,7 @@ $page-id: "#karnauhov";
   white-space: nowrap;
 }
 #{$page-id} .speaker-bg {
-  background: url("../images/speaker-info.png") no-repeat right bottom;
+  background: url("#{$image-folder}speaker-info.png") no-repeat right bottom;
   background-size: contain;
   height: 422px;
 }
@@ -117,7 +116,7 @@ $page-id: "#karnauhov";
 
 
 #{$page-id} .bg-1 {
-  background: url("../images/bg-pic1.jpg") no-repeat center;
+  background: url("#{$image-folder}bg-pic1.jpg") no-repeat center;
   background-size: cover;
 }
 #{$page-id} .bg-1 .timer-block {
@@ -153,9 +152,6 @@ $page-id: "#karnauhov";
   border: none;
 }
 
-#{$page-id} .icons-container {
-  margin-top: $grid-gutter-width * 2;
-}
 #{$page-id} .icon-block {
   border: solid 1px #acacac;
   padding: $grid-gutter-width * 2 0;
@@ -187,15 +183,15 @@ $page-id: "#karnauhov";
   bottom: 0;
   left: 50%;
 }
-#{$page-id} .icon-block .icon-pic-1 {background-image: url("../images/icons/chief.svg");}
-#{$page-id} .icon-block .icon-pic-2 {background-image: url("../images/icons/rocket.svg");}
-#{$page-id} .icon-block .icon-pic-3 {background-image: url("../images/icons/team.svg");}
-#{$page-id} .icon-block .icon-pic-4 {background-image: url("../images/icons/top.svg");}
-#{$page-id} .icon-block .icon-pic-5 {background-image: url("../images/icons/idea.svg");}
-#{$page-id} .icon-block .icon-pic-6 {background-image: url("../images/icons/volcano.svg");}
+#{$page-id} .icon-block .icon-pic-1 {background-image: url("#{$image-folder}icons/chief.svg");}
+#{$page-id} .icon-block .icon-pic-2 {background-image: url("#{$image-folder}icons/rocket.svg");}
+#{$page-id} .icon-block .icon-pic-3 {background-image: url("#{$image-folder}icons/team.svg");}
+#{$page-id} .icon-block .icon-pic-4 {background-image: url("#{$image-folder}icons/top.svg");}
+#{$page-id} .icon-block .icon-pic-5 {background-image: url("#{$image-folder}icons/idea.svg");}
+#{$page-id} .icon-block .icon-pic-6 {background-image: url("#{$image-folder}icons/volcano.svg");}
 
 #{$page-id} .bg-2 {
-  background: url("../images/bg-pic2.jpg") no-repeat center top;
+  background: url("#{$image-folder}bg-pic2.jpg") no-repeat center top;
   color: white;
 }
 #{$page-id} .icon-block-red {
@@ -211,9 +207,9 @@ $page-id: "#karnauhov";
   background: no-repeat center top;
   font-family: 'Muller Medium', $font-family-sans-serif;
 }
-#{$page-id} .icon-block-red .icon-pic-7 {background-image: url("../images/icons/laptop.svg");}
-#{$page-id} .icon-block-red .icon-pic-8 {background-image: url("../images/icons/workers.svg");}
-#{$page-id} .icon-block-red .icon-pic-9 {background-image: url("../images/icons/timer.svg");}
+#{$page-id} .icon-block-red .icon-pic-7 {background-image: url("#{$image-folder}icons/laptop.svg");}
+#{$page-id} .icon-block-red .icon-pic-8 {background-image: url("#{$image-folder}icons/workers.svg");}
+#{$page-id} .icon-block-red .icon-pic-9 {background-image: url("#{$image-folder}icons/timer.svg");}
 
 #{$page-id} .speaker-biografy-block {
   margin-top: $grid-gutter-width;
@@ -240,7 +236,7 @@ $page-id: "#karnauhov";
   padding-right: $half-gutter-width;
 }
 #{$page-id} .speaker-portrait {
-  background: url("../images/speaker-photo.jpg") no-repeat center top;
+  background: url("#{$image-folder}speaker-photo.jpg") no-repeat center top;
   background-size: contain;
   min-height: 670px;
 }
@@ -251,28 +247,16 @@ $page-id: "#karnauhov";
 }
 
 #{$page-id} .bg-3 {
-  background: url("../images/bg-pic3.jpg") no-repeat center top;
+  background: url("#{$image-folder}bg-pic3.jpg") no-repeat center top;
   color: white;
 }
 #{$page-id} .bg-3 h2:after {
   display: none;
 }
-#{$page-id} .tariffs-block {
-  margin-top: $grid-gutter-width;
-  margin-bottom: $grid-gutter-width;
-}
 #{$page-id} .tariff-block {
   background: $soft-red;
   font-size: 1.3em;
   font-family: 'Muller ExtraBold', $font-family-sans-serif;
-}
-@include media-breakpoint-down(xs) {
-  #{$page-id} .tariffs-block, #{$page-id} .last-tariff-block {
-    margin-bottom: 0;
-  }
-  #{$page-id} .tariff-block {
-    margin-bottom: $grid-gutter-width * 2;
-  }
 }
 #{$page-id} .tariff-block .block-title {
   font-size: 1.5em;
@@ -300,6 +284,7 @@ $page-id: "#karnauhov";
 }
 #{$page-id} .tariff-block .order-button {
   font-family: 'Muller', $font-family-sans-serif;
+  color: white;
   width: 100%;
   border: none;
   background: none;
@@ -328,7 +313,7 @@ $page-id: "#karnauhov";
 #{$page-id} .modal-content .modal-header button {
   opacity: 1;
 }
-#{$page-id} .order_form input, #{$page-id} .order_form .input-group-addon {
+#{$page-id} .order_form input, #{$page-id} .order_form .input-group-text {
   background: none;
   color: white;
 }
@@ -337,7 +322,6 @@ $page-id: "#karnauhov";
   border: solid 1px white;
   color: white;
   padding: $half-gutter-width - 5px $grid-gutter-width;
-  margin-left: 10px;
 }
 #{$page-id} .order_form button.complete-button {
   background: $soft-red;

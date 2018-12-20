@@ -119,7 +119,7 @@ SCRIPT
     </div>
 
     <div class="container">
-        <h2>Этот Бизнес-интенсив именно для вас если:</h2>
+        <h2 class="my-3 my-lg-5">Этот Бизнес-интенсив именно для вас если:</h2>
         <div class="row icons-container">
             <div class="col-12 col-sm-6 col-md-4">
                 <div class="icon-block text-center">
@@ -174,7 +174,7 @@ SCRIPT
 
     <div class="bg-2">
         <div class="container">
-            <h2>ПРИХОДИТЕ НА МАСТЕР-КЛАСС СО СВОЕЙ КОМАНДОЙ ЧТОБЫ</h2>
+            <h2 class="my-3 my-lg-5">ПРИХОДИТЕ НА МАСТЕР-КЛАСС СО СВОЕЙ КОМАНДОЙ ЧТОБЫ</h2>
             <div class="row icons-container">
                 <div class="col-12 col-sm-4">
                     <div class="icon-block-red text-center">
@@ -233,9 +233,9 @@ SCRIPT
 
     <div class="bg-3">
         <div class="container">
-            <h2>Выберите билет, подходящий именно Вам:</h2>
+            <h2 class="my-3 my-lg-5">Выберите билет, подходящий именно Вам:</h2>
             <div class="row tariffs-block">
-                <div class="col-12 col-sm-4">
+                <div class="col-12 col-md-4 my-2 my-md-0">
                     <div class="tariff-block text-center">
                         <div class="block-title">Platinum</div>
                         (1 490 000 сум)
@@ -252,7 +252,7 @@ SCRIPT
                         <button class="order-button" onclick="MainPage.launchModal();">ЗАКАЗАТЬ БИЛЕТ</button>
                     </div>
                 </div>
-                <div class="col-12 col-sm-4">
+                <div class="col-12 col-md-4 my-2 my-md-0">
                     <div class="tariff-block text-center">
                         <div class="block-title">Gold</div>
                         (990 000 сум)
@@ -267,7 +267,7 @@ SCRIPT
                         <button class="order-button" onclick="MainPage.launchModal();">ЗАКАЗАТЬ БИЛЕТ</button>
                     </div>
                 </div>
-                <div class="col-12 col-sm-4">
+                <div class="col-12 col-md-4 my-2 my-md-0">
                     <div class="tariff-block last-tariff-block text-center">
                         <div class="block-title">Silver</div>
                         (790 000 сум)
@@ -306,39 +306,51 @@ SCRIPT
                     <div class="clearfix"></div>
                 </div>
             </div>
-            <div class="row order_form">
-            <?= Html::beginForm(\yii\helpers\Url::to(['order/create']), 'post', ['onsubmit' => 'return MainPage.completeOrder(this);']); ?>
-                <div class="order_form_body">
+            <?= Html::beginForm(\yii\helpers\Url::to(['order/create']), 'post', ['onsubmit' => 'return MainPage.completeOrder(this);', 'class' => 'order_form']); ?>
+                <div class="order_form_body row">
                     <input type="hidden" name="order[subject]" value="Дмитрий Карнаухов">
-                    <div class="col-12 col-sm-6 col-md-5">
+                    <div class="col-12 col-sm-6 col-lg-5">
                         <input name="order[name]" class="form-control" required minlength="2" maxlength="50" placeholder="Ваше имя"><br>
-                        <div class="input-group"><span class="input-group-addon">+998</span>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">+998</span>
+                            </div>
                             <input type="tel" name="order[phoneFormatted]" class="form-control order-phone" maxlength="11" pattern="\d{2} \d{3}-\d{4}" required placeholder="Ваш номер телефона">
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-4">
-                        <?= ReCaptcha::widget(['name' => 'order[reCaptcha]', 'theme' => 'dark']) ?>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-3">
-                        <button class="complete-button">Получить тайминг</button>
+                    <div class="col-12 col-sm-6 col-lg-7">
+                        <div class="row">
+                            <div class="col-12 col-lg-7 mt-2 mt-sm-0">
+                                <?= ReCaptcha::widget(['name' => 'order[reCaptcha]', 'theme' => 'dark']) ?>
+                            </div>
+                            <div class="col-12 col-lg-5 mt-2 mt-lg-0">
+                                <button class="w-100 complete-button">Получить тайминг</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="order_form_extra hidden"></div>
             <?= Html::endForm(); ?>
-            </div>
         </div>
     </div>
 
     <div class="bg-1">
         <div class="container">
-            <div class="timer-block">
-                <div class="font-thin">Партнёры:</div>
-                <br>
-                <div>
+            <div class="py-5 text-center">
+                <div class="timer-block">
                     <div class="row">
-                        <div class="col-12 col-sm-4 partner-logo logo-sm"></div>
-                        <div class="col-12 col-sm-4 partner-logo logo-nmc"></div>
-                        <div class="col-12 col-sm-4 partner-logo logo-5p"></div>
+                        <h3 class="col-12 font-thin text-center">Партнёры:</h3>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-6 col-md-4 col-lg-3 col-xl-2 pb-3">
+                            <a href="https://5plus.uz" target="_blank" class="partner-logo logo-5p d-block"></a>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 col-xl-2 pb-3">
+                            <div class="partner-logo logo-mp d-block"></div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 col-xl-2 pb-3">
+                            <div class="partner-logo logo-nmc d-block"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -348,30 +360,40 @@ SCRIPT
     <footer class="vawes-bg">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-sm-4 col-md-4">
-                    <div class="red-icon icon icon-location float-left"></div>
-                    <div class="float-left">Ташкент Business Terra,<br> Oybek street, 16</div>
+                <div class="col-12 col-sm-6">
+                    <div class="row">
+                        <div class="col-12 col-lg-7">
+                            <div class="red-icon icon icon-location float-left"></div>
+                            <div class="float-left">Ташкент Business Terra,<br> Oybek street, 16</div>
+                        </div>
+                        <div class="col-12 col-lg-5 mt-2 mt-sm-3 mt-lg-0">
+                            <div class="red-icon icon icon-bell float-left"></div>
+                            <div class="float-left">20 октября<br> с 9.00 до 19.00</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-12 col-sm-4 col-md-3">
-                    <div class="red-icon icon icon-bell float-left"></div>
-                    <div class="float-left">20 октября<br> с 9.00 до 19.00</div>
-                </div>
-                <div class="col-12 col-sm-4 col-md-3 col-md-offset-2">
-                    <a class="font-bigger" href="tel:+99890-965-83-31">+99890 965 83 31</a><br>
-                    <a class="font-bigger" href="tel:+99890-178-28-07">+99890 178 28 07</a><br>
-                    <button class="red-button" onclick="MainPage.launchModal();">Обратный звонок</button>
+                <div class="col-12 col-sm-6 mt-2 mt-sm-0">
+                    <div class="row">
+                        <div class="col-12 col-lg-7">
+                            <a class="font-bigger" href="tel:+99890-965-83-31">+99890 965 83 31</a><br>
+                            <a class="font-bigger" href="tel:+99890-178-28-07">+99890 178 28 07</a>
+                        </div>
+                        <div class="col-12 col-lg-5 mt-2 mt-lg-0">
+                            <button class="red-button" onclick="MainPage.launchModal();">Обратный звонок</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
 
     <div id="order_form" class="modal fade order_form" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <?= Html::beginForm(\yii\helpers\Url::to(['order/create']), 'post', ['onsubmit' => 'fbq("track", "Lead"); return MainPage.completeOrder(this);']); ?>
-                <div class="modal-header">
+                <div class="modal-header border-bottom border-danger">
+                    <h5 class="modal-title">Оставить заявку</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span></button>
-                    <h4 class="modal-title">Оставить заявку</h4>
                 </div>
                 <div class="modal-body">
                     <div class="order_form_body">
@@ -382,7 +404,10 @@ SCRIPT
                         </div>
                         <div class="form-group">
                             <label for="order-phone">Ваш номер телефона</label>
-                            <div class="input-group"><span class="input-group-addon">+998</span>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">+998</span>
+                                </div>
                                 <input type="tel" name="order[phoneFormatted]" id="order-phone" class="form-control order-phone" maxlength="11" pattern="\d{2} \d{3}-\d{4}" required>
                             </div>
                         </div>
@@ -390,9 +415,9 @@ SCRIPT
                     </div>
                     <div class="order_form_extra hidden"></div>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" data-dismiss="modal">отмена</button>
-                    <button class="complete-button">готово</button>
+                <div class="modal-footer border-top border-danger">
+                    <button type="button" class="btn" data-dismiss="modal">отмена</button>
+                    <button class="btn complete-button">оставить заявку</button>
                 </div>
                 <?= Html::endForm(); ?>
             </div>

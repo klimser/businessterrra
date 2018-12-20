@@ -1,4 +1,5 @@
 $page-id: "#yakuba";
+$image-folder: "../images/yakuba/";
 $gray-dashed-border: dotted 3px #939393;
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500i,700,900&subset=cyrillic,cyrillic-ext');
@@ -74,7 +75,7 @@ $gray-dashed-border: dotted 3px #939393;
 }
 
 #{$page-id} header .container {
-  background: url("../images/yakuba/speaker-photo.jpg") no-repeat left top;
+  background: url("#{$image-folder}speaker-photo.jpg") no-repeat left top;
   background-size: contain;
   padding-top: $half-gutter-width;
 }
@@ -178,7 +179,7 @@ $gray-dashed-border: dotted 3px #939393;
 }
 @include media-breakpoint-down(md) {
   #{$page-id} .speaker-biografy.speaker-bg2 {
-    background-image: url("../images/yakuba/speaker-photo2.jpg");
+    background-image: url("#{$image-folder}speaker-photo2.jpg");
     background-position: left top;
     background-repeat: no-repeat;
     background-size: contain;
@@ -186,7 +187,7 @@ $gray-dashed-border: dotted 3px #939393;
 }
 @include media-breakpoint-up(lg) {
   #{$page-id} .container.speaker-bg2 {
-    background-image: url("../images/yakuba/speaker-photo2.jpg");
+    background-image: url("#{$image-folder}speaker-photo2.jpg");
     background-position: left top;
     background-repeat: no-repeat;
     background-size: contain;
