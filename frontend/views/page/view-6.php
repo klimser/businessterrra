@@ -266,7 +266,7 @@ SCRIPT
                     <div class="partner-logo logo-alo d-block"></div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 col-xl-2 pb-3">
-                    <div class="partner-logo logo-sm d-block"></div>
+                    <div class="partner-logo logo-mp d-block"></div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 col-xl-2 pb-3">
                     <div class="partner-logo logo-nmc d-block"></div>
