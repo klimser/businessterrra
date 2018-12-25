@@ -385,24 +385,36 @@ SCRIPT
                 </div>
                 <div class="modal-body">
                     <div class="row">
-                        <div class="col-12 col-sm-6 mb-2">
-                            <button type="button" class="btn btn-lg btn-block red-button" data-toggle="popover" data-trigger="click" data-placement="bottom" data-html="true" data-content="Программа мастер-класса<br> 2 кофе-брейка и обед<br> Сертификат о прохождении<br> VIP ужин<br> Личный разбор">
+                        <div class="col-12 col-sm-6">
+                            <div class="btn btn-lg btn-block red-button">
                                 Platinum<br>
                                 <small>1 290 000 <small>до 01.01.19</small></small><br>
                                 <small>1 490 000 <small>до 20.01.19</small></small><br>
                                 <small>1 790 000 <small>с 20.01.19</small></small>
-                            </button>
+                            </div>
+                            <ul class="list-unstyled border border-danger p-2 mt-2 small">
+                                <li>Программа мастер-класса</li>
+                                <li>2 кофе-брейка и обед</li>
+                                <li>Сертификат о прохождении</li>
+                                <li>VIP ужин</li>
+                                <li>Личный разбор</li>
+                            </ul>
                         </div>
-                        <div class="col-12 col-sm-6 mb-2">
-                            <button type="button" class="btn btn-lg btn-block red-button" data-toggle="popover" data-trigger="click" data-placement="bottom" data-html="true" data-content="Программа мастер-класса<br> 2 кофе-брейка и обед<br> Сертификат о прохождении">
+                        <div class="col-12 col-sm-6">
+                            <div class="btn btn-lg btn-block red-button">
                                 Gold<br>
                                 <small>790 000 <small>до 01.01.19</small></small><br>
                                 <small>990 000 <small>до 20.01.19</small></small><br>
                                 <small>1 290 000 <small>с 20.01.19</small></small>
-                            </button>
+                            </div>
+                            <ul class="list-unstyled border border-danger p-2 mt-2 small">
+                                <li>Программа мастер-класса</li>
+                                <li>2 кофе-брейка и обед</li>
+                                <li>Сертификат о прохождении</li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="order_form_body mt-3 pt-3 border-top">
+                    <div class="order_form_body pt-3 border-top">
                         <input type="hidden" name="order[subject]" value="Владимир Якуба">
                         <div class="form-group">
                             <label for="order-name">Ваше имя</label>
