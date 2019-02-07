@@ -1,0 +1,233 @@
+$page-id: "#sidorin";
+$image-folder: "../images/sidorin/";
+$gray-dashed-border: dotted 3px #939393;
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500i,700,900&subset=cyrillic,cyrillic-ext');
+
+#{$page-id} {
+  font-family: 'Roboto', $font-family-sans-serif;
+  background-color: white;
+  color: black;
+  font-size: 1rem;
+}
+
+@include media-breakpoint-up(sm) {
+  #{$page-id} {
+    font-size: 1.2rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  #{$page-id} {
+    font-size: 1.4rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  #{$page-id} {
+    font-size: 1.5rem;
+  }
+}
+
+#{$page-id} .modal-content {
+  background-color: black;
+  color: white;
+  font-size: 0.7em;
+  border: solid 1px white;
+}
+#{$page-id} .modal-content dt {
+  color: $soft-red;
+}
+#{$page-id} .close {
+  color: white;
+}
+
+#{$page-id} .red-button {
+  background-color: $soft-red;
+  border-width: 3px;
+  border-color: transparent;
+  color: white;
+  font-weight: 700;
+}
+#{$page-id} .red-button:focus, #{$page-id} .red-button:hover {
+  background-color: $true-red;
+  border-color: $soft-red;
+}
+
+#{$page-id} .red-button-outline {
+  border-width: 3px;
+  border-color: $soft-red;
+  background-color: transparent;
+  color: white;
+  font-weight: 700;
+}
+#{$page-id} .red-button-outline:focus, #{$page-id} .red-button-outline:hover {
+  background-color: $soft-red;
+}
+
+#{$page-id} .black-box {
+  background: black;
+  border-radius: $half-gutter-width;
+  padding: $half-gutter-width;
+}
+
+#{$page-id} h1 {
+  font-size: 1em;
+}
+
+#{$page-id} header {
+  background-color: black;
+  color: white;
+}
+
+#{$page-id} header .container {
+  background: linear-gradient(225deg, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.6) 70%, black 100%), url("#{$image-folder}main.jpg") no-repeat left top;
+  background-size: contain;
+  padding-top: $half-gutter-width;
+}
+
+#{$page-id} header .date {
+  font-size: 3em;
+  line-height: 85%;
+}
+
+#{$page-id} header .header-title {
+  font-size: 9vw;
+  line-height: 1.3em;
+}
+
+@include media-breakpoint-up(sm) {
+  #{$page-id} header .header-title {
+    font-size: 2.5em;
+  }
+}
+
+#{$page-id} .expectations .z-1 {
+  z-index: 1;
+}
+#{$page-id} .expectations h3 {
+  background-color: white;
+  z-index: 10;
+  min-height: 2em;
+}
+#{$page-id} .expectations .red-square {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: solid 3px $brand-red;
+  width: 60px;
+  height: 60px;
+  font-size: 0;
+  z-index: -1;
+}
+#{$page-id} .expectations p {
+  font-size: 0.8em;
+}
+
+#{$page-id} .audience .right-border {
+  border-right: $gray-dashed-border;
+  height: $grid-gutter-width;
+}
+#{$page-id} .audience .bottom-border {
+  border-bottom: $gray-dashed-border;
+  height: $grid-gutter-width;
+}
+#{$page-id} .audience .blocks {
+  font-size: 0.8em;
+}
+#{$page-id} .audience .blocks > div > div {
+  min-height: 3em;
+}
+
+#{$page-id} .learn-block {
+  background: black;
+  color: white;
+}
+#{$page-id} .learn-block div.red {
+  background-color: $soft-red;
+}
+#{$page-id} .learn-block div.row div {
+  border-color: white;
+  font-size: 0.9em;
+}
+
+#{$page-id} .learn-block .block-2, #{$page-id} .learn-block .block-3, #{$page-id} .learn-block .block-4, #{$page-id} .learn-block .block-5, #{$page-id} .learn-block .block-6 {
+  border-top: solid 1px;
+}
+@include media-breakpoint-only(md) {
+  #{$page-id} .learn-block .block-1, #{$page-id} .learn-block .block-2 {
+    border-top: none;
+  }
+  #{$page-id} .learn-block .block-1, #{$page-id} .learn-block .block-3, #{$page-id} .learn-block .block-5 {
+    border-right: solid 1px;
+  }
+}
+@include media-breakpoint-up(lg) {
+  #{$page-id} .learn-block .block-1, #{$page-id} .learn-block .block-2, #{$page-id} .learn-block .block-3 {
+    border-top: none;
+  }
+  #{$page-id} .learn-block .block-1, #{$page-id} .learn-block .block-2, #{$page-id} .learn-block .block-4, #{$page-id} .learn-block .block-5 {
+    border-right: solid 1px;
+  }
+}
+
+#{$page-id} .speaker-biografy {
+  background-color: #8E8E8E;
+  color: white;
+}
+#{$page-id} .speaker-biografy h2 {
+  font-size: 3em;
+}
+#{$page-id} .speaker-biografy a {
+  color: white;
+  text-decoration: underline dashed;
+}
+@include media-breakpoint-down(md) {
+  #{$page-id} .speaker-biografy.speaker-bg2 {
+    background-image: url("#{$image-folder}speaker-photo2.jpg");
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+@include media-breakpoint-up(lg) {
+  #{$page-id} .container.speaker-bg2 {
+    background-image: url("#{$image-folder}speaker-photo2.jpg");
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+@include media-breakpoint-between(sm, md) {
+  #{$page-id} .speaker-bg2 {
+    background-position-x: -$grid-gutter-width * 7;
+  }
+}
+@include media-breakpoint-down(xs) {
+  #{$page-id} .speaker-biografy .speaker-bio {
+    padding-top: $grid-gutter-width * 4;
+  }
+}
+@include media-breakpoint-down(md) {
+  #{$page-id} .speaker-biografy .speaker-bio {
+    font-size: 0.9em;
+  }
+}
+
+#{$page-id} .clients {
+  background: black;
+  color: white;
+}
+
+#{$page-id} footer {
+  background: black;
+  color: white;
+  font-size: 0.8em;
+}
+#{$page-id} footer a {
+  color: white;
+}
+#{$page-id} footer .copyright {
+  font-size: 0.8em;
+}
