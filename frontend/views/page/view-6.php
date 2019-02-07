@@ -388,7 +388,6 @@ SCRIPT
                         <div class="col-12 col-sm-6">
                             <div class="btn btn-lg btn-block red-button">
                                 Platinum<br>
-                                <small>1 290 000 <small>до 01.01.19</small></small><br>
                                 <small>1 490 000 <small>до 20.01.19</small></small><br>
                                 <small>1 790 000 <small>с 20.01.19</small></small>
                             </div>
@@ -403,7 +402,6 @@ SCRIPT
                         <div class="col-12 col-sm-6">
                             <div class="btn btn-lg btn-block red-button">
                                 Gold<br>
-                                <small>790 000 <small>до 01.01.19</small></small><br>
                                 <small>990 000 <small>до 20.01.19</small></small><br>
                                 <small>1 290 000 <small>с 20.01.19</small></small>
                             </div>
