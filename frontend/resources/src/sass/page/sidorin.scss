@@ -6,8 +6,8 @@ $gray-dashed-border: dotted 3px #939393;
 
 #{$page-id} {
   font-family: 'Roboto', $font-family-sans-serif;
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: white;
   font-size: 1rem;
 }
 
@@ -32,7 +32,7 @@ $gray-dashed-border: dotted 3px #939393;
 #{$page-id} .modal-content {
   background-color: black;
   color: white;
-  font-size: 0.7em;
+  font-size: 0.9em;
   border: solid 1px white;
 }
 #{$page-id} .modal-content dt {
@@ -42,21 +42,24 @@ $gray-dashed-border: dotted 3px #939393;
   color: white;
 }
 
+#{$page-id} .red-text {
+  color: $true-red;
+}
 #{$page-id} .red-button {
-  background-color: $soft-red;
+  background-color: $true-red;
   border-width: 3px;
   border-color: transparent;
   color: white;
   font-weight: 700;
 }
 #{$page-id} .red-button:focus, #{$page-id} .red-button:hover {
-  background-color: $true-red;
-  border-color: $soft-red;
+  background-color: $soft-red;
+  border-color: $true-red;
 }
 
 #{$page-id} .red-button-outline {
   border-width: 3px;
-  border-color: $soft-red;
+  border-color: $true-red;
   background-color: transparent;
   color: white;
   font-weight: 700;
@@ -67,8 +70,7 @@ $gray-dashed-border: dotted 3px #939393;
 
 #{$page-id} .black-box {
   background: black;
-  border-radius: $half-gutter-width;
-  padding: $half-gutter-width;
+  padding: 10%;
 }
 
 #{$page-id} h1 {
@@ -81,9 +83,8 @@ $gray-dashed-border: dotted 3px #939393;
 }
 
 #{$page-id} header .container {
-  background: linear-gradient(225deg, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.6) 70%, black 100%), url("#{$image-folder}main.jpg") no-repeat left top;
-  background-size: contain;
-  padding-top: $half-gutter-width;
+  background: linear-gradient(225deg, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.6) 70%, black 100%), url("#{$image-folder}main.jpg") no-repeat center top;
+  background-size: cover;
 }
 
 #{$page-id} header .date {
@@ -102,122 +103,58 @@ $gray-dashed-border: dotted 3px #939393;
   }
 }
 
-#{$page-id} .expectations .z-1 {
-  z-index: 1;
+#{$page-id} .red-block {
+  background-color: $true-red;
 }
-#{$page-id} .expectations h3 {
+#{$page-id} .white-block {
   background-color: white;
-  z-index: 10;
-  min-height: 2em;
+  color: black;
 }
-#{$page-id} .expectations .red-square {
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  border: solid 3px $brand-red;
-  width: 60px;
-  height: 60px;
-  font-size: 0;
-  z-index: -1;
+
+#{$page-id} .expectations .red-border-text {
+  color: white;
+  font-size: 6rem;
+  line-height: 6rem;
+  text-shadow: $true-red 1px 0 1px, $true-red -1px 0 1px, $true-red 0 1px 1px, $true-red 0 -1px 1px;
+  background: radial-gradient(circle at center, $gray-200 0, white 20%, $gray-200 25%, white 35%, $gray-200 45%, white 55%);
 }
 #{$page-id} .expectations p {
   font-size: 0.8em;
 }
 
-#{$page-id} .audience .right-border {
-  border-right: $gray-dashed-border;
-  height: $grid-gutter-width;
-}
-#{$page-id} .audience .bottom-border {
-  border-bottom: $gray-dashed-border;
-  height: $grid-gutter-width;
-}
-#{$page-id} .audience .blocks {
-  font-size: 0.8em;
-}
-#{$page-id} .audience .blocks > div > div {
-  min-height: 3em;
+#{$page-id} .audience {
+  background: url("#{$image-folder}speaker_photo_chair.jpg") no-repeat right bottom;
+  background-size: contain;
 }
 
-#{$page-id} .learn-block {
-  background: black;
-  color: white;
-}
-#{$page-id} .learn-block div.red {
-  background-color: $soft-red;
-}
-#{$page-id} .learn-block div.row div {
-  border-color: white;
-  font-size: 0.9em;
-}
-
-#{$page-id} .learn-block .block-2, #{$page-id} .learn-block .block-3, #{$page-id} .learn-block .block-4, #{$page-id} .learn-block .block-5, #{$page-id} .learn-block .block-6 {
-  border-top: solid 1px;
-}
-@include media-breakpoint-only(md) {
-  #{$page-id} .learn-block .block-1, #{$page-id} .learn-block .block-2 {
-    border-top: none;
-  }
-  #{$page-id} .learn-block .block-1, #{$page-id} .learn-block .block-3, #{$page-id} .learn-block .block-5 {
-    border-right: solid 1px;
-  }
-}
-@include media-breakpoint-up(lg) {
-  #{$page-id} .learn-block .block-1, #{$page-id} .learn-block .block-2, #{$page-id} .learn-block .block-3 {
-    border-top: none;
-  }
-  #{$page-id} .learn-block .block-1, #{$page-id} .learn-block .block-2, #{$page-id} .learn-block .block-4, #{$page-id} .learn-block .block-5 {
-    border-right: solid 1px;
+@include media-breakpoint-down(xs) {
+  #{$page-id} .audience {
+    background-position: right 260px;
   }
 }
 
 #{$page-id} .speaker-biografy {
-  background-color: #8E8E8E;
-  color: white;
-}
-#{$page-id} .speaker-biografy h2 {
-  font-size: 3em;
-}
-#{$page-id} .speaker-biografy a {
-  color: white;
-  text-decoration: underline dashed;
-}
-@include media-breakpoint-down(md) {
-  #{$page-id} .speaker-biografy.speaker-bg2 {
-    background-image: url("#{$image-folder}speaker-photo2.jpg");
-    background-position: left top;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-}
-@include media-breakpoint-up(lg) {
-  #{$page-id} .container.speaker-bg2 {
-    background-image: url("#{$image-folder}speaker-photo2.jpg");
-    background-position: left top;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-}
-@include media-breakpoint-between(sm, md) {
-  #{$page-id} .speaker-bg2 {
-    background-position-x: -$grid-gutter-width * 7;
-  }
-}
-@include media-breakpoint-down(xs) {
-  #{$page-id} .speaker-biografy .speaker-bio {
-    padding-top: $grid-gutter-width * 4;
-  }
-}
-@include media-breakpoint-down(md) {
-  #{$page-id} .speaker-biografy .speaker-bio {
-    font-size: 0.9em;
-  }
+  font-size: 0.8em;
 }
 
-#{$page-id} .clients {
-  background: black;
-  color: white;
+#{$page-id} .quoted-block {
+  position: relative;
+}
+#{$page-id} .quoted-block:before {
+  content: url("#{$image-folder}quotes1.svg");
+  position: absolute;
+  left: $grid-gutter-width;
+  top: -$half-gutter-width;
+}
+#{$page-id} .quoted-block:after {
+  content: url("#{$image-folder}quotes2.svg");
+  position: absolute;
+  right: $grid-gutter-width;
+  bottom: -$grid-gutter-width + 5px;
+}
+
+#{$page-id} .reviews {
+  font-size: 0.7em;
 }
 
 #{$page-id} footer {

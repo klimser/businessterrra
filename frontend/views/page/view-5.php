@@ -7,8 +7,6 @@ use himiklab\yii2\recaptcha\ReCaptcha;
 /* @var $page common\models\Page */
 /* @var $webpage common\models\Webpage */
 
-//$this->params['breadcrumbs'][] = $page->title;
-
 $nowDate = new \DateTime();
 $targetDate = new \DateTime('2018-10-20 09:00:00');
 $this->registerJs(<<<SCRIPT

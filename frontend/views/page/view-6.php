@@ -7,8 +7,6 @@ use himiklab\yii2\recaptcha\ReCaptcha;
 /* @var $page common\models\Page */
 /* @var $webpage common\models\Webpage */
 
-//$this->params['breadcrumbs'][] = $page->title;
-
 $this->registerJs(<<<SCRIPT
     MainPage.init();
     $('[data-toggle="popover"]').popover();
@@ -322,9 +320,9 @@ SCRIPT
                 <div class="col-12 col-md-6 col-xl-4">
                     <div class="row align-items-center">
                         <div class="col-6 col-xl-6 py-2 py-sm-1 text-center">
-                            <a href="https://www.facebook.com/businessterra2018/" class="mr-3"><span class="fab fa-2x fa-facebook-f"></span></a>
-                            <a href="https://www.instagram.com/terra_biz/" class="mr-3"><span class="fab fa-2x fa-instagram"></span></a>
-                            <a href="https://t.me/business_terra2018"><span class="fab fa-2x fa-telegram"></span></a>
+                            <a href="https://www.facebook.com/businessterra.uz" class="mr-3"><span class="fab fa-2x fa-facebook-f"></span></a>
+                            <a href="https://instagram.com/businessterra.uz" class="mr-3"><span class="fab fa-2x fa-instagram"></span></a>
+                            <a href="https://t.me/businessterrauz"><span class="fab fa-2x fa-telegram"></span></a>
                         </div>
                         <div class="col-6 col-xl-6 py-2 text-center">
                             <a href="tel:+99890-965-83-31">+99890 965 83 31</a><br>
