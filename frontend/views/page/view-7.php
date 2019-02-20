@@ -91,7 +91,7 @@ SCRIPT
                 <div class="row align-items-center">
                     <div class="col-3 red-border-text text-center">5</div>
                     <div class="col-9">
-                        <h4>Аналитика в интенет-маркетинге</h4>
+                        <h4>Аналитика в интернет-маркетинге</h4>
                     </div>
                 </div>
             </div>
@@ -137,7 +137,7 @@ SCRIPT
                     <img class="rounded-circle w-100 img-fluid" src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/sidorin/speaker.png">
                 </div>
                 <p>
-                    <span class="red-text">И</span>нернет-эксперт, политтехнолог, бизнес-тренер, руководитель и основатель множества интернет-проектов.<br>
+                    <span class="red-text">И</span>нтернет-эксперт, политтехнолог, бизнес-тренер, руководитель и основатель множества интернет-проектов.<br>
                     <span class="red-text">О</span>снователь и руководитель агентства по управлению репутацией №1 в России Сидорин Лаб.<br>
                     <span class="red-text">Л</span>учший спикер форума Синергия 2018 года.<br>
                     <span class="red-text">6</span> раз попадал на страницы Forbes за два года.<br>
