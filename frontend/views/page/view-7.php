@@ -309,6 +309,9 @@ SCRIPT
             <div class="col-6 col-md-4 col-lg-3 col-xl-2 pb-3">
                 <a href="https://t.me/kettuz" target="_blank" class="partner-logo logo-ketty d-block"></a>
             </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2 pb-3">
+                <a href="https://www.afisha.uz" target="_blank" class="partner-logo logo-afisha d-block"></a>
+            </div>
         </div>
     </section>
 
