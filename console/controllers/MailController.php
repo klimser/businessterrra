@@ -45,6 +45,10 @@ class MailController extends Controller
                         $message = "На сайте посетитель {$params['userName']} оставил заявку на занятие \"{$params['subjectName']}\".\n"
                             . '[Обработать заявку](https://cabinet.businessterra.uz/order/index)';
                         break;
+                    case 'order-paid-html':
+                        $message = "На сайте посетитель оплатил заявку на занятие \"{$params['subjectName']}\".\n"
+                            . '[Просмотреть заявку](https://cabinet.businessterra.uz/order/index)';
+                        break;
                 }
                 if ($message) {
                     /** @var \Longman\TelegramBot\Entities\ServerResponse[] $results */

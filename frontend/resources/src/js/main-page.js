@@ -34,6 +34,7 @@ var MainPage = {
             $(this).find("button.complete-button").prop("disabled", true);
         });
         this.activeForm = $(form);
+        $(this.activeForm).find(".order_form_extra").addClass("hidden");
         $.ajax({
             url: $(form).attr('action'),
             method: 'post',
@@ -57,6 +58,56 @@ var MainPage = {
                 $(MainPage.activeForm).find("button.complete-button").prop("disabled", false);
             }
         });
+        return false;
+    },
+    setType: function(button) {
+        $(".type-button").removeClass("red-button");
+        $(button).addClass("red-button");
+        $("input[name='order[type]']").val($(button).data("type"));
+    },
+    buyTicket: function(btn) {
+        var form = $(btn).closest("form");
+        var valid = true;
+        $(form).find("input, select").each(function() {
+            if (!this.checkValidity()) valid = false;
+        });
+        if (!valid) {
+            $('<input type="submit">').hide().appendTo($(form)).click().remove();
+            return false;
+        }
+
+        var gToken = grecaptcha.getResponse();
+        if (gToken.length === 0) return false;
+
+        $(form).find(".order_form_extra").addClass("hidden");
+        if ($("input[name='order[type]']").val().length === 0) {
+            Main.throwFlashMessage($(form).find(".order_form_extra"), 'Выберите билет.', 'alert-danger');
+            $(form).find(".order_form_extra").removeClass("hidden");
+        } else {
+            this.activeForm = $(form);
+            $.ajax({
+                url: $(btn).data('action'),
+                method: 'post',
+                dataType: 'json',
+                data: $(form).serialize(),
+                success: function (data) {
+                    if (data.status === 'ok') {
+                        data.payment_info.parent_id = "payment-frame";
+                        open(data.payment_info);
+                    } else {
+                        Main.throwFlashMessage($(MainPage.activeForm).find(".order_form_extra"), 'Не удалось отправить заявку: ' + data.errors, 'alert-danger');
+                        grecaptcha.reset();
+                    }
+                    $(MainPage.activeForm).find(".order_form_extra").removeClass("hidden");
+                    $(MainPage.activeForm).find("button.complete-button").prop("disabled", false);
+                },
+                error: function (xhr, textStatus, errorThrown) {
+                    Main.throwFlashMessage($(MainPage.activeForm).find(".order_form_extra"), 'Произошла ошибка при отправке заявки. Вы также можете оставить заявку по телефону.', 'alert-danger');
+                    $(MainPage.activeForm).find(".order_form_extra").removeClass("hidden");
+                    $(MainPage.activeForm).find("button.complete-button").prop("disabled", false);
+                }
+            });
+        }
         return false;
     },
     init: function() {

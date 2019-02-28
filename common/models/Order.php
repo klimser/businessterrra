@@ -2,6 +2,7 @@
 
 namespace common\models;
 
+use common\components\ComponentContainer;
 use common\components\extended\ActiveRecord;
 use common\models\traits\Inserted;
 use common\models\traits\Phone;
@@ -15,6 +16,8 @@ use yii;
  * @property string $subject
  * @property string $name
  * @property string $status
+ * @property string $type
+ * @property int $price
  * @property string $user_comment
  * @property string $admin_comment
  */
@@ -25,19 +28,16 @@ class Order extends ActiveRecord
     const STATUS_READ = 'read';
     const STATUS_DONE = 'done';
     const STATUS_PROBLEM = 'problem';
-
-    public static $statusList = [
-        self::STATUS_UNREAD,
-        self::STATUS_READ,
-        self::STATUS_DONE,
-        self::STATUS_PROBLEM,
-    ];
+    const STATUS_UNPAID = 'unpaid';
+    const STATUS_PAID = 'paid';
 
     public static $statusLabels = [
-        self::STATUS_UNREAD => 'Новый',
-        self::STATUS_READ => 'Просмотрен',
-        self::STATUS_DONE => 'Обработан',
-        self::STATUS_PROBLEM => 'Проблемный',
+        self::STATUS_UNREAD => 'Новая',
+        self::STATUS_READ => 'Просмотрена',
+        self::STATUS_DONE => 'Обработана',
+        self::STATUS_PROBLEM => 'Проблемная',
+        self::STATUS_UNPAID => 'Не оплачена',
+        self::STATUS_PAID => 'Оплачена',
     ];
 
     const SCENARIO_ADMIN = 'admin';
@@ -47,7 +47,7 @@ class Order extends ActiveRecord
     {
         $scenarios = parent::scenarios();
         $scenarios[self::SCENARIO_ADMIN] = ['username', 'name', 'phone', 'phoneFormatted', 'status', 'user_comment', 'admin_comment'];
-        $scenarios[self::SCENARIO_USER] = ['subject', 'name', 'phone', 'phoneFormatted', 'user_comment', 'reCaptcha'];
+        $scenarios[self::SCENARIO_USER] = ['subject', 'name', 'phone', 'phoneFormatted', 'user_comment', 'type', 'reCaptcha'];
         return $scenarios;
     }
 
@@ -74,9 +74,11 @@ class Order extends ActiveRecord
             [['phone'], 'match', 'pattern' => '#^\+998\d{9}$#'],
             [['phoneFormatted'], 'string', 'min' => 11, 'max' => 11],
             [['phoneFormatted'], 'match', 'pattern' => '#^\d{2} \d{3}-\d{4}$#'],
-            [['name'], 'string', 'max' => 50],
+            [['name', 'type'], 'string', 'max' => 50],
+            [['price'], 'integer'],
             [['user_comment', 'admin_comment'], 'string', 'max' => 255],
-            ['status', 'in', 'range' => self::$statusList],
+            ['status', 'in', 'range' => array_keys(self::$statusLabels)],
+            ['status', 'default', 'value' => self::STATUS_UNREAD],
             [['reCaptcha'], ReCaptchaValidator::class, 'on' => self::SCENARIO_USER],
         ];
     }
@@ -93,6 +95,8 @@ class Order extends ActiveRecord
             'phone' => 'Номер телефона',
             'created_at' => 'Дата подачи',
             'status' => 'Статус заявки',
+            'type' => 'Тип билета',
+            'price' => 'Цена',
             'user_comment' => 'Дополнительные сведения, пожелания',
             'admin_comment' => 'Комментарии админа',
         ];
@@ -105,7 +109,28 @@ class Order extends ActiveRecord
     public function notifyAdmin() {
         if ($this->isNewRecord) return false;
 
-        return Yii::$app->mailQueue->add('На сайте 5plus.uz новая заявка!', Yii::$app->params['noticeEmail'], 'order-html', 'order-text', ['userName' => $this->name, 'subjectName' => $this->subject]);
+        switch ($this->status) {
+            case self::STATUS_UNREAD:
+                return ComponentContainer::getMailQueue()->add(
+                    'На сайте businessterra.uz новая заявка!',
+                    Yii::$app->params['noticeEmail'],
+                    'order-html',
+                    'order-text',
+                    ['userName' => $this->name, 'subjectName' => $this->subject]
+                );
+                break;
+            case self::STATUS_PAID:
+                return ComponentContainer::getMailQueue()->add(
+                    'На сайте businessterra.uz новая оплаченная заявка!',
+                    Yii::$app->params['noticeEmail'],
+                    'order-paid-html',
+                    'order-paid-text',
+                    ['userName' => $this->name, 'subjectName' => $this->subject]
+                );
+                break;
+        }
+        return true;
+
     }
 
     /**

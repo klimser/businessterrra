@@ -72,6 +72,15 @@ return [
             'class' => \common\components\Tinifier::class,
             'apiKey' => $params['tinifyKey'],
         ],
+        'paymoApi' => [
+            'class' => \common\components\paymo\PaymoApi::class,
+            'paymentUrl' => $params['paymo-url'],
+            'widgetUrl' => $params['paymo-widget'],
+            'storeId' => $params['paymo-storeId'],
+            'apiKey' => $params['paymo-key'],
+            'login' => $params['paymo-login'],
+            'password' => $params['paymo-password'],
+        ],
     ],
     'aliases' => [
         '@uploads' => '@frontend/web/uploads',

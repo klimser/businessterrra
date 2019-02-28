@@ -18,17 +18,20 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
-        'options' => ['class' => 'grid-view table-responsive'],
+        'tableOptions' => ['class' => 'table table-sm table-responsive'],
         'rowOptions' => function ($model, $index, $widget, $grid) {
             switch ($model->status) {
-                case 'unread':
-                    $class = 'table-info';
-                    break;
-                case 'done':
+                case \common\models\Order::STATUS_DONE:
                     $class = 'table-success';
                     break;
-                case 'problem':
+                case \common\models\Order::STATUS_PROBLEM:
                     $class = 'table-danger';
+                    break;
+                case \common\models\Order::STATUS_PAID:
+                    $class = 'table-primary';
+                    break;
+                case \common\models\Order::STATUS_UNPAID:
+                    $class = 'table-secondary';
                     break;
             }
             $return = ['title' => $model->admin_comment];
@@ -52,7 +55,9 @@ $this->params['breadcrumbs'][] = $this->title;
                 'attribute' => 'user_comment',
                 'header' => 'Комментарии',
                 'content' => function ($model, $key, $index, $column) {
-                    $content = $model->user_comment;
+                    $content = ($model->type ? "Билет - $model->type<br>" : '')
+                        . ($model->price ? "Цена - $model->price<br>" : '')
+                        . $model->user_comment;
                     if ($model->admin_comment) {
                         $content .= '<br><i>Комментарий админа:</i> ' . $model->admin_comment;
                     }
@@ -77,7 +82,16 @@ $this->params['breadcrumbs'][] = $this->title;
                 'attribute' => 'status',
                 'format' => 'html',
                 'content' => function ($model, $key, $index, $column) {
-                    return Html::activeDropDownList($model, 'status', \common\models\Order::$statusLabels, ['class' => 'form-control input-sm', 'onchange' => 'Main.changeEntityStatus("order", ' . $model->id . ', $(this).val(), this);', 'id' => 'order-status-' . $key]);
+                    switch ($model->status) {
+                        case \common\models\Order::STATUS_PAID:
+                            return Html::tag('span', \common\models\Order::$statusLabels[$model->status], ['class' => 'badge badge-primary']);
+                            break;
+                        case \common\models\Order::STATUS_UNPAID:
+                            return Html::tag('span', \common\models\Order::$statusLabels[$model->status], ['class' => 'badge badge-secondary']);
+                            break;
+                        default:
+                            return Html::activeDropDownList($model, 'status', \common\models\Order::$statusLabels, ['class' => 'form-control input-sm', 'onchange' => 'Main.changeEntityStatus("order", ' . $model->id . ', $(this).val(), this);', 'id' => 'order-status-' . $key]);
+                    }
                 },
                 'filter' => Html::activeDropDownList(
                     $searchModel,

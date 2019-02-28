@@ -45,12 +45,25 @@ $gray-dashed-border: dotted 3px #939393;
 #{$page-id} .red-text {
   color: $true-red;
 }
-#{$page-id} .red-button {
-  background-color: $true-red;
+#{$page-id} .red-button, #{$page-id} .gold-button, #{$page-id} .platinum-button {
   border-width: 3px;
   border-color: transparent;
-  color: white;
   font-weight: 700;
+}
+#{$page-id} .gold-button {
+  background-color: gold;
+  color: $brand-blue;
+}
+#{$page-id} .platinum-button {
+  background-color: silver;
+  color: $brand-blue;
+}
+#{$page-id} .red-button {
+  background-color: $true-red;
+  color: white;
+}
+#{$page-id} .gold-button:focus, #{$page-id} .gold-button:hover, #{$page-id} .platinum-button:focus, #{$page-id} .platinum-button:hover {
+  border-color: $true-red;
 }
 #{$page-id} .red-button:focus, #{$page-id} .red-button:hover {
   background-color: $soft-red;

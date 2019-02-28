@@ -10,7 +10,10 @@ use himiklab\yii2\recaptcha\ReCaptcha;
 $this->registerJs(<<<SCRIPT
     MainPage.init();
 SCRIPT
-); ?>
+);
+$this->registerJsFile(\common\components\ComponentContainer::getPaymoApi()->getWidgetUrl());
+
+?>
 
 <div id="sidorin">
     <header>
@@ -355,7 +358,7 @@ SCRIPT
     <div id="order_form" class="modal fade order_form" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div class="modal-content">
-                <?= Html::beginForm(\yii\helpers\Url::to(['order/create']), 'post', ['onsubmit' => 'fbq("track", "Lead"); return MainPage.completeOrder(this);']); ?>
+                <?= Html::beginForm(\yii\helpers\Url::to(['order/create']), 'post', ['onsubmit' => 'return MainPage.completeOrder(this);']); ?>
                 <div class="modal-header border-bottom border-danger">
                     <h5 class="modal-title">Выберите билет, подходящий именно Вам</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span></button>
@@ -363,12 +366,12 @@ SCRIPT
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-12 col-sm-6">
-                            <div class="btn btn-lg btn-block red-button">
+                            <button type="button" class="btn btn-lg btn-block type-button platinum-button" data-type="platinum" onclick="MainPage.setType(this);">
                                 Platinum<br>
                                 <small>1 290 000 <small>до 10.03.19</small></small><br>
                                 <small>1 490 000 <small>до 31.03.19</small></small><br>
                                 <small>1 790 000 <small>с 01.04.19</small></small>
-                            </div>
+                            </button>
                             <ul class="list-unstyled border border-danger p-2 mt-2">
                                 <li>Программа мастер-класса</li>
                                 <li>2 кофе-брейка и обед</li>
@@ -378,12 +381,12 @@ SCRIPT
                             </ul>
                         </div>
                         <div class="col-12 col-sm-6">
-                            <div class="btn btn-lg btn-block red-button">
+                            <button type="button" class="btn btn-lg btn-block type-button gold-button" data-type="gold" onclick="MainPage.setType(this);">
                                 Gold<br>
                                 <small>790 000 <small>до 10.03.19</small></small><br>
                                 <small>990 000 <small>до 31.03.19</small></small><br>
                                 <small>1 290 000 <small>с 01.04.19</small></small>
-                            </div>
+                            </button>
                             <ul class="list-unstyled border border-danger p-2 mt-2">
                                 <li>Программа мастер-класса</li>
                                 <li>2 кофе-брейка и обед</li>
@@ -393,6 +396,7 @@ SCRIPT
                     </div>
                     <div class="order_form_body pt-3 border-top">
                         <input type="hidden" name="order[subject]" value="Дмитрий Сидорин">
+                        <input type="hidden" name="order[type]">
                         <div class="form-group">
                             <label for="order-name">Ваше имя</label>
                             <input name="order[name]" id="order-name" class="form-control" required minlength="2" maxlength="50">
@@ -413,9 +417,11 @@ SCRIPT
                 <div class="modal-footer border-top border-danger">
                     <button type="button" class="btn red-button-outline" data-dismiss="modal">отмена</button>
                     <button class="btn red-button">оставить заявку</button>
+                    <button type="button" class="btn red-button" data-action="<?= \yii\helpers\Url::to(['order/create-payment']); ?>" onclick="MainPage.buyTicket(this);">купить билет онлайн</button>
                 </div>
                 <?= Html::endForm(); ?>
             </div>
         </div>
     </div>
+    <div id="payment-frame"></div>
 </div>
