@@ -91,7 +91,21 @@ class OrderController extends Controller
                         'success_redirect' => yii\helpers\Url::to(['order/success'], true),
                         'fail_redirect' => yii\helpers\Url::to(['order/fail'], true),
                         'lang' => $_SERVER['HTTP_ACCEPT_LANGUAGE'] ? substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2) : 'ru',
-    //                    'theme' => 'blue',
+                        'theme' => '',
+                        'color1' => "#777777",
+                        'color2' => "#ffffff",
+                        'color3' => "#ff0000",
+                        'color4' => "#ffffff",
+                        'color5' => "#ffeeaa",
+                        'color6' => "#666666",
+                        'color7' => "#ffd800",
+                        'color8' => "#333366",
+                        'color9' => "#000000",
+                        'color10' =>"#ffffff",
+                        'details' => json_encode([
+                            'тренинг' => 'Дмитрий Сидорин',
+                            'билет' => $order->type,
+                        ]),
                     ],
                 ]);
             } else {

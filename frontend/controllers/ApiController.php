@@ -102,16 +102,29 @@ class ApiController extends Controller
 
         $jsonData = $this->processPaymoRequest();
         if (!array_key_exists('status', $jsonData) || $jsonData['status'] != 1) {
-            \Yii::$app->response->statusCode = 400;
             ComponentContainer::getErrorLogger()->logError(
                 'api/paymo',
                 \Yii::$app->request->rawBody . "\n" . print_r($jsonData, true),
                 true
             );
-        } else {
-            \Yii::$app->response->statusCode = 200;
         }
 
         return $jsonData;
     }
+
+//    public function actionPaymoCompleteTest()
+//    {
+//        \Yii::$app->response->format = \yii\web\Response::FORMAT_JSON;
+//
+//        $jsonData = $this->processPaymoRequest();
+//        if (!array_key_exists('status', $jsonData) || $jsonData['status'] != 1) {
+//            ComponentContainer::getErrorLogger()->logError(
+//                'api/paymo',
+//                \Yii::$app->request->rawBody . "\n" . print_r($jsonData, true),
+//                true
+//            );
+//        }
+//
+//        return $jsonData;
+//    }
 }
