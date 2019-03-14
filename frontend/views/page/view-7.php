@@ -19,7 +19,10 @@ $this->registerJsFile(\common\components\ComponentContainer::getPaymoApi()->getW
     <header>
         <div class="container">
             <div class="row justify-content-end">
-                <div class="col-3 col-md-2 offset-md-4 offset-lg-6 py-3 pt-md-4 pt-lg-5 mt-md-2 order-md-12">
+                <div class="col-4 col-sm-3 col-md-2 order-sm-10 order-md-12 pb-sm-3 text-center align-self-center">
+                    <img src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/logo_radisson.svg" class="img-fluid" alt="Radisson Blu">
+                </div>
+                <div class="col-3 col-md-2 offset-md-4 offset-lg-6 py-3 pt-md-3 pt-lg-5 mt-md-2 order-md-11 align-self-center">
                     <img src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/bt-logo.svg" class="img-fluid black-box rounded" alt="Business Terra">
                 </div>
                 <div class="w-100 d-sm-none"></div>
@@ -31,7 +34,7 @@ $this->registerJsFile(\common\components\ComponentContainer::getPaymoApi()->getW
                     <img src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/sidorin/title2.svg" class="img-fluid" alt="интернет-маркетинг">
                 </div>
                 <div class="w-100"></div>
-                <div class="col-7 col-sm-6 col-md-6 order-md-11 col-lg-4 pt-3 pt-lg-5 mt-md-5 mb-2 mb-lg-5">
+                <div class="col-7 col-sm-6 col-md-6 order-md-10 col-lg-4 pt-3 pt-lg-5 mt-md-5 mb-2 mb-lg-5">
                     <div class="row no-gutters justify-content-start">
                         <div class="col-4 col-sm-3">
                             <img src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/sidorin/date.svg" class="img-fluid" alt="6 апреля">
@@ -43,10 +46,10 @@ $this->registerJsFile(\common\components\ComponentContainer::getPaymoApi()->getW
                         </div>
                     </div>
                 </div>
-                <div class="col-5 col-sm-4 offset-sm-2 order-md-9 col-md-3 text-right">
+                <div class="col-5 col-sm-4 offset-sm-2 order-md-8 col-md-3 text-right">
                     <img src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/sidorin/title3.svg" class="img-fluid" alt="Дмитрий Сидорин">
                 </div>
-                <div class="w-100 d-none d-md-block order-md-10"></div>
+                <div class="w-100 d-none d-md-block order-md-9"></div>
             </div>
         </div>
     </header>
@@ -368,7 +371,6 @@ $this->registerJsFile(\common\components\ComponentContainer::getPaymoApi()->getW
                         <div class="col-12 col-sm-6">
                             <button type="button" class="btn btn-lg btn-block type-button platinum-button" data-type="platinum" onclick="MainPage.setType(this);">
                                 Platinum<br>
-                                <small>1 290 000 <small>до 10.03.19</small></small><br>
                                 <small>1 490 000 <small>до 31.03.19</small></small><br>
                                 <small>1 790 000 <small>с 01.04.19</small></small>
                             </button>
@@ -383,7 +385,6 @@ $this->registerJsFile(\common\components\ComponentContainer::getPaymoApi()->getW
                         <div class="col-12 col-sm-6">
                             <button type="button" class="btn btn-lg btn-block type-button gold-button" data-type="gold" onclick="MainPage.setType(this);">
                                 Gold<br>
-                                <small>790 000 <small>до 10.03.19</small></small><br>
                                 <small>990 000 <small>до 31.03.19</small></small><br>
                                 <small>1 290 000 <small>с 01.04.19</small></small>
                             </button>

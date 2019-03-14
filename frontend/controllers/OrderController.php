@@ -37,6 +37,7 @@ class OrderController extends Controller
         $orderData = Yii::$app->request->post('order');
         $order = new Order(['scenario' => Order::SCENARIO_USER]);
         $order->load($orderData, '');
+        $order->status = Order::STATUS_UNREAD;
         if (Yii::$app->request->post('g-recaptcha-response')) $order->reCaptcha = Yii::$app->request->post('g-recaptcha-response');
         if ($order->save(true)) {
             $order->notifyAdmin();
