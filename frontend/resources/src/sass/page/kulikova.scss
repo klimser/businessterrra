@@ -1,0 +1,171 @@
+$page-id: "#kulikova";
+$image-folder: "../images/sidorin/";
+$gray-dashed-border: dotted 3px #939393;
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500i,700,900&subset=cyrillic,cyrillic-ext');
+
+#{$page-id} {
+  font-family: 'Roboto', $font-family-sans-serif;
+  font-size: 1rem;
+}
+
+@include media-breakpoint-up(sm) {
+  #{$page-id} {
+    font-size: 1.2rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  #{$page-id} {
+    font-size: 1.4rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  #{$page-id} {
+    font-size: 1.5rem;
+  }
+}
+
+#{$page-id} .modal-content {
+  font-size: 0.9em;
+  border: solid 1px black;
+}
+#{$page-id} .modal-content dt {
+  color: $soft-red;
+}
+
+#{$page-id} .red-text {
+  color: $true-red;
+}
+#{$page-id} .red-button, #{$page-id} .gold-button, #{$page-id} .platinum-button {
+  border-width: 3px;
+  border-color: transparent;
+  font-weight: 700;
+}
+#{$page-id} .gold-button {
+  background-color: gold;
+  color: $brand-blue;
+}
+#{$page-id} .platinum-button {
+  background-color: silver;
+  color: $brand-blue;
+}
+#{$page-id} .red-button {
+  background-color: $true-red;
+  color: white;
+}
+#{$page-id} .gold-button:focus, #{$page-id} .gold-button:hover, #{$page-id} .platinum-button:focus, #{$page-id} .platinum-button:hover {
+  border-color: $true-red;
+}
+#{$page-id} .red-button:focus, #{$page-id} .red-button:hover {
+  background-color: $soft-red;
+  border-color: $true-red;
+}
+
+#{$page-id} .red-button-outline {
+  border-width: 3px;
+  border-color: $true-red;
+  background-color: transparent;
+  color: black;
+  font-weight: 700;
+}
+#{$page-id} .red-button-outline:focus, #{$page-id} .red-button-outline:hover {
+  background-color: $soft-red;
+}
+
+#{$page-id} .black-box {
+  background: black;
+  padding: 10%;
+}
+
+#{$page-id} h1 {
+  font-size: 1em;
+}
+
+#{$page-id} header .container {
+  background: linear-gradient(225deg, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.6) 70%, black 100%), url("#{$image-folder}main.jpg") no-repeat center top;
+  background-size: cover;
+}
+
+#{$page-id} header .date {
+  font-size: 3em;
+  line-height: 85%;
+}
+
+#{$page-id} header .header-title {
+  font-size: 9vw;
+  line-height: 1.3em;
+}
+
+@include media-breakpoint-up(sm) {
+  #{$page-id} header .header-title {
+    font-size: 2.5em;
+  }
+}
+
+#{$page-id} .red-block {
+  background-color: $true-red;
+}
+#{$page-id} .white-block {
+  background-color: white;
+  color: black;
+}
+
+#{$page-id} .expectations .red-border-text {
+  color: white;
+  font-size: 6rem;
+  line-height: 6rem;
+  text-shadow: $true-red 1px 0 1px, $true-red -1px 0 1px, $true-red 0 1px 1px, $true-red 0 -1px 1px;
+  background: radial-gradient(circle at center, $gray-200 0, white 20%, $gray-200 25%, white 35%, $gray-200 45%, white 55%);
+}
+#{$page-id} .expectations p {
+  font-size: 0.8em;
+}
+
+#{$page-id} .audience {
+  background: url("#{$image-folder}speaker_big.png") no-repeat right bottom;
+  background-size: contain;
+}
+
+@include media-breakpoint-down(xs) {
+  #{$page-id} .audience {
+    background-position: right 260px;
+  }
+}
+
+#{$page-id} .speaker-biografy {
+  font-size: 0.8em;
+}
+
+#{$page-id} .quoted-block {
+  position: relative;
+}
+#{$page-id} .quoted-block:before {
+  content: url("#{$image-folder}quotes1.svg");
+  position: absolute;
+  left: $grid-gutter-width;
+  top: -$half-gutter-width;
+}
+#{$page-id} .quoted-block:after {
+  content: url("#{$image-folder}quotes2.svg");
+  position: absolute;
+  right: $grid-gutter-width;
+  bottom: -$grid-gutter-width + 5px;
+}
+
+#{$page-id} .reviews {
+  font-size: 0.7em;
+}
+
+#{$page-id} footer {
+  background: black;
+  color: white;
+  font-size: 0.8em;
+}
+#{$page-id} footer a {
+  color: white;
+}
+#{$page-id} footer .copyright {
+  font-size: 0.8em;
+}
