@@ -27,6 +27,9 @@ $this->registerJsFile(\common\components\ComponentContainer::getPaymoApi()->getW
                     <img src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/bt-logo.svg" class="img-fluid black-box rounded" alt="Business Terra">
                 </div>
                 <div class="w-100 d-sm-none"></div>
+                <div class="col-7 col-sm-4 text-right pt-4 mt-5 mt-sm-0 pb-1 pb-sm-3">
+                    <img src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/kulikova/title.svg" class="img-fluid" alt="Я умею играть">
+                </div>
                 <div class="w-100"></div>
                 <div class="col-7 col-sm-6 col-md-6 order-md-10 col-lg-4 pt-3 pt-lg-5 mt-md-5 mb-2 mb-lg-5">
                     <div class="row no-gutters justify-content-start">
@@ -42,6 +45,9 @@ $this->registerJsFile(\common\components\ComponentContainer::getPaymoApi()->getW
                 </div>
                 <div class="col-5 col-sm-4 offset-sm-2 order-md-8 col-md-3 text-right">
                     
+                </div>
+                <div class="col-5 col-sm-4 offset-sm-2 order-md-8 col-md-3 text-right">
+                    <img src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/kulikova/main.jpg" class="img-fluid" alt="Елена Куликова">
                 </div>
                 <div class="w-100 d-none d-md-block order-md-9"></div>
             </div>
@@ -129,7 +135,7 @@ $this->registerJsFile(\common\components\ComponentContainer::getPaymoApi()->getW
                     <img class="rounded-circle w-100 img-fluid" src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/sidorin/speaker.png">
                 </div>
                 <p>
-                    <span class="red-text">О</span>один из самых известных специалистов в странах СНГ по развитию детей.<br>
+                    <span class="red-text">О</span>дин из самых известных специалистов в странах СНГ по развитию детей.<br>
                     <span class="red-text">Д</span>важды дипломированный педагог по работе с детьми<br>
                     <span class="red-text">У</span>же более 15 лет проводит развивающие занятия с детьми по методу игровой терапии, что является самым естественным способом развития всех жизненных навыков человека<br>
                     <span class="red-text">З</span>анятия дают поразительные результаты, как в работе с обычными детьми, так и в адаптации для детей с особенностями развития<br>
