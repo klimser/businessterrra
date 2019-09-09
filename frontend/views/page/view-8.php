@@ -19,37 +19,44 @@ $this->registerJsFile(\common\components\ComponentContainer::getPaymoApi()->getW
 <div id="kulikova">
     <header>
         <div class="container">
-            <div class="row justify-content-end">
-                <div class="col-4 col-sm-3 col-md-2 order-sm-10 order-md-12 pb-sm-3 text-center align-self-center">
-                    <img src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/logo_radisson.svg" class="img-fluid" alt="Radisson Blu">
-                </div>
-                <div class="col-3 col-md-2 offset-md-4 offset-lg-6 py-3 pt-md-3 pt-lg-5 mt-md-2 order-md-11 align-self-center">
-                    <img src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/bt-logo.svg" class="img-fluid black-box rounded" alt="Business Terra">
-                </div>
-                <div class="w-100 d-sm-none"></div>
-                <div class="col-7 col-sm-4 text-right pt-4 mt-5 mt-sm-0 pb-1 pb-sm-3">
-                    <img src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/kulikova/title.svg" class="img-fluid" alt="Я умею играть">
-                </div>
-                <div class="w-100"></div>
-                <div class="col-7 col-sm-6 col-md-6 order-md-10 col-lg-4 pt-3 pt-lg-5 mt-md-5 mb-2 mb-lg-5">
+            <div class="row justify-content-start">
+                <div class="col-7 col-sm-8 pt-3 pt-lg-3 mt-md-3 mb-2 mb-lg-5">
                     <div class="row no-gutters justify-content-start">
-                        <div class="col-4 col-sm-3">
+                        <div class="col-10 text-center col-sm-3 mt-2 mt-sm-1 mt-md-2">
                             22 октября
                         </div>
-                        <div class="col-8 col-sm-8 pl-2 pl-sm-4">
+                        <div class="col-10 col-sm-8 col-md-6 pl-2 pl-sm-4">
                             <button class="btn btn-block btn-lg red-button px-2 py-0 px-md-4 py-md-2" onclick="MainPage.launchModal();">
-                                купить<br class="d-md-none"> билет
+                                купить билет
                             </button>
                         </div>
                     </div>
+                    <div class="row no-gutters d-none d-md-flex">
+                        <div class="col-12 text-center pt-md-5">
+                            <img src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/kulikova/main.jpg" class="img-fluid" alt="Елена Куликова">
+                        </div>
+                    </div>
                 </div>
-                <div class="col-5 col-sm-4 offset-sm-2 order-md-8 col-md-3 text-right">
-                    
+                <div class="col-5 col-sm-4 text-right pt-2 pt-md-2 mt-md-5 mt-sm-0 pb-1 pb-sm-3">
+                    <div class="row">
+                        <div class="col-12">
+                            <img src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/kulikova/title.svg" class="img-fluid" alt="Я умею играть">
+                        </div>
+                    </div>
+                    <div class="row justify-content-end mt-md-4">
+                        <div class="col-8 col-md-6 py-3 pt-sm-4 pt-md-3 pt-lg-5 mt-md-2 align-self-right">
+                            <img src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/bt-logo.svg" class="img-fluid black-box rounded" alt="Business Terra">
+                        </div>
+                        <div class="col-8 col-md-6 py-3 text-center align-self-center">
+                            <img src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/logo_5p.png" class="img-fluid rounded" alt="5 с плюсом">
+                        </div>
+                    </div>
+                    <div class="row justify-content-end">
+                        <div class="col-8 col-md-6 pb-3 text-center align-self-center">
+                            <img src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/logo_radisson.svg" class="img-fluid black-box rounded" alt="Radisson Blu">
+                        </div>
+                    </div>
                 </div>
-                <div class="col-5 col-sm-4 offset-sm-2 order-md-8 col-md-3 text-right">
-                    <img src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/kulikova/main.jpg" class="img-fluid" alt="Елена Куликова">
-                </div>
-                <div class="w-100 d-none d-md-block order-md-9"></div>
             </div>
         </div>
     </header>
@@ -61,7 +68,7 @@ $this->registerJsFile(\common\components\ComponentContainer::getPaymoApi()->getW
             </div>
         </div>
         <div class="row white-block rounded py-2">
-            <div class="col-12 col-md-6 py-3 py-sm-2 py-md-5">
+            <div class="col-12 col-md-6 pb-3 py-sm-2 py-md-3">
                 ✅ Элементы помогающие концентрировать внимание, память, логику, мышление;<br>
                 ✅ Как научиться «слышать» своего ребёнка и находить подход;<br>
                 ✅ Как грамотно и ненавязчиво менять виды деятельности на занятии;<br>
@@ -70,7 +77,7 @@ $this->registerJsFile(\common\components\ComponentContainer::getPaymoApi()->getW
                 ✅ Как правильно выбирать и покупать игры в магазине игрушек;<br>
                 ✅ Как научиться использовать и показывать свои эмоции ребёнку;
             </div>
-            <div class="col-12 col-md-6 py-3 py-sm-2 py-md-5">
+            <div class="col-12 col-md-6 pb-3 py-sm-2 py-md-3">
                 ✅ Элементы помогающие концентрировать внимание, память, логику, мышление;<br>
                 ✅ Как научиться «слышать» своего ребёнка и находить подход;<br>
                 ✅ Как грамотно и ненавязчиво менять виды деятельности на занятии;<br>
@@ -82,40 +89,39 @@ $this->registerJsFile(\common\components\ComponentContainer::getPaymoApi()->getW
         </div>
     </section>
 
-    <section class="container audience mt-4 mt-md-5">
-        <div class="row mt-5 pt-5 mt-sm-0 pt-sm-0">
-            <div class="col text-uppercase mt-5 pt-5 mt-sm-0 pt-sm-0">
-                <h2 class="mt-5 pt-4 pt-sm-0 mb-3 font-weight-bold">Для кого?</h2>
+    <section class="container audience mt-3">
+        <div class="row">
+            <div class="col text-uppercase">
+                <h2 class="mb-3 font-weight-bold">Для кого?</h2>
             </div>
         </div>
-        <div class="row mt-2">
-            <div class="col-12 col-sm-6 col-md-5 d-flex align-items-center white-block rounded py-2 px-3 mb-3 mx-sm-3 font-weight-bold">
-                <div><span class="red-text">М</span>амам
-                </div>
+        <div class="row mt-2 justify-content-center">
+            <div class="col-6 text-center py-2 px-3 mb-3 font-weight-bold">
+                <span class="red-text">М</span>амам
             </div>
-            <div class="col-12 col-sm-6 col-md-5 d-flex align-items-center white-block rounded py-2 px-3 mb-3 mx-sm-3 font-weight-bold">
+            <div class="col-6 text-center py-2 px-3 mb-3 font-weight-bold">
                 <div><span class="red-text">П</span>едагогам</div>
             </div>
-            <div class="col-12 col-sm-6 col-md-5 d-flex align-items-center white-block rounded py-2 px-3 mb-3 mx-sm-3 font-weight-bold">
+            <div class="w-100"></div>
+            <div class="col-auto text-center white-block rounded py-2 mb-3 font-weight-bold">
                 <div><span class="red-text">П</span>апам</div>
             </div>
-        </div>
-        <div class="row justify-content-md-end pt-md-3">
-            <div class="col-12 col-sm-6 col-md-5 offset-md-2 d-flex align-items-center white-block rounded py-2 px-3 mb-3 mx-sm-3 font-weight-bold">
+            <div class="w-100"></div>
+            <div class="col-6 text-center py-2 px-3 mb-3 font-weight-bold">
                 <div><span class="red-text">Н</span>яням</div>
             </div>
-            <div class="col-12 col-sm-6 col-md-5 d-flex align-items-center white-block rounded py-2 px-3 mb-sm-3 mx-sm-3 font-weight-bold">
+            <div class="col-6 text-center py-2 px-3 mb-sm-3 font-weight-bold">
                 <div><span class="red-text">Б</span>абушкам</div>
             </div>
         </div>
 
-        <div class="row mt-5 pt-5 mt-sm-0 pt-sm-0">
-            <div class="col text-uppercase mt-5 pt-5 mt-sm-0 pt-sm-0">
-                <h2 class="mt-5 pt-4 pt-sm-0 mb-3 font-weight-bold">Для КОГО будет интересен семинар?</h2>
+        <div class="row mt-3">
+            <div class="col text-uppercase">
+                <h2 class="font-weight-bold">Для КОГО будет интересен семинар?</h2>
             </div>
         </div>
 
-        <div class="row border border-danger rounded py-3 py-sm-5 justify-content-center">
+        <div class="row border border-danger rounded py-3 justify-content-center">
             <div class="col-12 col-sm-11 d-flex">
                 <p>Прежде всего МАМАМ и ПЕДАГОГАМ. Также семинар обязательно будет интересен БАБУШКАМ, ПАПАМ и НЯНЯМ - тем кто играет в воспитании ребенка немаловажную роль.</p>
                 <p>Если вы являетесь кем-то из этого списка, ВАМ обязательно нужно попасть на этот семинар 22 Октября. Специалисты такого уровня посещают наш город не так часто.</p>
@@ -132,7 +138,7 @@ $this->registerJsFile(\common\components\ComponentContainer::getPaymoApi()->getW
         <div class="row white-block rounded">
             <div class="col no-gutters">
                 <div class="col-4 col-sm-3 col-md-2 text-center d-block float-left my-3 mr-3">
-                    <img class="rounded-circle w-100 img-fluid" src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/sidorin/speaker.png">
+                    <img class="rounded-circle w-100 img-fluid" src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/kulikova/speaker.jpg">
                 </div>
                 <p>
                     <span class="red-text">О</span>дин из самых известных специалистов в странах СНГ по развитию детей.<br>
@@ -172,25 +178,25 @@ $this->registerJsFile(\common\components\ComponentContainer::getPaymoApi()->getW
             </div>
             <div class="row">
                 <div class="col-6 col-lg-3 d-flex align-items-center justify-content-center py-2">
-                    <img class="img-fluid" src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/kulikova/client-1.png" alt="Лукойл">
+                    <img class="img-fluid" src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/kulikova/client-1.jpg" alt="Тимати">
                 </div>
                 <div class="col-6 col-lg-3 d-flex align-items-center justify-content-center py-2">
-                    <img class="img-fluid" src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/kulikova/client-2.png" alt="Газпром">
+                    <img class="img-fluid" src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/kulikova/client-2.jpg" alt="Рита Дакота">
                 </div>
                 <div class="col-6 col-lg-3 d-flex align-items-center justify-content-center py-2">
-                    <img class="img-fluid" src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/kulikova/client-3.png" alt="Ростелеком">
+                    <img class="img-fluid" src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/kulikova/client-3.jpg" alt="Филипп Киркоров">
                 </div>
                 <div class="col-6 col-lg-3 d-flex align-items-center justify-content-center py-2">
-                    <img class="img-fluid" src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/kulikova/client-4.png" alt="MERZ">
+                    <img class="img-fluid" src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/kulikova/client-4.jpg" alt="Александр Гордон">
                 </div>
                 <div class="col-6 col-lg-3 d-flex align-items-center justify-content-center py-3">
-                    <img class="img-fluid" src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/kulikova/client-5.png" alt="Сбербанк">
+                    <img class="img-fluid" src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/kulikova/client-5.jpg" alt="Лена Перминова">
                 </div>
                 <div class="col-6 col-lg-3 d-flex align-items-center justify-content-center py-3">
-                    <img class="img-fluid" src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/kulikova/client-6.png" alt="Албфа банк">
+                    <img class="img-fluid" src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/kulikova/client-6.jpg" alt="Александр Гордон">
                 </div>
                 <div class="col-6 col-lg-3 d-flex align-items-center justify-content-center py-3">
-                    <img class="img-fluid" src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/kulikova/client-7.png" alt="Рив гош">
+                    <img class="img-fluid" src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/kulikova/client-7.jpg" alt="Саша Зверева">
                 </div>
             </div>
         </div>

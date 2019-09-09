@@ -2,10 +2,11 @@ $page-id: "#kulikova";
 $image-folder: "../images/kulikova/";
 $gray-dashed-border: dotted 3px #939393;
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,500i,700,900&subset=cyrillic,cyrillic-ext');
+@import url('https://fonts.googleapis.com/css?family=Neucha&display=swap');
+
 
 #{$page-id} {
-  font-family: 'Roboto', $font-family-sans-serif;
+  font-family: 'Neucha', cursive, $font-family-sans-serif;
   font-size: 1rem;
 }
 
@@ -58,10 +59,6 @@ $gray-dashed-border: dotted 3px #939393;
 #{$page-id} .gold-button:focus, #{$page-id} .gold-button:hover, #{$page-id} .platinum-button:focus, #{$page-id} .platinum-button:hover {
   border-color: $true-red;
 }
-#{$page-id} .red-button:focus, #{$page-id} .red-button:hover {
-  background-color: $soft-red;
-  border-color: $true-red;
-}
 
 #{$page-id} .red-button-outline {
   border-width: 3px;
@@ -83,9 +80,11 @@ $gray-dashed-border: dotted 3px #939393;
   font-size: 1em;
 }
 
-#{$page-id} header .container {
-  background: linear-gradient(225deg, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.6) 70%, black 100%), url("#{$image-folder}main.jpg") no-repeat center top;
-  background-size: cover;
+@include media-breakpoint-down(sm) {
+  #{$page-id} header .container {
+    background: url("#{$image-folder}main.jpg") no-repeat left bottom;
+    background-size: contain;
+  }
 }
 
 #{$page-id} header .date {
