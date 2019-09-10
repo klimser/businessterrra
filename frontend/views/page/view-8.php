@@ -22,7 +22,7 @@ $this->registerJsFile(\common\components\ComponentContainer::getPaymoApi()->getW
             <div class="row justify-content-start">
                 <div class="col-7 col-sm-8 pt-3 pt-lg-3 mt-md-3 mb-2 mb-lg-5">
                     <div class="row no-gutters justify-content-start">
-                        <div class="col-10 text-center col-sm-3 mt-2 mt-sm-1 mt-md-2">
+                        <div class="col-10 text-center col-sm-4 mt-1 mt-sm-1 mt-md-2 mt-lg-1">
                             22 октября
                         </div>
                         <div class="col-10 col-sm-8 col-md-6 pl-2 pl-sm-4">
@@ -37,7 +37,7 @@ $this->registerJsFile(\common\components\ComponentContainer::getPaymoApi()->getW
                         </div>
                     </div>
                 </div>
-                <div class="col-5 col-sm-4 text-right pt-2 pt-md-2 mt-md-5 mt-sm-0 pb-1 pb-sm-3">
+                <div class="col-5 col-sm-4 text-right pt-3 pt-md-2 mt-md-5 mt-lg-3 mt-sm-0 pb-1 pb-sm-3">
                     <div class="row">
                         <div class="col-12">
                             <img src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/kulikova/title.svg" class="img-fluid" alt="Я умею играть">
@@ -64,18 +64,19 @@ $this->registerJsFile(\common\components\ComponentContainer::getPaymoApi()->getW
     <section class="container expectations">
         <div class="row">
             <div class="col text-uppercase mt-4 mt-md-5 mb-3">
-                <h2 class="font-weight-bold">Программа семинара</h2>
+                <h2>Программа семинара</h2>
             </div>
         </div>
         <div class="row py-2">
             <div class="col-12 col-md-6 pb-3 py-sm-2 py-md-3">
-                ✅ Элементы помогающие концентрировать внимание, память, логику, мышление;<br>
-                ✅ Как научиться «слышать» своего ребёнка и находить подход;<br>
-                ✅ Как грамотно и ненавязчиво менять виды деятельности на занятии;<br>
-                ✅ Рубрика «Своими руками» - Секреты игрушек, или как из погремушки сделать пособие для малютки и трехлетки;<br>
-                ✅ Как одной игрой можно проиграть множество разных вариантов;<br>
-                ✅ Как правильно выбирать и покупать игры в магазине игрушек;<br>
-                ✅ Как научиться использовать и показывать свои эмоции ребёнку;
+                ✅ Как в обычной квартире создать зону для плодотворных занятий;<br>
+                ✅ Создаём вместе «Волшебную коробочку»<br>
+                ✅ Как правильно подобрать игрушки, чтобы задействовать все функции головного мозга;<br>
+                ✅ Как развивать работу левого и правого полушария;<br>
+                ✅ Пальчиковая гимнастика от 6 месяцев до 6 лет;<br>
+                ✅ Как подобрать индивидуальный вариант игры для вашего ребёнка;<br>
+                ✅ Какие игрушки использовать на одном занятии, чтобы ребёнку было интересно;<br>
+                ✅ Как преподнести новый материал в игровой и непринужденной форме;
             </div>
             <div class="col-12 col-md-6 pb-3 py-sm-2 py-md-3">
                 ✅ Элементы помогающие концентрировать внимание, память, логику, мышление;<br>
@@ -92,7 +93,7 @@ $this->registerJsFile(\common\components\ComponentContainer::getPaymoApi()->getW
     <section class="container audience mt-3">
         <div class="row">
             <div class="col text-uppercase">
-                <h2 class="mb-3 font-weight-bold">Для кого?</h2>
+                <h2 class="mb-3">Для кого?</h2>
             </div>
         </div>
         <div class="row mt-2 justify-content-center">
@@ -117,14 +118,14 @@ $this->registerJsFile(\common\components\ComponentContainer::getPaymoApi()->getW
 
         <div class="row mt-3">
             <div class="col text-uppercase">
-                <h2 class="font-weight-bold">Для КОГО будет интересен семинар?</h2>
+                <h2>Для КОГО будет интересен семинар?</h2>
             </div>
         </div>
 
-        <div class="row border border-danger rounded py-3 justify-content-center">
-            <div class="col-12 col-sm-11 d-flex">
+        <div class="row py-3 justify-content-center">
+            <div class="col-11 border border-danger rounded py-2">
                 <p>Прежде всего МАМАМ и ПЕДАГОГАМ. Также семинар обязательно будет интересен БАБУШКАМ, ПАПАМ и НЯНЯМ - тем кто играет в воспитании ребенка немаловажную роль.</p>
-                <p>Если вы являетесь кем-то из этого списка, ВАМ обязательно нужно попасть на этот семинар 22 Октября. Специалисты такого уровня посещают наш город не так часто.</p>
+                <p>Если вы являетесь кем-то из этого списка, ВАМ обязательно нужно попасть на этот семинар 22 октября. Специалисты такого уровня посещают наш город не так часто.</p>
             </div>
         </div>
     </section>
@@ -132,7 +133,7 @@ $this->registerJsFile(\common\components\ComponentContainer::getPaymoApi()->getW
     <section class="container speaker-biografy">
         <div class="row">
             <div class="col text-uppercase mt-4 mt-md-5 mb-3">
-                <h2 class="font-weight-bold">Елена <span class="red-block px-2">Куликова</span></h2>
+                <h2>Елена <span class="red-block px-2">Куликова</span></h2>
             </div>
         </div>
         <div class="row white-block rounded">
@@ -151,14 +152,24 @@ $this->registerJsFile(\common\components\ComponentContainer::getPaymoApi()->getW
         </div>
     </section>
 
-    <section class="container learn-block">
-        <div class="row">
-            <div class="col text-uppercase mt-4 mt-md-5 mb-3">
-                <h2 class="font-weight-bold">Что вы получите в процессе семинара:</h2>
+    <section class="container">
+        <div class="row justify-content-center mb-4">
+            <div class="col-7 col-md-4 col-lg-3">
+                <button class="btn btn-block btn-lg red-button px-2 mt-3 py-0 px-md-4 py-md-2" onclick="MainPage.launchModal();">
+                    купить билет
+                </button>
             </div>
         </div>
-        <div class="row border border-danger rounded py-3 py-sm-5 justify-content-center">
-            <div class="col-12 col-sm-11 d-flex align-items-center">
+    </section>
+
+    <section class="container learn-block">
+        <div class="row">
+            <div class="col text-uppercase mt-4 mt-md-5">
+                <h2>Что вы получите в процессе семинара:</h2>
+            </div>
+        </div>
+        <div class="row py-3 justify-content-center">
+            <div class="col-11 d-flex align-items-center border border-danger rounded py-2">
                 <ol class="pl-4 mb-0">
                     <li>Разучите основные техники игровой методики обучения детей</li>
                     <li>Научитесь строить процесс развития ребенка посредством выработки положительных эмоций через игру</li>
@@ -171,7 +182,7 @@ $this->registerJsFile(\common\components\ComponentContainer::getPaymoApi()->getW
         </div>
     </section>
 
-    <section class="section clients py-5">
+    <section class="section clients py-3">
         <div class="container">
             <div class="row">
                 <h2 class="col-12 text-center">Елене Куликовой доверяют</h2>
@@ -202,20 +213,10 @@ $this->registerJsFile(\common\components\ComponentContainer::getPaymoApi()->getW
         </div>
     </section>
 
-    <section class="container">
-        <div class="row justify-content-center">
-            <div class="col-7 col-md-4 col-lg-3">
-                <button class="btn btn-block btn-lg red-button px-2 mt-3 py-0 px-md-4 py-md-2" onclick="MainPage.launchModal();">
-                    купить билет
-                </button>
-            </div>
-        </div>
-    </section>
-
     <section class="container partners">
         <div class="row">
             <div class="col text-uppercase mt-4 mt-md-5 mb-3">
-                <h2 class="font-weight-bold">Партнёры</h2>
+                <h2>Партнёры</h2>
             </div>
         </div>
         <div class="row justify-content-center align-items-center white-block rounded p-3 mb-3">
@@ -248,7 +249,7 @@ $this->registerJsFile(\common\components\ComponentContainer::getPaymoApi()->getW
             <div class="row align-items-center">
                 <div class="col-12 col-md-6 col-xl-8">
                     <div class="row align-items-center">
-                        <div class="col-12 col-xl-5 py-2 py-sm-1 d-flex">
+                        <div class="col-12 col-xl-6 py-2 py-sm-1 d-flex">
                             <div class="red-icon icon icon-location"></div>
                             <div>
                                 <a href="https://goo.gl/maps/vcs1xfRvz3XSxe7b9" target="_blank">Ташкент, гостиница Raddison,<br> улица Амира Темура 88</a>
@@ -258,7 +259,7 @@ $this->registerJsFile(\common\components\ComponentContainer::getPaymoApi()->getW
                             <div class="red-icon icon icon-bell"></div>
                             <div>22 октября</div>
                         </div>
-                        <div class="col-6 col-xl-4 py-2 py-sm-1 align-items-center d-flex">
+                        <div class="col-6 col-xl-3 py-2 py-sm-1 align-items-center d-flex">
                             <button class="btn btn-block red-button text-uppercase text-center px-1 px-sm-3" onclick="MainPage.launchModal();">купить билет</button>
                         </div>
                     </div>
@@ -285,14 +286,15 @@ $this->registerJsFile(\common\components\ComponentContainer::getPaymoApi()->getW
             <div class="modal-content">
                 <?= Html::beginForm(Url::to(['order/create']), 'post', ['onsubmit' => 'return MainPage.completeOrder(this);']); ?>
                 <div class="modal-header border-bottom border-danger">
+                    <h2 class="modal-title">Ваш билет на семинар</h2>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span></button>
                 </div>
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-12">
-                            <h4 class="text-center">890 000</h4>
+                            Цена: 890 000
                             
-                            <ul class="list-unstyled border border-danger p-2 mt-2">
+                            <ul class="list-unstyled border border-danger rounded p-2 mt-2">
                                 <li>посещение семинара</li>
                                 <li>раздаточный материал</li>
                                 <li>кофе-брейк</li>
