@@ -45,15 +45,15 @@ $this->registerJsFile(\common\components\ComponentContainer::getPaymoApi()->getW
                     </div>
                     <div class="row justify-content-end mt-md-4">
                         <div class="col-8 col-md-6 py-3 pt-sm-4 pt-md-3 pt-lg-5 mt-md-2 align-self-right">
-                            <img src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/bt-logo.svg" class="img-fluid black-box rounded" alt="Business Terra">
+                            <img src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/bt-logo-light.svg" class="img-fluid " alt="Business Terra">
                         </div>
                         <div class="col-8 col-md-6 py-3 text-center align-self-center">
-                            <img src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/logo_5p.png" class="img-fluid rounded" alt="5 с плюсом">
+                            <img src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/logo_5p.svg" class="img-fluid" alt="5 с плюсом">
                         </div>
                     </div>
                     <div class="row justify-content-end">
                         <div class="col-8 col-md-6 pb-3 text-center align-self-center">
-                            <img src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/logo_radisson.svg" class="img-fluid black-box rounded" alt="Radisson Blu">
+                            <img src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/logo_radisson_light.svg" class="img-fluid" alt="Radisson Blu">
                         </div>
                     </div>
                 </div>
@@ -67,7 +67,7 @@ $this->registerJsFile(\common\components\ComponentContainer::getPaymoApi()->getW
                 <h2 class="font-weight-bold">Программа семинара</h2>
             </div>
         </div>
-        <div class="row white-block rounded py-2">
+        <div class="row py-2">
             <div class="col-12 col-md-6 pb-3 py-sm-2 py-md-3">
                 ✅ Элементы помогающие концентрировать внимание, память, логику, мышление;<br>
                 ✅ Как научиться «слышать» своего ребёнка и находить подход;<br>
@@ -103,7 +103,7 @@ $this->registerJsFile(\common\components\ComponentContainer::getPaymoApi()->getW
                 <div><span class="red-text">П</span>едагогам</div>
             </div>
             <div class="w-100"></div>
-            <div class="col-auto text-center white-block rounded py-2 mb-3 font-weight-bold">
+            <div class="col-auto text-center py-2 mb-3 font-weight-bold">
                 <div><span class="red-text">П</span>апам</div>
             </div>
             <div class="w-100"></div>
@@ -138,7 +138,7 @@ $this->registerJsFile(\common\components\ComponentContainer::getPaymoApi()->getW
         <div class="row white-block rounded">
             <div class="col no-gutters">
                 <div class="col-4 col-sm-3 col-md-2 text-center d-block float-left my-3 mr-3">
-                    <img class="rounded-circle w-100 img-fluid" src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/kulikova/speaker.jpg">
+                    <img class="rounded-circle w-100 img-fluid" src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/kulikova/speaker.jpg" alt="Елена Куликова">
                 </div>
                 <p>
                     <span class="red-text">О</span>дин из самых известных специалистов в странах СНГ по развитию детей.<br>
