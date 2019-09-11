@@ -165,7 +165,7 @@ $this->registerJsFile(\common\components\ComponentContainer::getPaymoApi()->getW
     <section class="container learn-block">
         <div class="row">
             <div class="col text-uppercase mt-4 mt-md-5">
-                <h2>Что вы получите в процессе семинара:</h2>
+                <h2>Что вы получите на семинаре:</h2>
             </div>
         </div>
         <div class="row py-3 justify-content-center">
@@ -208,6 +208,9 @@ $this->registerJsFile(\common\components\ComponentContainer::getPaymoApi()->getW
                 </div>
                 <div class="col-6 col-lg-3 d-flex align-items-center justify-content-center py-3">
                     <img class="img-fluid" src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/kulikova/client-7.jpg" alt="Саша Зверева">
+                </div>
+                <div class="col-6 col-lg-3 d-flex align-items-center justify-content-center py-3">
+                    <img class="img-fluid" src="<?= Yii::$app->homeUrl; ?>assets/grunt/images/kulikova/client-8.jpg" alt="Максим Галкин">
                 </div>
             </div>
         </div>
@@ -252,7 +255,7 @@ $this->registerJsFile(\common\components\ComponentContainer::getPaymoApi()->getW
                         <div class="col-12 col-xl-6 py-2 py-sm-1 d-flex">
                             <div class="red-icon icon icon-location"></div>
                             <div>
-                                <a href="https://goo.gl/maps/vcs1xfRvz3XSxe7b9" target="_blank">Ташкент, гостиница Raddison,<br> улица Амира Темура 88</a>
+                                <a href="https://goo.gl/maps/vcs1xfRvz3XSxe7b9" target="_blank">Ташкент, гостиница Radisson,<br> улица Амира Темура 88</a>
                             </div>
                         </div>
                         <div class="col-6 col-xl-3 py-2 py-sm-1 align-items-center d-flex">
