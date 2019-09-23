@@ -27,7 +27,8 @@
     "google/apiclient": "^2.2",
     "himiklab/yii2-recaptcha-widget": "^1.2",
     "longman/telegram-bot": "^0.54.0",
-    "yiisoft/yii2-bootstrap4": "^1.0@dev"
+    "yiisoft/yii2-bootstrap4": "^1.0@dev",
+    "ext-json": "*"
   },
   "require-dev": {
     "yiisoft/yii2-debug": "*",

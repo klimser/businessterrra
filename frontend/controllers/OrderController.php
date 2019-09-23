@@ -23,7 +23,10 @@ class OrderController extends Controller
             '2019-03-10' => 1290000,
             '2019-03-31' => 1490000,
             '2019-04-05' => 1790000,
-        ]
+        ],
+        'kulikova' => [
+            '2019-10-22' => 890000,
+        ],
     ];
     /**
      * Creates a new Order model.
@@ -104,8 +107,8 @@ class OrderController extends Controller
                         'color9' => "#000000",
                         'color10' =>"#ffffff",
                         'details' => json_encode([
-                            'тренинг' => 'Дмитрий Сидорин',
-                            'билет' => $order->type,
+                            'семинар' => $order->subject,
+//                            'билет' => $order->type,
                         ]),
                     ],
                 ]);
