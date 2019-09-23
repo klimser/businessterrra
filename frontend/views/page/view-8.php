@@ -226,8 +226,8 @@ $this->registerJsFile(\common\components\ComponentContainer::getPaymoApi()->getW
             <div class="col-6 col-md-4 col-lg-3 col-xl-2 pb-3">
                 <a href="https://5plus.uz" target="_blank" class="partner-logo logo-5p d-block"></a>
             </div>
-            <div class="col-6 col-md-4 col-lg-3 col-xl-2 pb-3">
-                <div class="partner-logo logo-baby-island d-block"></div>
+            <a class="col-6 col-md-4 col-lg-3 col-xl-2 pb-3">
+                <a href="https://instagram.com/babyisland.uz?igshid=15l2dvjd8p0jn" target="_blank" class="partner-logo logo-baby-island d-block"></a>
             </div>
             <div class="col-6 col-md-4 col-lg-3 col-xl-2 pb-3">
                 <div class="partner-logo logo-mp d-block"></div>
