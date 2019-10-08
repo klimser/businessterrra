@@ -247,6 +247,9 @@ $this->registerJsFile(\common\components\ComponentContainer::getPaymoApi()->getW
             <div class="col-6 col-md-4 col-lg-3 col-xl-2 pb-3">
                 <a href="https://t.me/kettuz" target="_blank" class="partner-logo logo-ketty d-block"></a>
             </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2 pb-3">
+                <a href="https://instagram.com/russia_toys_uz" target="_blank" class="partner-logo logo-toyworld d-block"></a>
+            </div>
         </div>
     </section>
 
